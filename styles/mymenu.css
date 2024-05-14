@@ -1,0 +1,218 @@
+/*hide menu_toggle checkbox*/
+#menu_toggle,#lbl_toggle{
+    display: none; /*visibility:hidden;*/
+}
+
+ul#mainmenu{
+    position: relative;
+    z-index: 100;
+    background: #3db2e1;
+    display: inline; /*necessary for narrow menu*/
+}
+ul#mainmenu>li{
+    display:inline-block;
+    vertical-align: top;
+}
+ul#mainmenu>li:first-child{
+    width: 80px; /*set width of home, since its small to accommodate emoji changes on selection to avoid menu shifts*/
+}
+ul.submenu>li, ul.subsubmenu>li{
+    list-style-type: none;
+    background: #3db2e1;
+    border-top: 1px solid #ffffff;
+    line-height: 25px;
+    padding: 1px 5px 1px 5px;
+}
+ul.submenu, ul.subsubmenu{
+    padding-left:17px;
+    visibility: hidden;
+    height: 0;
+}
+ul#mainmenu>li:hover>.submenu{
+    visibility: visible;
+    height:auto;
+}
+ul.submenu>li:hover>.subsubmenu{
+    visibility: visible;
+    height: auto;
+}
+ul#mainmenu li>a{
+    text-decoration: none;
+}
+ul#mainmenu>li>a::before{
+    content:"\1F48E"; /* "\1F4BC";  diamond / briefcase  */
+}
+ul#mainmenu>li:hover>a::before{
+    content:"\1F4A1";
+}
+ul.submenu>li.submain>a::after{
+    content:"\2B9B";  /*  	\2795 (+)  */
+    font-size:18px;
+    color: darkgreen;
+}
+ul.submenu>li.submain:hover>a::after{
+    content:"\2B99"; /*  	\2796 (-)  */
+    font-size:18px;
+    color: red;
+}
+ul#mainmenu a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color:navy;
+}
+ul.submenu>li:not(.submain):hover, ul.subsubmenu>li:hover{
+    background-image:radial-gradient(lightslategray, yellow, turquoise)
+}
+
+
+/* mobile menu */
+/*mobile last approach */
+
+
+/*mobile last approach */
+
+    /* first */
+    @media only screen and (min-width: 0px) and (max-width:768px){
+
+        /* -- changing to one column for narrow screens < 600px */
+        #divcol-container {
+            display: block; /* Make the container element behave like a table */
+            width: 100%; /* Set full-width to expand the whole page */
+            border-collapse: separate;
+            border-spacing: 0px 0; /*(left/right) - (top/bottom)*/
+            /*table-layout: fixed; /*restrict col width */
+        }
+        
+        div.col {
+            display: block; /* Make elements inside the container behave like table cells */
+            height: auto;
+            overflow-x: scroll;
+        }
+        #divsidebar {
+            width: 100%;
+            border: 1px solid Green;
+            border-radius: 1px;
+            background-color: honeydew;
+            color: royalblue;
+            font-size: 12px;
+            text-align: left;
+            margin-bottom: 2px;
+            padding:5px;
+        }
+        #divcontent {
+            width: 100%;
+            border: 1px solid Green;
+            border-radius: 1px;
+            background-color: white;
+            color: blue;
+            font-size: 12px;
+            text-align: left;
+            box-sizing: border-box;
+            padding: 5px;
+        }
+        
+        /*-- remove white spaces for single column on narrow screens --*/
+        #divcontainer {
+            background-color: ghostwhite;
+            width: 100%;
+            height: auto;
+            margin: auto;
+            padding: 0;
+        }
+
+        /*-- reduce sitetitle and motto fonts and change colors for narrow devices ;less than 600px --*/
+        #divbanner > #sitetitle{
+            color:rgb(240, 32, 32);
+            font-size:25px;
+            padding-top:15px;
+        }
+        
+        #divbanner > #sitemotto{
+            color:rgb(251, 255, 0);
+            padding-bottom:30px;
+            font-size:12px;
+        }
+
+        /*swap sidebar and content divs for mobile */
+        #divsidebar{
+            /*float:left;*/
+            display:none; OR /*simply hide sidebar*/
+        }
+        #divcontent{
+            /*float:left;
+            clear:left;*/
+        }
+
+
+
+
+        /*~~~~~~~~~~~~~~~~~~~~ customise mobile menu for screens less than 768px ~~~~~~~~~~~~~~~~~~~~~~~*/
+
+        ul#mainmenu{
+            visibility: hidden;
+        }
+        #divmenu>nav#navmenu::before{
+            content:"MENU";
+            color:navy;
+            font-size:16px;
+            font-weight:bold;
+        }
+        #navmenu>#lbl_toggle{
+          float:right;
+          display: block;
+        }
+
+
+        ul#mainmenu{
+            position: relative;
+            z-index: 100;
+            background: #3db2e1;
+            display: block; /*necessary for narrow menu to display on top of each other vertically*/
+        }
+        ul#mainmenu>li{
+            display:block;
+        }
+
+
+        #divmenu>#navmenu>#menu_toggle:checked~ul#mainmenu{
+            visibility: visible;
+        }
+
+        #menu_toggle:checked~#lbl_toggle::after{
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            margin-right:2px;
+            border:1px solid slateblue;
+            border-radius:1px;
+            content: "";
+            background: url("../images/menu_close.JPG") no-repeat 0 0;
+            background-size: 100%;
+        }
+        #menu_toggle:not(:checked)~#lbl_toggle::after{
+            /*content: url('../images/menu_open.JPG');*/ /*'\2B55 // \274C'; */
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            margin-right:2px;
+            border:1px solid slateblue;
+            border-radius:1px;
+            content: "";
+            background: url("../images/menu_open.JPG") no-repeat 0 0;
+            background-size: 100%;
+        }
+
+
+        /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+    } /*end break point*/
+
+
+
+/*-------end mobile last---------*/
+
+
+
+
+
+ /* end of mobile menu break point */

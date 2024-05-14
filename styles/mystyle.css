@@ -1,1 +1,494 @@
+/*
+
+3 Types of CSS - Cascading Style Sheets
+->Inline - same line as tag to be styled -> takes highest priority (no code reuse / not recommended)
+    <p style="color:green">Hello</p>
+
+->Embedded/Internal - written in the head of the html page to be styled (applies code reuse within the same page, average recommendation)
+->External - written in a seperate file/ external css (100% code reuse / the most recommended)
+*NB :(Priority between Internal and External depends on the position of the linking line and your embedded css style tag... if linking line for external comes last, external takes precedence, otherwise internal takes priority)
+
+
+=====
+
+How does css identify tags to be styled
+-> we make use of Selectors
+-> There are 2 types of selectors
+    1. Element selectors - selectors based on tag names eg: hr, h1, p, table, tr
+        p{ color: red;}
+    2. Named Selectors   - Selectors which identifies elements by names (are of 2 types)
+        a) -> id (#)- an element is assigned an id, which is used to identify it for styling (only one element may have a unique id)
+            <input type="text" id="fname">
+              #fname{color: blue;}
+        b) -> class (.) - an element is assigned a class name, which is used to identify it for styling (more than one elements may belong to  a class)
+            <p class="bida" id="p1">Hi</p>
+            <p class="bida">hello</p>
+            <p class="status">hello</p>
+              .bida{letter-spacing:2px;}
+
+
+    *** COMBINING SELECTORS ***
+    - We may combine Selectors as follows:
+        i-> element selector then class (Select a Paragraph with a class called bida)
+            p.bida{background-color:cyan;}
+        ii-> element selector and id (select a div with an id called footer)
+            div#footer{color:navy;}
+
+    *** USING MULTIPLE CLASSES **
+    -> elements may be assigned multiple classes for example to set the classes details and status to a div:
+        <div class="details status bida">...</div>  (any class that matches' styling will be applied)
+        .details{ color: navy; }
+        .status { font-weight:bold;}
+        .bida{text-align:center;}
+
+    *** GROUPING  ***
+    - Elements sharing the same styles may be grouped to eliminate style redundancies
+    - Example :
+     h1,h2,p{color: blue;}
+
+    *** COMBINATORS ***
+    -> CSS allows to select elements by their nesting level ie: 
+            <div id="divcontent" class="content">
+                <div id="divc1"
+                    <div id="divc1c1">
+                        <p>Child of Child</p>
+                    </div>
+                    <h1 id="hc1">Hello</h1>
+                    <h1 id="hc2">Good Day</h1>
+                    <p>Enjoy</p>
+                    <p>Always</p>
+                </div>
+                <div id="divc2">
+                    <p id="gc">Welcome</p>
+                </div>
+                <p id="gs">Styling is cool</p>
+            </div>
+    i.   Child(>)
+        -> selects direct children of an element eg: 
+        div>div{color:red;}   [picks 3 divs] WHICH ONES?
+        div>p{color:blue;}    [picks 4 paragraph] WHICH ONES?
+
+    ii.  Grandchild( ) / descendant
+        -> selects elements which are grand children/descendants of a given element e.g.
+        div div{font-weight:bold;} [Picks 3 divs] WHICH ONES?
+
+    iii. Sibling(+)
+        -> selects elements which are direct siblings of a given element e.g.
+        h1+p{color:green;} [selects one p] WHICH ONE?
+
+    iv.  General sibling (~)
+        -> selects elements which are  general siblings of a given element e.g.
+        h1~*{ color: purple; } [selects 3 elements] WHICH ONES?
+
+    *** THE ALL SELECTOR (*) ***
+    -> The all (*) selector selects all elements belonging to the specified element eg: 
+        body * {
+            font-size:12px;
+        }
+
+    *** PSEUDO SELECTORS (:) ***
+    - Helps to select elements upon some action being performed to the element or elements by some qualification eg :first-child
+    Examples;
+        a:link{color:blue; }
+        a:visited{color:purple;}
+        a:hover{color:pink;}
+        a:active{color:red;}
+
+        p:first-child{background-color:lime;}
+        p:first-child+(2){background-color:lime;}
+        p:last-child{...}
+        p:first-of-type{...}
+
+        input:read-only{...}
+
+        :not(selector)	
+        :not(p)	Selects every element that is not a <p> element
+
+
+        *** PSEUDO ELEMENTS ***
+        p::after{content:'🏆'}
+        ::after	p::after	Insert content after every <p> element
+        ::before	p::before	Insert content before every <p> element
+        ::first-letter	p::first-letter	Selects the first letter of every <p> element
+        ::first-line	p::first-line	Selects the first line of every <p> element
+        ::selection	p::selection	Selects the portion of an element that is selected by a user
+
+
+
+*/
+
+
+
+
+
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: ghostwhite;
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* MASTER PAGE */
+
+#divcontainer {
+    background-color: ghostwhite;
+    width: 90%;
+    height: auto;
+    margin: auto;
+    padding: 0;
+}
+#divbanner {
+    width: 100%;
+    height: 200px;
+    border: 1px solid Green;
+    border-radius: 10px 10px 0 0;
+    background-image: url("../images/banner.jpg"); /*path has to be relative to css.. go out of css folder once, then find images*/
+    background-repeat:no-repeat;
+    background-size: 100% 100%;
+    color: royalblue;
+    font-size: 20px;
+    margin-bottom: 2px;
+}
+
+#divbanner > #sitetitle{
+    color:rgb(240, 32, 170);
+    font-size:40px;
+    padding-top:15px;
+}
+
+#divbanner > #sitemotto{
+    color:lime;
+    padding-bottom:60px;
+}
+
+#divsidebar>ul, #divsidebar>ul>li{
+    list-style-type: none;
+    margin:0;
+    padding:5px;
+}
+
+body * {
+    font: 14px Arial, sans-serif;
+}
+
+#divmenu {
+    width: 100%;
+    height: 34px;
+    border: 1px solid Green;
+    border-radius: 0px 0 0 0;
+    background-color: #3db2e1;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: left;
+    vertical-align: middle;
+    margin-bottom: 2px;
+    padding-left: 2px;
+    padding-top: 5px;
+}
+
+
+#divcol-container {
+    display: table; /* Make the container element behave like a table */
+    width: 100%; /* Set full-width to expand the whole page */
+    border-collapse: separate;
+    border-spacing: 0px 0; /*(left/right) - (top/bottom)*/
+    table-layout: fixed; /*restrict col width */
+}
+
+div.col {
+    display: table-cell; /* Make elements inside the container behave like table cells */
+    height: 70vh;
+}
+#divsidebar {
+    width: 30%;
+    border: 1px solid Green;
+    border-radius: 1px;
+    background-color: honeydew;
+    color: royalblue;
+    font-size: 12px;
+    text-align: left;
+    margin-bottom: 2px;
+    vertical-align: top;
+    padding:5px;
+}
+#divcontent {
+    width: 70%;
+    border: 1px solid Green;
+    border-radius: 1px;
+    background-color: white;
+    color: blue;
+    font-size: 12px;
+    text-align: left;
+    box-sizing: border-box;
+    padding: 5px;
+}
+#divfooter {
+    clear: both;
+    width: 100%;
+    min-height: 25px;
+    border: 1px solid Green;
+    border-radius: 0 0 5px 5px;
+    background-color: #3db2e1;
+    color: yellow;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 2px;
+}
+#divfooter>p#footer{
+    text-align: center;
+}
+#divsocialmedia img{
+    border: 2px solid aqua ;
+    border-radius:50%;
+}
+#divsocialmedia img:hover{
+    opacity:0.5;
+}
+
+#heading{
+    font-size:30px;
+    color: Navy;
+    background-color:transparent;
+    text-align:center; 
+}
+
+p{
+    padding: 5px 2px 5px 2px;
+    margin: 0 0 0 0;
+}
+
+
+
+
+/*-------content style------*/
+
+#divcontent > :not(p)+fieldset:nth-child(9){ /*color children, skip paragraphs */
+    background-color: red;
+}
+
+#divcontent p:not(#divcontent>p){
+    color: black;
+}
+
+#divcontent > p + p{
+    background-color: rgb(186, 228, 238); 
+}
+
+#divcontent > div ~ :not(p::after){
+    color:red;
+}
+
+
+#divsidebar>ul>li:nth-child(4) a{
+    color:navy;
+}
+
+
+#divmenu>a::after{
+    content:"D";
+} 
+
+
+/* css box model */
+
+#divcontent>p:first-child{
+    color:blue;
+    /*
+    padding:10px;
+    border:5px groove green;
+    margin:10px;
+    text-align: center;
+    font-size:2em;
+    */
+}
+
+#divcontent>p:first-child{
+    padding-top:10px;
+    padding-right:10px;
+    padding-bottom: 10px;
+    padding-left:10px;
+
+
+    border-top:5px dotted yellow;
+    border-bottom:5px double red;
+    border-left:10px groove turquoise;
+    border-right:2px solid steelblue;
+
+
+    margin:10px 10px 10px 10px; /*T R B L*/
+
+    font-size:2em;
+}
+
+
+
+#divcontent>p:nth-child(2)::first-letter{
+    padding-top:10px;
+    padding-right:10px;
+    padding-bottom: 10px;
+    padding-left:10px;
+    border:1px solid green;
+    margin:50px;
+}
+
+
+#divcontent>div>div>p{
+    letter-spacing: 20px;
+    background-color: yellow;
+    font-size: 2em;
+    text-align: center;
+    border:5px dotted teal;
+}
+
+
+/*
+h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2.5em;
+    color: green;
+    text-transform: uppercase;
+    font-style: italic;
+    text-decoration: underline;
+    text-align: center;
+    letter-spacing: 2px;
+    text-shadow: -5px 10px blue;
+}
+
+h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2em;
+    color:darkcyan;
+    font-style: italic;
+    text-align: left;
+    letter-spacing: 2px;
+}
+*/
+
+
+
+h1{
+    font-size: 2em;
+    color:green;
+    background-color:none;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: underline;
+    text-shadow: 5px 2px greenyellow;
+}
+
+h2{
+    font-size: 1.5em;
+    color:rgb(240, 32, 170);
+    font-style: italic;
+    
+        transform:scaleX(3);
+        transform:scaleY(10);
+        transform:rotate(-1deg);
+    
+}
+
+p{
+    text-align: justify;
+    padding:5px;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+    line-height: 18px;
+}
+
+p#footnote{
+    color:red;
+    background-color: yellow;
+    font-style: italic;
+    letter-spacing: 2px;
+}
+
+
+#divbackground>p{
+    background-image: linear-gradient(lightcyan, yellowgreen);
+}
+
+#divbackground>p{
+   /* background-image: linear-gradient(to right, red , yellow); 
+   background-image: linear-gradient(to bottom right, red, yellow);
+   background-image: linear-gradient(red, yellow, green);
+   background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
+   background-image: radial-gradient(red, yellow, green);
+   background-image: radial-gradient(red 5%, yellow 15%, green 60%);
+   background-image: radial-gradient(circle, red, yellow, green);*/
+   background-image: repeating-radial-gradient(lightcyan, rgb(247, 247, 213) 10%, rgb(195, 252, 195) 15%);
+}
+
+/*~~~~~~~~~~~~~form controls styling~~~~~~~~~~~~~~*/
+button, input[type='submit'], input[type='reset'], input[type='button']{
+    background-color: #5ba3e0;
+    border: #2e6da4;
+    font-family: Arial, Geneva, Arial, Helvetica,  sans-serif;
+    color: #fff;
+    letter-spacing: 1px;
+    padding: 8px 12px;
+    font-size: 14px;
+    font-weight: normal;
+    border-radius: 2px;
+    line-height: 1.2;
+    text-decoration:none;
+}
+
+fieldset>label:not(.check){
+    color:green;
+    width:150px;
+    display: inline-block;
+    text-align: left;
+}
+fieldset>label:not(.check)::after{
+    content:" : ";
+    float: right;
+}
+label.check{
+    color:royalblue;
+}
+label[for="customerid"]+input[type="text"]{
+    color: red;
+    background-image:radial-gradient(yellowgreen, azure, lightcyan);
+}
+fieldset{
+    border:1px solid turquoise;
+    border-radius: 8px;
+    background-image:linear-gradient(lightcyan, peachpuff);
+    padding: 20px;
+}
+legend{
+    border:1px solid turquoise;
+    border-radius: 2px;
+    background-image: linear-gradient(lightcyan, lightyellow, lightcyan);
+    height:22px;
+    padding: 3px;
+}
+/*select desired input types leaving undesired*/
+input[type="text"],input[type="date"],input[type="time"],input[type="password"], select{
+    border:1px solid lightskyblue;
+    border-radius: 3px;
+    margin-bottom: 3px;
+    height:24px;
+    width:350px;
+}
+/*select all inputs and filter out undesired || same results as above*/
+input:not([type=checkbox]):not([type=radio]):not([type=reset]):not([type=submit]):not([type=button]), select{
+    border:1px solid lightskyblue;
+    border-radius: 3px;
+    margin-bottom: 3px;
+    height:24px;
+    width:350px;
+}
+
+/*~~~~~~~~~~~~~~`*/
+
+
+
+
+
 
