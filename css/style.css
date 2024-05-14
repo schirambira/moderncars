@@ -1,1 +1,174 @@
+/* this is a comment */
+/*
 
+There are 3 Types of CSS - Cascading Style Sheets
+1 - INLINE - is written in the same line as the tag to be styled -> takes highest priority(there is no code reuse / hence not recomended)
+    Example: 
+    <p style="color:red; font-size:12px; background-color:cyan; text-align:center">Welcome To CSS</p>
+    <p style="color:red; font-size:12px; background-color:cyan; text-align:center">Inline CSS You have to repeat the styling hencedifficult to maintain</p>
+
+2 - EMBEDDED / INTERNAL - CSS written in the head of an html document to be styled (it applies code reuse within the same page, average recommendation)
+
+3 - EXTERNAL - Written in a seperate file/ external css (there is 100% code reuse / it is the most recomended)
+
+*NB: Priority between Internal and Exeternal depends on the positioning of the linking line and your embedded CSS style tag... 
+    if linking line for external css comes last, then external takes precedence, otherwise internal takes precedence as below;
+
+    <head>
+        <style>
+            p{
+                color: red;
+            }
+        <style>
+        <link rel="stylesheet" href="style.css"> /*link to external comes last: takes precedence
+    </head>
+
+    =====
+
+    HOW CSS IDENTIFIES THE HTML TAGS TO BE STYLED : (MAKES USE OF SELECTORS)
+        
+    -> There are 2 main types of selectors as follows:
+            1. ELEMENT SELECTORS - Selectors based on tag names eg: hr, h1, p, table, tr, fieldset
+                P{ font-size: 18px; }
+
+            2. NAMED SELECTORS - Selectors which identifies elements by names (they are of 2 types)
+                a) -> id (#) - an element is assigned an id, which is used to identify it for styling (only one element may have a unique id)
+                      <input type="text" id="fname">
+
+                      To Style from CSS: 
+                      #fname{
+                          color: blue;
+                      }
+
+                b) -> class (.) - an element is assigned a classname, which is used to identify it for styling (more than one elements may belong to a class)
+                      <p class="wmd">Hi</p>
+                      <p class="wmd">Welcome</p>
+                      <h1 class="wmd">Good Morning</h1>
+                      <p class="status">Class Status</p>
+
+                      To Style from CSS: 
+                      .wmd{
+                          color: green;
+                          letter-spacing:5px;
+                      }
+
+            ***** COMBINING SELECTORS ****
+
+            - We may combine Selectors as follows:
+
+            i. - Element Selector and Class Name ( Eg: Select a h1 with a class called wmd)
+                 h1.wmd{
+                    background-color: cyan;
+                 }
+
+            ii. - Element Selector and id ( Eg: Select a div with the id divfooter)
+                 div#divfooter{
+                    color: navy;
+                 }
+            
+            ***** USING MULTIPLE CLASSES *****
+            - Elements may be assigned to multiple classes for example to set the class bida2 and status to a div write as follows: 
+            <div class="wmd status detail">....</div> /* the space seperates different class names to which the div belongs
+
+            To Style the div from the different classes:
+            .wmd{ color: red; }
+            .status{ font-weight: bold; }
+            .detail{ text-align: center; }
+
+            *** GROUPINGS ***
+            - Elements sharing the same styles may be grouped to eliminate style redundancies
+            - Example:
+            h1, h2, p, table, tr{
+                color: green;
+            }
+
+
+            *** COMBINATORS ***
+            -> CSS allows you to combine elements by their nesting level ie their relationship to other elements. 
+            -> There are 4 Combinators as follows: 
+                a. Child (>)
+                b. Descendant ( )
+                c. Adjuscent Sibling (+)
+                d. General Sibling (~)
+
+
+                EXAMPLE :
+                <div id="divcontent" class="content">
+                    <div id="divcol1">
+                        <p>Child of Child</p>
+                    </div>
+                    <h1 id="hc1">Hello</h1>
+                    <h1 id="hc2">Good Day>/h1>
+                    <p>Enyoy</p>
+                    <p>Always</p>
+                    <div id="divcol2">
+                        <p id="gc">Welcome</p>
+                    </div>
+                    <p id="gs">Styling is cool</p>
+                </div>
+
+                Examples based on above html
+                (i) Child (>)
+                    -> Selects direct children of an element eg:
+                    div>div{ color: red; }   [picks 2 divs]       Which ones?  divcol1 , divcol2
+                    div>p{ color:red; }      [picks 4 paragraphs] which ones?  
+
+                (ii) Descendant / Grand Child ( )
+                    -> selects elements which are children/descendants of a given element eg: 
+                    div div{ font-weight: bold; } [picks 2 divs] which ones?   divcol1 , divcol2
+
+                (iii) Adjuscent Sibling (+)
+                    -> Selects elements which are direct siblings of a given element eg: 
+                    h1+p{ color: green; } [selects 1 p] which one?  p with Enjoy
+
+                (iv) General Sibling (~)
+                    -> Selects elements which are general siblings of a given element eg: 
+                    h1~*{ color: purple; } [selects 5 elements ] Which ones?  h1, p, p, div, p
+
+            
+    *** THE ALL SELECTOR (*) ***
+    -> The all (*) selector selects all elements belonging to the specified element eg: 
+        body * {
+            font-size:12px;
+        }
+
+    *** PSEUDO SELECTORS (:) ***
+    - Helps to select elements upon some action being performed to the element or elements by some qualification eg :first-child
+    Examples;
+        a:link{color:blue; }
+        a:visited{color:purple;}
+        a:hover{color:pink;}
+        a:active{color:red;}
+
+        p:first-child{background-color:lime;}
+        p:first-child+(2){background-color:lime;}
+        p:last-child{...}
+        p:first-of-type{...}
+
+        input:read-only{...}
+
+        :not(selector)	
+        :not(p)	Selects every element that is not a <p> element
+
+
+        *** PSEUDO ELEMENTS ***
+        p::after{content:'🏆'}
+        ::after	p::after	Insert content after every <p> element
+        ::before	p::before	Insert content before every <p> element
+        ::first-letter	p::first-letter	Selects the first letter of every <p> element
+        ::first-line	p::first-line	Selects the first line of every <p> element
+        ::selection	p::selection	Selects the portion of an element that is selected by a user
+
+        *****FAMILIARISE YOURSELF WITH CSS PROPERTIES AND UNITS OF MEASUREMENT, AND THE CSS BOX MODEL*******
+
+*/
+
+/* set global settings */
+body *{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color:navy;
+    box-sizing: border-box;
+}
+
+/* set borders for the master page divs */
