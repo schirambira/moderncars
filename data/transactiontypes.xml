@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rootElement>
+  <rowElement>
+    <TRANSACTION_TYPE_ID>101</TRANSACTION_TYPE_ID>
+    <TRANSACTION_TYPE>Donation Income </TRANSACTION_TYPE>
+    <DESCRIPTION>Donation Income </DESCRIPTION>
+    <CLASS_ID>1</CLASS_ID>
+    <TRANSACTION_CLASS>Income </TRANSACTION_CLASS>
+  </rowElement>
+  <rowElement>
+    <TRANSACTION_TYPE_ID>102</TRANSACTION_TYPE_ID>
+    <TRANSACTION_TYPE>Fundraising Campaign </TRANSACTION_TYPE>
+    <DESCRIPTION>Fundraising Campaign </DESCRIPTION>
+    <CLASS_ID>1</CLASS_ID>
+    <TRANSACTION_CLASS>Income </TRANSACTION_CLASS>
+  </rowElement>
+  <rowElement>
+    <TRANSACTION_TYPE_ID>103</TRANSACTION_TYPE_ID>
+    <TRANSACTION_TYPE>Loan Income </TRANSACTION_TYPE>
+    <DESCRIPTION>Loan Income to Fund Foundation </DESCRIPTION>
+    <CLASS_ID>1</CLASS_ID>
+    <TRANSACTION_CLASS>Income </TRANSACTION_CLASS>
+  </rowElement>
+  <rowElement>
+    <TRANSACTION_TYPE_ID>201</TRANSACTION_TYPE_ID>
+    <TRANSACTION_TYPE>Staff Salaries</TRANSACTION_TYPE>
+    <DESCRIPTION>Salaries for foundation staff</DESCRIPTION>
+    <CLASS_ID>2</CLASS_ID>
+    <TRANSACTION_CLASS>Expenditure </TRANSACTION_CLASS>
+  </rowElement>
+  <rowElement>
+    <TRANSACTION_TYPE_ID>202</TRANSACTION_TYPE_ID>
+    <TRANSACTION_TYPE>Office Rentals</TRANSACTION_TYPE>
+    <DESCRIPTION>Rent for Office</DESCRIPTION>
+    <CLASS_ID>2</CLASS_ID>
+    <TRANSACTION_CLASS>Expenditure </TRANSACTION_CLASS>
+  </rowElement>
+  <rowElement>
+    <TRANSACTION_TYPE_ID>203</TRANSACTION_TYPE_ID>
+    <TRANSACTION_TYPE>Electricity Bills</TRANSACTION_TYPE>
+    <DESCRIPTION>Payment for Electricity</DESCRIPTION>
+    <CLASS_ID>2</CLASS_ID>
+    <TRANSACTION_CLASS>Expenditure </TRANSACTION_CLASS>
+  </rowElement>
+  <rowElement>
+    <TRANSACTION_TYPE_ID>204</TRANSACTION_TYPE_ID>
+    <TRANSACTION_TYPE>Water Bills</TRANSACTION_TYPE>
+    <DESCRIPTION>Payment for water</DESCRIPTION>
+    <CLASS_ID>2</CLASS_ID>
+    <TRANSACTION_CLASS>Expenditure </TRANSACTION_CLASS>
+  </rowElement>
+  <rowElement>
+    <TRANSACTION_TYPE_ID>205</TRANSACTION_TYPE_ID>
+    <TRANSACTION_TYPE>Office Equipment</TRANSACTION_TYPE>
+    <DESCRIPTION>Payment for Office Equipment</DESCRIPTION>
+    <CLASS_ID>2</CLASS_ID>
+    <TRANSACTION_CLASS>Expenditure </TRANSACTION_CLASS>
+  </rowElement>
+  <rowElement>
+    <TRANSACTION_TYPE_ID>206</TRANSACTION_TYPE_ID>
+    <TRANSACTION_TYPE>Foundation Cars</TRANSACTION_TYPE>
+    <DESCRIPTION>Payment for cars, service and repairs</DESCRIPTION>
+    <CLASS_ID>2</CLASS_ID>
+    <TRANSACTION_CLASS>Expenditure </TRANSACTION_CLASS>
+  </rowElement>
+  <rowElement>
+    <TRANSACTION_TYPE_ID>207</TRANSACTION_TYPE_ID>
+    <TRANSACTION_TYPE>Fuel Expenses</TRANSACTION_TYPE>
+    <DESCRIPTION>Payment for foundation cars fueling</DESCRIPTION>
+    <CLASS_ID>2</CLASS_ID>
+    <TRANSACTION_CLASS>Expenditure </TRANSACTION_CLASS>
+  </rowElement>
+  <rowElement>
+    <TRANSACTION_TYPE_ID>208</TRANSACTION_TYPE_ID>
+    <TRANSACTION_TYPE>Internet (data)</TRANSACTION_TYPE>
+    <DESCRIPTION>Internet and data expenses</DESCRIPTION>
+    <CLASS_ID>2</CLASS_ID>
+    <TRANSACTION_CLASS>Expenditure </TRANSACTION_CLASS>
+  </rowElement>
+  <rowElement>
+    <TRANSACTION_TYPE_ID>209</TRANSACTION_TYPE_ID>
+    <TRANSACTION_TYPE>Transportation Costs</TRANSACTION_TYPE>
+    <DESCRIPTION>Staff and shipment transportation costs</DESCRIPTION>
+    <CLASS_ID>2</CLASS_ID>
+    <TRANSACTION_CLASS>Expenditure </TRANSACTION_CLASS>
+  </rowElement>
+  <rowElement>
+    <TRANSACTION_TYPE_ID>210</TRANSACTION_TYPE_ID>
+    <TRANSACTION_TYPE>Staff Training</TRANSACTION_TYPE>
+    <DESCRIPTION>Staff Training Costs</DESCRIPTION>
+    <CLASS_ID>2</CLASS_ID>
+    <TRANSACTION_CLASS>Expenditure </TRANSACTION_CLASS>
+  </rowElement>
+  <rowElement>
+    <TRANSACTION_TYPE_ID>211</TRANSACTION_TYPE_ID>
+    <TRANSACTION_TYPE>Publicity and Marketing</TRANSACTION_TYPE>
+    <DESCRIPTION>Publicity and Marketing Costs</DESCRIPTION>
+    <CLASS_ID>2</CLASS_ID>
+    <TRANSACTION_CLASS>Expenditure </TRANSACTION_CLASS>
+  </rowElement>
+  <rowElement>
+    <TRANSACTION_TYPE_ID>212</TRANSACTION_TYPE_ID>
+    <TRANSACTION_TYPE>Accommodation Costs</TRANSACTION_TYPE>
+    <DESCRIPTION>Hotel and Accommodation Costs</DESCRIPTION>
+    <CLASS_ID>2</CLASS_ID>
+    <TRANSACTION_CLASS>Expenditure </TRANSACTION_CLASS>
+  </rowElement>
+  <rowElement>
+    <TRANSACTION_TYPE_ID>213</TRANSACTION_TYPE_ID>
+    <TRANSACTION_TYPE>Insurance Costs</TRANSACTION_TYPE>
+    <DESCRIPTION>Insurance Costs</DESCRIPTION>
+    <CLASS_ID>2</CLASS_ID>
+    <TRANSACTION_CLASS>Expenditure </TRANSACTION_CLASS>
+  </rowElement>
+  <rowElement>
+    <TRANSACTION_TYPE_ID>214</TRANSACTION_TYPE_ID>
+    <TRANSACTION_TYPE>Medical Aid Costs</TRANSACTION_TYPE>
+    <DESCRIPTION>Medical Aid Costs for staff</DESCRIPTION>
+    <CLASS_ID>2</CLASS_ID>
+    <TRANSACTION_CLASS>Expenditure </TRANSACTION_CLASS>
+  </rowElement>
+  <rowElement>
+    <TRANSACTION_TYPE_ID>215</TRANSACTION_TYPE_ID>
+    <TRANSACTION_TYPE>Bank Fees</TRANSACTION_TYPE>
+    <DESCRIPTION>Bank Charges</DESCRIPTION>
+    <CLASS_ID>2</CLASS_ID>
+    <TRANSACTION_CLASS>Expenditure </TRANSACTION_CLASS>
+  </rowElement>
+  <rowElement>
+    <TRANSACTION_TYPE_ID>216</TRANSACTION_TYPE_ID>
+    <TRANSACTION_TYPE>Cost of Annual</TRANSACTION_TYPE>
+    <DESCRIPTION>Cost of Annual</DESCRIPTION>
+    <CLASS_ID>2</CLASS_ID>
+    <TRANSACTION_CLASS>Expenditure </TRANSACTION_CLASS>
+  </rowElement>
+  <rowElement>
+    <TRANSACTION_TYPE_ID>217</TRANSACTION_TYPE_ID>
+    <TRANSACTION_TYPE>Administration Cost</TRANSACTION_TYPE>
+    <DESCRIPTION>Administration Cost</DESCRIPTION>
+    <CLASS_ID>2</CLASS_ID>
+    <TRANSACTION_CLASS>Expenditure </TRANSACTION_CLASS>
+  </rowElement>
+  <rowElement>
+    <TRANSACTION_TYPE_ID>218</TRANSACTION_TYPE_ID>
+    <TRANSACTION_TYPE>Security Costs</TRANSACTION_TYPE>
+    <DESCRIPTION>Security Costs</DESCRIPTION>
+    <CLASS_ID>2</CLASS_ID>
+    <TRANSACTION_CLASS>Expenditure </TRANSACTION_CLASS>
+  </rowElement>
+  <rowElement>
+    <TRANSACTION_TYPE_ID>219</TRANSACTION_TYPE_ID>
+    <TRANSACTION_TYPE>Yearly Taxes</TRANSACTION_TYPE>
+    <DESCRIPTION>Yearly Taxes</DESCRIPTION>
+    <CLASS_ID>2</CLASS_ID>
+    <TRANSACTION_CLASS>Expenditure </TRANSACTION_CLASS>
+  </rowElement>
+  <rowElement>
+    <TRANSACTION_TYPE_ID>220</TRANSACTION_TYPE_ID>
+    <TRANSACTION_TYPE>Yearly Registration Fees</TRANSACTION_TYPE>
+    <DESCRIPTION>Yearly Registration Fees</DESCRIPTION>
+    <CLASS_ID>2</CLASS_ID>
+    <TRANSACTION_CLASS>Expenditure </TRANSACTION_CLASS>
+  </rowElement>
+  <rowElement>
+    <TRANSACTION_TYPE_ID>221</TRANSACTION_TYPE_ID>
+    <TRANSACTION_TYPE>Loan Repayment </TRANSACTION_TYPE>
+    <DESCRIPTION>Repayment for Loan Income </DESCRIPTION>
+    <CLASS_ID>2</CLASS_ID>
+    <TRANSACTION_CLASS>Expenditure </TRANSACTION_CLASS>
+  </rowElement>
+</rootElement>

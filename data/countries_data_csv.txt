@@ -1,0 +1,252 @@
+COUNTRY_ID	COUNTRY	CAPITAL_CITY	CONTINENT	CONTINENT_ID	ISO2_CODE	ISO3_CODE	IOC_CODE	TLD	CURRENCY	TEL_CODE	ICO	PREFERENCE_ORDER_ID
+1	Algeria	Algier	Africa	1	DZ	DZA	ALG	.dz	DZD	213		
+2	Angola	Luanda	Africa	1	AO	AGO	ANG	.ao	AOA	244		
+3	Ascension Island	Georgetown	Africa	1	AC	ASC		.ac		247		
+4	Benin	Porto Novo	Africa	1	BJ	BEN	BEN	.bj	XOF	229		
+5	Botswana	Gaborone	Africa	1	BW	BWA	BOT	.bw	BWP	267		
+6	Burkina Faso	Ouagadougou	Africa	1	BF	BFA	BUR	.bf	XOF	226		
+7	Burundi	Bujumbura	Africa	1	BI	BDI	BDI	.bi	BIF	257		
+8	Cameroon	Yaoundé	Africa	1	CM	CMR	CMR	.cm	XAF	237		
+9	Cape Verde	Praia	Africa	1	CV	CPV	CPV	.cv	CVE	238		
+10	Central African Republic	Bangui	Africa	1	CF	CAF	CAF	.cf	XAF	236		
+11	Chad	N'Djamena	Africa	1	TD	TCD	CHA	.td	XAF	235		
+12	Comoros	Moroni	Africa	1	KM	COM	COM	.km	KMF	269		
+13	Congo	Brazzaville	Africa	1	CG	COG	CGO	.cg	XAF	242		
+14	Congo, The Democratic Republic Of The	Kinshasa	Africa	1	CD	COD	COD	.cd	CDF	243		
+15	CÔte D'ivoire	Yamoussoukro	Africa	1	CI	CIV	CIV	.ci	XOF	225		
+16	Diego Garcia	Diego Garcia (Main Island)	Africa	1	DG	DGA				246		
+17	Djibouti	Djibouti City	Africa	1	DJ	DJI	DJI	.dj	DJF	253		
+18	Egypt	Kairo	Africa	1	EG	EGY	EGY	.eg	EGP	20		
+19	Equatorial Guinea	Malabo	Africa	1	GQ	GNQ	GEQ	.gq	XAF	240		
+20	Eritrea	Asmara (Asmera)	Africa	1	ER	ERI	ERI	.er	ERN	291		
+21	Ethiopia	Addis Abeba	Africa	1	ET	ETH	ETH	.et	ETB	251		
+22	Falkland Islands (malvinas)	Port Stanley	Africa	1	FK	FLK		.fk	FLP	500		
+23	Gabon	Libreville	Africa	1	GA	GAB	GAB	.ga	XAF	241		
+24	Ghana	Accra	Africa	1	GH	GHA	GHA	.gh	GHC	233		
+25	Gibraltar	Gibraltar (Stadt)	Africa	1	GI	GIB		.gi	GIP	350		
+26	Guinea	Conakry	Africa	1	GN	GIN	GUI	.gn	GNF	224		
+27	Guinea-Bissau	Bissau	Africa	1	GW	GNB	GBS	.gw	XOF	245		
+28	Kenya	Nairobi	Africa	1	KE	KEN	KEN	.ke	KES	254		
+29	Lesotho	Maseru	Africa	1	LS	LSO	LES	.ls	LSL	266		
+30	Liberia	Monrovia	Africa	1	LR	LBR	LBR	.lr	LRD	231		
+31	Libya	Tripolis	Africa	1	LY	LBY	LBA	.ly	LYD	218		
+32	Madagascar	Antananarivo	Africa	1	MG	MDG	MAD	.mg	MGA	261		
+33	Malawi	Lilongwe	Africa	1	MW	MWI	MAW	.mw	MWK	265		
+34	Mali	Bamako	Africa	1	ML	MLI	MLI	.ml	XOF	223		
+35	Mauritania	Nouakchott	Africa	1	MR	MRT	MTN	.mr	MRO	222		
+36	Mauritius	Port Louis	Africa	1	MU	MUS	MRI	.mu	MUR	230		
+37	Mayotte	Mamoudzou	Africa	1	YT	MYT		.yt	EUR	269		
+38	Morocco	Rabat	Africa	1	MA	MAR	MAR	.ma	MAD	211		
+39	Mozambique	Maputo	Africa	1	MZ	MOZ	MOZ	.mz	MZM	258		
+40	Namibia	Windhoek	Africa	1	NA	NAM	NAM	.na	ZAR	264		
+41	Niger	Niamey	Africa	1	NE	NER	NIG	.ne	XOF	227		
+42	Nigeria	Abuja	Africa	1	NG	NGA	NGR	.ng	NGN	234		
+43	RÉunion	Saint-Denis	Africa	1	RE	REU		.re	EUR	262		
+44	Rwanda	Kigali	Africa	1	RW	RWA	RWA	.rw	RWF	250		
+45	Saint Helena	Jamestown	Africa	1	SH	SHN		.sh	SHP	290		
+46	Sao Tome And Principe	São Tomé	Africa	1	ST	STP	STP	.st	STD	239		
+47	Senegal	Dakar	Africa	1	SN	SEN	SEN	.sn	XOF	221		
+48	Seychelles	Victoria	Africa	1	SC	SYC	SEY	.sc	SCR	248		
+49	Sierra Leone	Freetown	Africa	1	SL	SLE	SLE	.sl	SLL	232		
+50	Somalia	Mogadischu	Africa	1	SO	SOM	SOM	.so	SOS	252		
+51	South Africa	Pretoria	Africa	1	ZA	ZAF	RSA	.za	ZAR	27		
+52	Sudan	Khartum	Africa	1	SD	SDN	SUD	.sd	SDD	249		
+53	Swaziland	Mbabane	Africa	1	SZ	SWZ	SWZ	.sz	SZL	268		
+54	Tanzania, United Republic Of	Dodoma	Africa	1	TZ	TZA	TAN	.tz	TZS	255		
+55	The Gambia	Banjul	Africa	1	GM	GMB	GAM	.gm	GMD	220		
+56	Togo	Lomé	Africa	1	TG	TGO	TOG	.tg	XOF	228		
+57	Tristan da Cunha	Jamestown	Africa	1	TA	TAA				290		
+58	Tunisia	Tunis	Africa	1	TN	TUN	TUN	.tn	TND	216		
+59	Uganda	Kampala	Africa	1	UG	UGA	UGA	.ug	UGX	256		
+60	Western Sahara	El Aaiún	Africa	1	EH	ESH		.eh	MAD			
+61	Zambia	Lusaka	Africa	1	ZM	ZMB	ZAM	.zm	ZMK	260		
+62	Zimbabwe	Harare	Africa	1	ZW	ZWE	ZIM	.zw	ZWD	263		
+63	Afghanistan	Kabul	Asia	2	AF	AFG	AFG	.af	AFN	93		
+64	Armenia	Eriwan	Asia	2	AM	ARM	ARM	.am	AMD	374		
+65	Azerbaijan	Baku	Asia	2	AZ	AZE	AZE	.az	AZN	994		
+66	Bahrain	Manama	Asia	2	BH	BHR	BRN	.bh	BHD	973		
+67	Bangladesh	Dhaka	Asia	2	BD	BGD	BAN	.bd	BDT	880		
+68	Bhutan	Thimphu	Asia	2	BT	BTN	BHU	.bt	BTN	975		
+69	British Indian Ocean Territory	-/-	Asia	2	IO	IOT		.io	USD			
+70	Brunei Darussalam	Bandar Seri Begawan	Asia	2	BN	BRN	BRU	.bn	BND	673		
+71	Burma	Rangun	Asia	2	MM	MMR	MYA	.mm	MMK	95		
+72	Cambodia	Phnom Penh	Asia	2	KH	KHM	CAM	.kh	KHR	855		
+73	China	Peking (Beijing)	Asia	2	CN	CHN	CHN	.cn	CNY	86		
+74	Christmas Island	Flying Fish Cove	Asia	2	CX	CXR		.cx	AUD	61		
+75	Cocos (keeling) Islands	West Island	Asia	2	CC	CCK		.cc	AUD			
+76	Cyprus	Nikosia	Asia	2	CY	CYP	CYP	.cy	CYP	357		
+77	Guam	Hagåtña	Asia	2	GU	GUM	GUM	.gu	USD	1671		
+78	Hong Kong	-/-	Asia	2	HK	HKG	HKG	.hk	HNL	852		
+79	India	Neu-Delhi	Asia	2	IN	IND	IND	.in	ISK	91		
+80	Indonesia	Jakarta	Asia	2	ID	IDN	INA	.id	INR	62		
+81	Iran	Teheran	Asia	2	IR	IRN	IRI	.ir	IRR	98		
+82	Iraq	Bagdad	Asia	2	IQ	IRQ	IRQ	.iq	IDR	964		
+83	Israel	Jerusalem	Asia	2	IL	ISR	ISR	.il	ILS	972		
+84	Japan	Tokio	Asia	2	JP	JPN	JPN	.jp	JPY	81		
+85	Jordan	Amman	Asia	2	JO	JOR	JOR	.jo	JOD	962		
+86	Kazakhstan	Astana	Asia	2	KZ	KAZ	KAZ	.kz	KZT	7		
+87	Kuwait	Kuwait	Asia	2	KW	KWT	KUW	.kw	KWD	965		
+88	Kyrgyzstan	Bischkek	Asia	2	KG	KGZ	KGZ	.kg	KGS	996		
+89	Lao People's Democratic Republic	Vientiane	Asia	2	LA	LAO	LAO	.la	LAK	856		
+90	Lebanon	Beirut	Asia	2	LB	LBN	LIB	.lb	LBP	961		
+91	Macao	-/-	Asia	2	MO	MAC		.mo	MOP	853		
+92	Malaysia	Kuala Lumpur	Asia	2	MY	MYS	MAS	.my	MYR	60		
+93	Maldives	Malé	Asia	2	MV	MDV	MDV	.mv	MVR	960		
+94	Mongolia	Ulaanbaatar	Asia	2	MN	MNG	MGL	.mn	MNT	976		
+95	Nepal	Kathmandu	Asia	2	NP	NPL	NEP	.np	NPR	977		
+96	North Korea	Pjöngjang	Asia	2	KP	PRK	PRK	.kp	KPW	850		
+97	Oman	Maskat	Asia	2	OM	OMN	OMA	.om	OMR	968		
+98	Pakistan	Islamabad	Asia	2	PK	PAK	PAK	.pk	PKR	92		
+99	Palestinian Territory, Occupied	Ramallah	Asia	2	PS	PSE	PLE	.ps		970		
+100	Philippines	Manila	Asia	2	PH	PHL	PHI	.ph	PHP	63		
+101	Qatar	Doha	Asia	2	QA	QAT	QAT	.qa	QAR	974		
+102	Russian Federation	Moskau	Asia	2	RU	RUS	RUS	.ru	RUB	7		
+103	Saudi Arabia	Riad	Asia	2	SA	SAU	KSA	.sa	SAR	966		
+104	Saudi–Iraqi neutral zone	-/-	Asia	2	NT	NTZ		.nt				
+105	Singapore	Singapur	Asia	2	SG	SGP	SIN	.sg	SGD	65		
+106	South Korea	Seoul	Asia	2	KR	KOR	KOR	.kr	KRW	82		
+107	Sri Lanka	Colombo	Asia	2	LK	LKA	SRI	.lk	LKR	94		
+108	Syrian Arab Republic	Damaskus	Asia	2	SY	SYR	SYR	.sy	SYP	963		
+109	Taiwan	Taipeh	Asia	2	TW	TWN	TPE	.tw	TWD	886		
+110	Tajikistan	Duschanbe	Asia	2	TJ	TJK	TJK	.tj	RUB	992		
+111	Thailand	Bangkok	Asia	2	TH	THA	THA	.th	THB	66		
+112	Turkey	Ankara	Asia	2	TR	TUR	TUR	.tr	TRY	90		
+113	Turkmenistan	Asgabat	Asia	2	TM	TKM	TKM	.tm	TMM	993		
+114	United Arab Emirates	Abu Dhabi	Asia	2	AE	ARE	UAE	.ae	AED	971		
+115	Uzbekistan	Taschkent	Asia	2	UZ	UZB	UZB	.uz	UZS	998		
+116	Viet Nam	Hà N?i	Asia	2	VN	VNM	VIE	.vn	VND	84		
+117	Yemen	Sanaa	Asia	2	YE	YEM	YEM	.ye	YER	967		
+118	Antarctica	Juneau	Antarctica	3	AQ	ATA		.aq		672		
+119	Bouvet Island	(Forschungsinsel)	Antarctica	3	BV	BVT		.bv	NOK			
+120	French Southern Territories	Port-aux-Français	Antarctica	3	TF	ATF		.tf	EUR			
+121	American Samoa	Pago-Pago	Australia	4	AS	ASM		.as	USD	1684		
+122	Australia	Canberra	Australia	4	AU	AUS	AUS	.au	AUD	61		
+123	Cook Islands	Avarua	Australia	4	CK	COK	COK	.ck	NZD	682		
+124	East Timor	Dili	Australia	4	TL	TLS		.tl	IDR	670		
+125	Fiji	Suva	Australia	4	FJ	FJI	FJI	.fj	FJD	679		
+126	French Polynesia	Papeete	Australia	4	PF	PYF		.pf	XPF	689		
+127	Heard Island And Mcdonald Islands	-/-	Australia	4	HM	HMD		.hm	AUD			
+128	Kiribati	Bairiki	Australia	4	KI	KIR		.ki	AUD	686		
+129	Marshall Islands	Delap-Uliga-Darrit	Australia	4	MH	MHL		.mh	USD	692		
+130	Micronesia, Federated States Of	Palikir	Australia	4	FM	FSM	FSM	.fm	USD	691		
+131	Nauru	Yaren	Australia	4	NR	NRU	NRU	.nr	AUD	674		
+132	New Caledonia	Nouméa	Australia	4	NC	NCL		.nc	XPF	687		
+133	New Zealand	Wellington	Australia	4	NZ	NZL	NZL	.nz	NZD	64		
+134	Niue	Alofi	Australia	4	NU	NIU		.nu	NZD	683		
+135	Norfolk Island	Kingston	Australia	4	NF	NFK		.nf	AUD	6723		
+136	Northern Mariana Islands	Saipan	Australia	4	MP	MNP		.mp	USD	1670		
+137	Palau	Melekeok	Australia	4	PW	PLW	PLW	.pw	USD	680		
+138	Papua New Guinea	Port Moresby	Australia	4	PG	PNG		.pg	PGK	675		
+139	Pitcairn	Adamstown	Australia	4	PN	PCN		.pn	NZD	649		
+140	Samoa	Apia	Australia	4	WS	WSM	SAM	.ws	WST			
+141	Solomon Islands	Honiara	Australia	4	SB	SLB	SOL	.sb	SBD	677		
+142	Tokelau	-/-	Australia	4	TK	TKL		.tk	NZD	690		
+143	Tonga	Nuku’alofa	Australia	4	TO	TON	TGA	.to	TOP	676		
+144	Tuvalu	Funafuti	Australia	4	TV	TUV		.tv	TVD	688		
+145	Vanuatu	Port Vila	Australia	4	VU	VUT	VAN	.vu	VUV	678		
+146	Wallis And Futuna	Mata-Utu	Australia	4	WF	WLF		.wf	XPF	681		
+147	Åland Islands	Mariehamn	Europe	5	AX	ALA		.ax	EUR	35818		
+148	Albania	Tirana	Europe	5	AL	ALB	ALB	.al	ALL	355		
+149	Andorra	Andorra la Vella	Europe	5	AD	AND	AND	.ad	EUR	376		
+150	Austria	Wien	Europe	5	AT	AUT	AUT	.at	EUR	43		
+151	Belarus	Minsk	Europe	5	BY	BLR	BLR	.by	BYR	375		
+152	Belgium	Brüssel	Europe	5	BE	BEL	BEL	.be	EUR	32		
+153	Bosnia And Herzegovina	Sarajevo	Europe	5	BA	BIH	BIH	.ba	BAM	387		
+154	Bulgaria	Sofia	Europe	5	BG	BGR	BUL	.bg	BGN	359		
+155	Canary Islands	Santa Cruz de Tenerife	Europe	5	IC							
+156	Croatia	Zagreb	Europe	5	HR	HRV	CRO	.hr	HRK	385		
+157	Czech Republic	Prag	Europe	5	CZ	CZE	CZE	.cz	CZK	420		
+158	Denmark	Kopenhagen	Europe	5	DK	DNK	DEN	.dk	DKK	45		
+159	Estonia	Tallinn (Reval)	Europe	5	EE	EST	EST	.ee	EEK	372		
+160	European Union	Brussels	Europe	5	EU			.eu	EUR	3883		
+161	Faroe Islands	Tórshavn	Europe	5	FO	FRO	FRO	.fo	DKK	298		
+162	Finland	Helsinki	Europe	5	FI	FIN	FIN	.fi	EUR	358		
+163	France	Paris	Europe	5	FR	FRA	FRA	.fr	EUR	33		
+164	Georgia	Tiflis	Europe	5	GE	GEO	GEO	.ge	GEL	995		
+165	Germany	Berlin	Europe	5	DE	DEU	GER	.de	EUR	49		
+166	Greece	Athen	Europe	5	GR	GRC	GRE	.gr	EUR	30		
+167	Guernsey	St. Peter Port	Europe	5	GG	GGY		.gg	GGP	44148		
+168	Hungary	Budapest	Europe	5	HU	HUN	HUN	.hu	HUF	36		
+169	Iceland	Reykjavík	Europe	5	IS	ISL	ISL	.is	HUF	354		
+170	Ireland	Dublin	Europe	5	IE	IRL	IRL	.ie	EUR	353		
+171	Isle Of Man	Douglas	Europe	5	IM	IMN		.im	IMP	44		
+172	Italy	Rom	Europe	5	IT	ITA	ITA	.it	EUR	39		
+173	Jersey	Saint Helier	Europe	5	JE	JEY		.je	JEP	44		
+174	Latvia	Riga	Europe	5	LV	LVA	LAT	.lv	LVL	371		
+175	Liechtenstein	Vaduz	Europe	5	LI	LIE	LIE	.li	CHF	423		
+176	Lithuania	Wilna	Europe	5	LT	LTU	LTU	.lt	LTL	370		
+177	Luxembourg	Luxemburg	Europe	5	LU	LUX	LUX	.lu	EUR	352		
+178	Malta	Valletta	Europe	5	MT	MLT	MLT	.mt	EUR	356		
+179	Moldova	Chisinau	Europe	5	MD	MDA	MDA	.md	MDL	373		
+180	Monaco	Monaco	Europe	5	MC	MCO	MON	.mc	EUR	377		
+181	Montenegro	Podgorica	Europe	5	ME	MNE	MNE	.me		382		
+182	Netherlands	Amsterdam	Europe	5	NL	NLD	NED	.nl	EUR	31		
+183	Norway	Oslo	Europe	5	NO	NOR	NOR	.no	NOK	47		
+184	Poland	Warschau	Europe	5	PL	POL	POL	.pl	PLN	48		
+185	Portugal	Lissabon	Europe	5	PT	PRT	POR	.pt	EUR	351		
+186	Republic of Macedonia	Skopje	Europe	5	MK	MKD	MKD	.mk	MKD	389		
+187	Romania	Bukarest	Europe	5	RO	ROU	ROM	.ro	RON	40		
+188	San Marino	San Marino	Europe	5	SM	SMR	SMR	.sm	EUR	378		
+189	Serbia	Belgrade	Europe	5	RS	SRB	SRB	.rs	RSD	381		
+190	Serbien und Montenegro	Belgrad	Europe	5	CS	SCG	YUG	.cs		381		
+191	Slovakia	Bratislava	Europe	5	SK	SVK	SVK	.sk	SKK	421		
+192	Slovenia	Ljubljana	Europe	5	SI	SVN	SLO	.si	SIT	386		
+193	Soviet Union	Moskau	Europe	5	SU	SUN	URS	.su				
+194	Spain	Madrid	Europe	5	ES	ESP	ESP	.es	EUR	34		
+195	Svalbard And Jan Mayen	Longyearbyen	Europe	5	SJ	SJM		.sj	NOK			
+196	Sweden	Stockholm	Europe	5	SE	SWE	SWE	.se	SEK	46		
+197	Switzerland	Bern	Europe	5	CH	CHE	SUI	.ch	CHF	41		
+198	Ukraine	Kiew	Europe	5	UA	UKR	UKR	.ua	UAH	380		
+199	United Kingdom	London	Europe	5	GB	GBR	GBR	.gb	GBP	44		
+200	Vatican City	Vatican City	Europe	5	VA	VAT		.va	EUR	3906		
+201	Anguilla	The Valley	North America	6	AI	AIA		.ai	XCD	1264		
+202	Antigua And Barbuda	Saint John's	North America	6	AG	ATG	ANT	.ag	XCD	1268		
+203	Aruba	Oranjestad	North America	6	AW	ABW	ARU	.aw	ANG	297		
+204	Bahamas	Nassau	North America	6	BS	BHS	BAH	.bs	BSD	1242		
+205	Barbados	Bridgetown	North America	6	BB	BRB	BAR	.bb	BBD	1246		
+206	Belize	Belmopan	North America	6	BZ	BLZ	BLZ	.bz	BZD	51		
+207	Bermuda	Hamilton	North America	6	BM	BMU	BER	.bm	BMD	1441		
+208	British Virgin Islands	Road Town	North America	6	VG	VGB	ISB	.vg	USD	1284		
+209	Canada	Ottawa	North America	6	CA	CAN	CAN	.ca	CAD			
+210	Cayman Islands	George Town	North America	6	KY	CYM	CAY	.ky	KYD	1345		
+211	Costa Rica	San José	North America	6	CR	CRI	CRC	.cr	CRC	56		
+212	Cuba	Havanna	North America	6	CU	CUB	CUB	.cu	CUP	53		
+213	Dominica	Roseau	North America	6	DM	DMA		.dm	XCD	1767		
+214	El Salvador	San Salvador	North America	6	SV	SLV	ESA	.sv	SVC	53		
+215	Greenland	Nuuk	North America	6	GL	GRL		.gl	DKK	299		
+216	Grenada	St. George's	North America	6	GD	GRD	GRN	.gd	XCD	1473		
+217	Guadeloupe	Basse-Terre	North America	6	GP	GLP		.gp	EUR	590		
+218	Guatemala	Guatemala-Stadt	North America	6	GT	GTM	GUA	.gt	GTQ	52		
+219	Haiti	Port-au-Prince	North America	6	HT	HTI	HAI	.ht	USD	59		
+220	Honduras	Tegucigalpa	North America	6	HN	HND	HON	.hn	HNL	54		
+221	Jamaica	Kingston	North America	6	JM	JAM	JAM	.jm	JMD	1876		
+222	Martinique	Fort-de-France	North America	6	MQ	MTQ		.mq	EUR	596		
+223	Mexico	Mexiko-Stadt	North America	6	MX	MEX	MEX	.mx	MXN	52		
+224	Montserrat	Plymouth	North America	6	MS	MSR		.ms	XCD	1664		
+225	Netherlands Antilles	Willemstad	North America	6	AN	ANT	AHO	.an	ANG	599		
+226	Nicaragua	Managua	North America	6	NI	NIC	NCA	.ni	NIO	55		
+227	Puerto Rico	San Juan	North America	6	PR	PRI	PUR	.pr	USD	1939		
+228	Saint Kitts And Nevis	Basseterre	North America	6	KN	KNA	SKN	.kn	XCD	1869		
+229	Saint Pierre And Miquelon	Saint-Pierre	North America	6	PM	SPM		.pm	EUR	508		
+230	Turks And Caicos Islands	Cockburn Town auf Grand Turk	North America	6	TC	TCA		.tc	USD	1649		
+231	United States	Washington, D.C.	North America	6	US	USA	USA	.us	USD	1		
+232	Argentina	Buenos Aires	South America	7	AR	ARG	ARG	.ar	ARS	54		
+233	Bolivia	Sucre	South America	7	BO	BOL	BOL	.bo	BOB	591		
+234	Brazil	Brasília	South America	7	BR	BRA	BRA	.br	BRL	55		
+235	Chile	Santiago	South America	7	CL	CHL	CHI	.cl	CLP	56		
+236	Colombia	Santa Fé de Bogotá	South America	7	CO	COL	COL	.co	COP	57		
+237	Dominican Republic	Santo Domingo	South America	7	DO	DOM	DOM	.do	DOP	1809		
+238	Ecuador	Quito	South America	7	EC	ECU	ECU	.ec	USD	593		
+239	French Guiana	Cayenne	South America	7	GF	GUF		.gf	EUR	594		
+240	Guyana	Georgetown	South America	7	GY	GUY	GUY	.gy	GYD	592		
+241	Panama	Panama City	South America	7	PA	PAN	PAN	.pa	USD	57		
+242	Paraguay	Asunción	South America	7	PY	PRY	PAR	.py	PYG	595		
+243	Peru	Lima	South America	7	PE	PER	PER	.pe	PEN	51		
+244	Saint Lucia	Castries	South America	7	LC	LCA	LCA	.lc	XCD	1758		
+245	Saint Vincent and the Grenadines	Kingstown	South America	7	VC	VCT	VIN	.vc	XCD	1784		
+246	South Georgia And The South Sandwich Islands	King Edward Point	South America	7	GS	SGS			GBP			
+247	Suriname	Paramaribo	South America	7	SR	SUR	SUR	.sr	SRD	597		
+248	Trinidad And Tobago	Port-of-Spain	South America	7	TT	TTO	TRI	.tt	TTD	1868		
+249	Uruguay	Montevideo	South America	7	UY	URY	URU	.uy	UYU	598		
+250	Venezuela	Caracas	South America	7	VE	VEN	VEN	.ve	VEB	58		
+251	Virgin Islands, U.s.	Charlotte Amalie	South America	7	VI	VIR	ISV	.vi	USD	1340		

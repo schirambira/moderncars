@@ -1,1 +1,50 @@
-
+BIDA20-015	Phindile Garona Kgaiso	Molefe	F	bida20-015@thuto.bac.ac.bw	BIDA-4	Business Intelligence and Data Analytics
+BIDA20-020	Segomotso Ruth	Isaac	F	bida20-020@thuto.bac.ac.bw	BIDA-4	Business Intelligence and Data Analytics
+BIDA20-021	Sabuta	Renee	F	bida20-021@thuto.bac.ac.bw	BIDA-2	Business Intelligence and Data Analytics
+BIDA20-023	Ipeleng	Ngake	F	bida20-023@thuto.bac.ac.bw	BIDA-4	Business Intelligence and Data Analytics
+BIDA20-024	Thuto	Kgosidialwa	M	bida20-024@thuto.bac.ac.bw	BIDA-4	Business Intelligence and Data Analytics
+BIDA20-025	Maruatona	Lone	M	bida20-025@thuto.bac.ac.bw	BIDA-2	Business Intelligence and Data Analytics
+BIDA20-026	Mfazi	Sandile Desmond	M	bida20-026@thuto.bac.ac.bw	BIDA-2	Business Intelligence and Data Analytics
+BIDA20-027	Bosena	Pearl Dudu	F	bida20-027@thuto.bac.ac.bw	BIDA-2	Business Intelligence and Data Analytics
+BIDA20-028	Maedza	Maano	M	bida20-028@thuto.bac.ac.bw	BIDA-2	Business Intelligence and Data Analytics
+BIDA20-029	Mpete	Natasha Oratile	F	bida20-029@thuto.bac.ac.bw	BIDA-2	Business Intelligence and Data Analytics
+BIDA20-030	Omphile	Tanda Ookeditse	M	bida20-030@thuto.bac.ac.bw	BIDA-2	Business Intelligence and Data Analytics
+BIDA20-031	Kgamelo	Pearl Naomi Angeler	F	bida20-031@thuto.bac.ac.bw	BIDA-2	Business Intelligence and Data Analytics
+BIDA20-032	Nwako	Oabo Ungwang	F	bida20-032@thuto.bac.ac.bw	BIDA-2	Business Intelligence and Data Analytics
+BIDA20-033	Otukile	Rakheem Ofile	M	bida20-033@thuto.bac.ac.bw	BIDA-2	Business Intelligence and Data Analytics
+BIDA20-034	Outule	Thulaganyo	M	bida20-034@thuto.bac.ac.bw	BIDA-2	Business Intelligence and Data Analytics
+BIDA20-035	Gobonywe	Ebiditse	F	bida20-035@thuto.bac.ac.bw	BIDA-2	Business Intelligence and Data Analytics
+BIDA20-036	Rampete	Thabang Allen	M	bida20-036@thuto.bac.ac.bw	BIDA-2	Business Intelligence and Data Analytics
+BIDA20-037	Molatlhiwa	Tirelo	M	bida20-037@thuto.bac.ac.bw	BIDA-2	Business Intelligence and Data Analytics
+BIDA20-048	Kgosienngwe	Keletso Sharon	F	bida20-048@thuto.bac.ac.bw	BIDA-2	Business Intelligence and Data Analytics
+BIDA20-049	Amos	Obakeng Unoda	M	bida20-049@thuto.bac.ac.bw	BIDA-2	Business Intelligence and Data Analytics
+BIDA20-050	Kgosimore	Kgosimore	M	bida20-050@thuto.bac.ac.bw	BIDA-2	Business Intelligence and Data Analytics
+BIDA20-051	Charity	Tselakgopo	F	bida20-051@thuto.bac.ac.bw	BIDA-4	Business Intelligence and Data Analytics
+BIDA20-052	Ntefo	Wayne Tefo	M	bida20-052@thuto.bac.ac.bw	BIDA-2	Business Intelligence and Data Analytics
+BIDA20-053	Sean Thapelo	Mmolai	M	bida20-053@thuto.bac.ac.bw	BIDA-4	Business Intelligence and Data Analytics
+BIDA20-055	Tamara Botho	Olivier	F	bida20-055@thuto.bac.ac.bw	BIDA-4	Business Intelligence and Data Analytics
+BIDA20-056	Onalethata	Mokiya	M	bida20-056@thuto.bac.ac.bw	BIDA-4	Business Intelligence and Data Analytics
+BIDA20-057	Keaboka Tepo	Nkhwa	M	bida20-057@thuto.bac.ac.bw	BIDA-4	Business Intelligence and Data Analytics
+BIDA20-060	Tshepo Ivy	Sebola	F	bida20-060@thuto.bac.ac.bw	BIDA-4	Business Intelligence and Data Analytics
+BIDA20-064	Olwethu Nomcebo	Mahlathini	F	bida20-064@thuto.bac.ac.bw	BIDA-4	Business Intelligence and Data Analytics
+BIDA20-067	Boago Onicah	Jackson	F	bida20-067@thuto.bac.ac.bw	BIDA-4	Business Intelligence and Data Analytics
+BIDA20-069	Katlo Atang	Karema	M	bida20-069@thuto.bac.ac.bw	BIDA-4	Business Intelligence and Data Analytics
+BIDA20-070	Otebo Tetlanyo	Leshogo	M	bida20-070@thuto.bac.ac.bw	BIDA-4	Business Intelligence and Data Analytics
+BIDA20-071	Zachariah	Samuel	M	bida20-071@thuto.bac.ac.bw	BIDA-4	Business Intelligence and Data Analytics
+BIDA20-076	Warona	Goitsemang	F	bida20-076@thuto.bac.ac.bw	BIDA-4	Business Intelligence and Data Analytics
+BIDA20-079	Bokani	Makosha	M	bida20-079@thuto.bac.ac.bw	BIDA-4	Business Intelligence and Data Analytics
+BIDA20-091	Refilwe Dianna	Jack	F	bida20-091@thuto.bac.ac.bw	BIDA-4	Business Intelligence and Data Analytics
+CSE20-025	Tshimanga	Ammiel Ntumba	M	cse20-025@thuto.bac.ac.bw	CSE-1	Computer Systems Engineering
+CSE20-026	Kgolwane	Metha Moeti	M	cse20-026@thuto.bac.ac.bw	CSE-1	Computer Systems Engineering
+CSE20-028	Seleka	Onalethata Kenneth	M	cse20-028@thuto.bac.ac.bw	CSE-1	Computer Systems Engineering
+CSE20-030	Chinyanga	Tsame Lesley	M	cse20-030@thuto.bac.ac.bw	CSE-1	Computer Systems Engineering
+CSE20-035	Jimson	Lorraine Onneile	F	cse20-035@thuto.bac.ac.bw	CSE-1	Computer Systems Engineering
+CSE20-036	Ntsatsi	Seneo Aratwa	F	cse20-036@thuto.bac.ac.bw	CSE-1	Computer Systems Engineering
+CSE20-039	Tuelo	Tshepho Billy	M	cse20-039@thuto.bac.ac.bw	CSE-1	Computer Systems Engineering
+CSE20-040	Modukanele	Thobo Kabelo	M	cse20-040@thuto.bac.ac.bw	CSE-1	Computer Systems Engineering
+CSE20-041	Moepeng	Katlo Jason	M	cse20-041@thuto.bac.ac.bw	CSE-1	Computer Systems Engineering
+CSE20-043	Libinda	Boipelo Shangano	F	cse20-043@thuto.bac.ac.bw	CSE-1	Computer Systems Engineering
+CSE20-054	Tshimologo	Tumisang	F	cse20-054@thuto.bac.ac.bw	CSE-1	Computer Systems Engineering
+CSE20-069	Sebara	Peo	M	cse20-069@thuto.bac.ac.bw	CSE-1	Computer Systems Engineering
+CSE20-077	Mlazie	Warona	F	cse20-077@thuto.bac.ac.bw	CSE-1	Computer Systems Engineering
+CSE20-081	Sebolawe	Kutlo Karen	F	cse20-081@thuto.bac.ac.bw	CSE-1	Computer Systems Engineering

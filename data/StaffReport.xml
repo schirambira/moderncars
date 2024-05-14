@@ -1,0 +1,3446 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rootElement>
+  <rowElement>
+    <ID>1</ID>
+    <FIRSTNAME>Baontse</FIRSTNAME>
+    <SURNAME>Matlhako</SURNAME>
+    <EMAIL>baontsem@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Executive</DEPARTMENT>
+    <CAMPUS>Gaborone</CAMPUS>
+    <OFFICE>BIFM</OFFICE>
+    <CELLNO>77586369</CELLNO>
+    <TEL_EXT>2865</TEL_EXT>
+  </rowElement>
+  <rowElement>
+    <ID>2</ID>
+    <FIRSTNAME>Dr. Byron</FIRSTNAME>
+    <SURNAME>Brown</SURNAME>
+    <EMAIL>byronb@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Executive</DEPARTMENT>
+    <CAMPUS>Gaborone</CAMPUS>
+    <OFFICE>Main Campus</OFFICE>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>3</ID>
+    <FIRSTNAME>Enelys</FIRSTNAME>
+    <SURNAME>Shamakumba</SURNAME>
+    <EMAIL>enelyss@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Executive</DEPARTMENT>
+    <CAMPUS>Gaborone</CAMPUS>
+    <OFFICE>BIFM</OFFICE>
+    <CELLNO>72817418</CELLNO>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>4</ID>
+    <FIRSTNAME>Moilwa</FIRSTNAME>
+    <SURNAME>Modimakwane</SURNAME>
+    <EMAIL>moilwam@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Executive</DEPARTMENT>
+    <CAMPUS>Gaborone</CAMPUS>
+    <OFFICE>BIFM</OFFICE>
+    <CELLNO>72431939</CELLNO>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>5</ID>
+    <FIRSTNAME>Oaitse</FIRSTNAME>
+    <SURNAME>Gabadirwe</SURNAME>
+    <EMAIL>oaitseg@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Executive</DEPARTMENT>
+    <CAMPUS>Gaborone</CAMPUS>
+    <OFFICE>BIFM</OFFICE>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>6</ID>
+    <FIRSTNAME>Serty</FIRSTNAME>
+    <SURNAME>Leburu</SURNAME>
+    <EMAIL>sertyl@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Executive</DEPARTMENT>
+    <CAMPUS>Gaborone</CAMPUS>
+    <OFFICE>BIFM</OFFICE>
+    <CELLNO>72253777</CELLNO>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>7</ID>
+    <FIRSTNAME>Waabo </FIRSTNAME>
+    <SURNAME>Anwar</SURNAME>
+    <EMAIL>waaboa@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Facilities</DEPARTMENT>
+    <CAMPUS>Gaborone</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>8</ID>
+    <FIRSTNAME>Abednico </FIRSTNAME>
+    <SURNAME>Sebedi</SURNAME>
+    <EMAIL>abednicos@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Facilities</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>9</ID>
+    <FIRSTNAME>Badubi </FIRSTNAME>
+    <SURNAME>Badubi</SURNAME>
+    <EMAIL>badubib@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Facilities</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>10</ID>
+    <FIRSTNAME>Chiappo Kemiso </FIRSTNAME>
+    <SURNAME>Dutlwang</SURNAME>
+    <EMAIL>chiappod@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Facilities</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>11</ID>
+    <FIRSTNAME>Kutlwano Getrude </FIRSTNAME>
+    <SURNAME>Kedumele</SURNAME>
+    <EMAIL>kutlwanok@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Facilities</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>12</ID>
+    <FIRSTNAME>Lesego</FIRSTNAME>
+    <SURNAME>Lesego</SURNAME>
+    <EMAIL>Lesegol@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Facilities</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>13</ID>
+    <FIRSTNAME>Malebogo </FIRSTNAME>
+    <SURNAME>Diago</SURNAME>
+    <EMAIL>malebogod@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Facilities</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>14</ID>
+    <FIRSTNAME>matshwenyego </FIRSTNAME>
+    <SURNAME>motshewa</SURNAME>
+    <EMAIL>matshwenyegom@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Facilities</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>15</ID>
+    <FIRSTNAME>Moemedi </FIRSTNAME>
+    <SURNAME>Masilo</SURNAME>
+    <EMAIL>moemedim@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Facilities</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO>75732092</CELLNO>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>16</ID>
+    <FIRSTNAME>Monametsi</FIRSTNAME>
+    <SURNAME>Monametsi</SURNAME>
+    <EMAIL>Monametsip@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Facilities</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>17</ID>
+    <FIRSTNAME>Motsei</FIRSTNAME>
+    <SURNAME>Motsei</SURNAME>
+    <EMAIL>Motseit@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Facilities</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>18</ID>
+    <FIRSTNAME>Mpuisang</FIRSTNAME>
+    <SURNAME>Mpuisang</SURNAME>
+    <EMAIL>Mpuisangk@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Facilities</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>19</ID>
+    <FIRSTNAME>Nametso</FIRSTNAME>
+    <SURNAME>Nametso</SURNAME>
+    <EMAIL>Nametsos@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Facilities</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>20</ID>
+    <FIRSTNAME>Neelo </FIRSTNAME>
+    <SURNAME>Koronale</SURNAME>
+    <EMAIL>neelok@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Facilities</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>21</ID>
+    <FIRSTNAME>Neom</FIRSTNAME>
+    <SURNAME>Neom</SURNAME>
+    <EMAIL>Neoma@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Facilities</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>22</ID>
+    <FIRSTNAME>Neo </FIRSTNAME>
+    <SURNAME>Ramaotwana</SURNAME>
+    <EMAIL>neor@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Facilities</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>23</ID>
+    <FIRSTNAME>Neo</FIRSTNAME>
+    <SURNAME>Neo</SURNAME>
+    <EMAIL>Neos@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Facilities</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>24</ID>
+    <FIRSTNAME>Oabile </FIRSTNAME>
+    <SURNAME>Salani</SURNAME>
+    <EMAIL>oabiles@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Facilities</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>25</ID>
+    <FIRSTNAME>Onneile </FIRSTNAME>
+    <SURNAME>Tshiamonyana</SURNAME>
+    <EMAIL>onneilet@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Facilities</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>26</ID>
+    <FIRSTNAME>Phodiso</FIRSTNAME>
+    <SURNAME>Phodiso</SURNAME>
+    <EMAIL>Phodisot@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Facilities</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>27</ID>
+    <FIRSTNAME>Segolame</FIRSTNAME>
+    <SURNAME>Segolame</SURNAME>
+    <EMAIL>Segolamek@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Facilities</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>28</ID>
+    <FIRSTNAME>Selina</FIRSTNAME>
+    <SURNAME>Selina</SURNAME>
+    <EMAIL>Selinas@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Facilities</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>29</ID>
+    <FIRSTNAME>Sethona</FIRSTNAME>
+    <SURNAME>Sethona</SURNAME>
+    <EMAIL>Sethonad@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Facilities</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>30</ID>
+    <FIRSTNAME>setlogelo </FIRSTNAME>
+    <SURNAME>Tsere</SURNAME>
+    <EMAIL>setlogelot@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Facilities</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>31</ID>
+    <FIRSTNAME>Tebogom</FIRSTNAME>
+    <SURNAME>Tebogom</SURNAME>
+    <EMAIL>Tebogome@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Facilities</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>32</ID>
+    <FIRSTNAME>Tefo</FIRSTNAME>
+    <SURNAME>Tefo</SURNAME>
+    <EMAIL>Tefos@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Facilities</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>33</ID>
+    <FIRSTNAME>Thatayaone </FIRSTNAME>
+    <SURNAME>Motswasele</SURNAME>
+    <EMAIL>thatayaonem@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Facilities</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>34</ID>
+    <FIRSTNAME>Thatayaone </FIRSTNAME>
+    <SURNAME>Mapotu</SURNAME>
+    <EMAIL>thatayaonema@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Facilities</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO>75732101</CELLNO>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>35</ID>
+    <FIRSTNAME>Zibani </FIRSTNAME>
+    <SURNAME>Kgatlhego</SURNAME>
+    <EMAIL>zibanik@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Facilities</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>36</ID>
+    <FIRSTNAME>Batsile </FIRSTNAME>
+    <SURNAME>Bonno</SURNAME>
+    <EMAIL>Batsileb@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Finance and Procurement</DEPARTMENT>
+    <CAMPUS>Gaborone</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>37</ID>
+    <FIRSTNAME>Boammaruri </FIRSTNAME>
+    <SURNAME>Masendu</SURNAME>
+    <EMAIL>boammarurim@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Finance and Procurement</DEPARTMENT>
+    <CAMPUS>Gaborone</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>38</ID>
+    <FIRSTNAME>Chedu </FIRSTNAME>
+    <SURNAME>Antsheng</SURNAME>
+    <EMAIL>chedua@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Finance and Procurement</DEPARTMENT>
+    <CAMPUS>Gaborone</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>39</ID>
+    <FIRSTNAME>Gorata Amantle </FIRSTNAME>
+    <SURNAME>Ntatawe</SURNAME>
+    <EMAIL>Goratak@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Finance and Procurement</DEPARTMENT>
+    <CAMPUS>Gaborone</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>40</ID>
+    <FIRSTNAME>Katlego </FIRSTNAME>
+    <SURNAME>Thuto</SURNAME>
+    <EMAIL>katlegot@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Finance and Procurement</DEPARTMENT>
+    <CAMPUS>Gaborone</CAMPUS>
+    <OFFICE/>
+    <CELLNO>75482420</CELLNO>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>41</ID>
+    <FIRSTNAME>Keoobametse </FIRSTNAME>
+    <SURNAME>Sebole</SURNAME>
+    <EMAIL>keoobametses@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Finance and Procurement</DEPARTMENT>
+    <CAMPUS>Gaborone</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>42</ID>
+    <FIRSTNAME>Mercy </FIRSTNAME>
+    <SURNAME>Morapedi</SURNAME>
+    <EMAIL>mercymo@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Finance and Procurement</DEPARTMENT>
+    <CAMPUS>Gaborone</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>43</ID>
+    <FIRSTNAME>Moineedi </FIRSTNAME>
+    <SURNAME>Kokorwe</SURNAME>
+    <EMAIL>moineedik@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Finance and Procurement</DEPARTMENT>
+    <CAMPUS>Gaborone</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>44</ID>
+    <FIRSTNAME>Olerilwe </FIRSTNAME>
+    <SURNAME>kelepang</SURNAME>
+    <EMAIL>olerilwek@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Finance and Procurement</DEPARTMENT>
+    <CAMPUS>Gaborone</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>45</ID>
+    <FIRSTNAME>Rosemary Onneile </FIRSTNAME>
+    <SURNAME>Sianga</SURNAME>
+    <EMAIL>rosemarys@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Finance and Procurement</DEPARTMENT>
+    <CAMPUS>Gaborone</CAMPUS>
+    <OFFICE/>
+    <CELLNO>75204729</CELLNO>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>46</ID>
+    <FIRSTNAME>Tebogo </FIRSTNAME>
+    <SURNAME>Moretlwaneng</SURNAME>
+    <EMAIL>tebogomo@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Finance and Procurement</DEPARTMENT>
+    <CAMPUS>Gaborone</CAMPUS>
+    <OFFICE/>
+    <CELLNO>72431956</CELLNO>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>47</ID>
+    <FIRSTNAME>Thatayotlhe </FIRSTNAME>
+    <SURNAME>Noge</SURNAME>
+    <EMAIL>thatayotlhen@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Finance and Procurement</DEPARTMENT>
+    <CAMPUS>Gaborone</CAMPUS>
+    <OFFICE/>
+    <CELLNO>77 560 439</CELLNO>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>48</ID>
+    <FIRSTNAME>Aone Thato </FIRSTNAME>
+    <SURNAME>Bodi</SURNAME>
+    <EMAIL>aoneb@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Finance and Procurement</DEPARTMENT>
+    <CAMPUS>Gaborone</CAMPUS>
+    <OFFICE/>
+    <CELLNO>3980604</CELLNO>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>49</ID>
+    <FIRSTNAME>Winnie </FIRSTNAME>
+    <SURNAME>Moloi</SURNAME>
+    <EMAIL>winnier@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Finance and Procurement</DEPARTMENT>
+    <CAMPUS>Gaborone</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>50</ID>
+    <FIRSTNAME>Cynthia </FIRSTNAME>
+    <SURNAME>Johannes</SURNAME>
+    <EMAIL>cynthiaj@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Finance and Procurement</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>51</ID>
+    <FIRSTNAME>Kabelo </FIRSTNAME>
+    <SURNAME>Dintwe</SURNAME>
+    <EMAIL>kabelod@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Finance and Procurement</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO>76448309</CELLNO>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>52</ID>
+    <FIRSTNAME>Karabo </FIRSTNAME>
+    <SURNAME>Sehera</SURNAME>
+    <EMAIL>karabos@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Finance and Procurement</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>53</ID>
+    <FIRSTNAME>Kealeboga </FIRSTNAME>
+    <SURNAME>Chibane</SURNAME>
+    <EMAIL>kealebogac@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Finance and Procurement</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>54</ID>
+    <FIRSTNAME>Kelefentse </FIRSTNAME>
+    <SURNAME>Molatlhiwa</SURNAME>
+    <EMAIL>kelefentsem@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Finance and Procurement</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>55</ID>
+    <FIRSTNAME>Lorato </FIRSTNAME>
+    <SURNAME>Madimabe</SURNAME>
+    <EMAIL>loratom@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Finance and Procurement</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO>76981048</CELLNO>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>56</ID>
+    <FIRSTNAME>Modise </FIRSTNAME>
+    <SURNAME>Mmopi</SURNAME>
+    <EMAIL>modisem@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Finance and Procurement</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>57</ID>
+    <FIRSTNAME>Onalethata </FIRSTNAME>
+    <SURNAME>Motsatsi</SURNAME>
+    <EMAIL>onalethatam@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Finance and Procurement</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>58</ID>
+    <FIRSTNAME>Shathiso </FIRSTNAME>
+    <SURNAME>Lekang</SURNAME>
+    <EMAIL>shathisol@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Finance and Procurement</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>59</ID>
+    <FIRSTNAME>Ishmael </FIRSTNAME>
+    <SURNAME>Dipholo</SURNAME>
+    <EMAIL>ishmaeld@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Human Resources</DEPARTMENT>
+    <CAMPUS>Gaborone</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>60</ID>
+    <FIRSTNAME>Lame Tsholofelo </FIRSTNAME>
+    <SURNAME>Poelo</SURNAME>
+    <EMAIL>lamep@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Human Resources</DEPARTMENT>
+    <CAMPUS>Gaborone</CAMPUS>
+    <OFFICE/>
+    <CELLNO>76426887</CELLNO>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>61</ID>
+    <FIRSTNAME>Gabothuse </FIRSTNAME>
+    <SURNAME>Bornwell-Ogaketse</SURNAME>
+    <EMAIL>gabothuseb@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Human Resources</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>62</ID>
+    <FIRSTNAME>Nombulelo Lone </FIRSTNAME>
+    <SURNAME>Moruti</SURNAME>
+    <EMAIL>nombulelom@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Human Resources</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>63</ID>
+    <FIRSTNAME>Oteng </FIRSTNAME>
+    <SURNAME>Nkanokang</SURNAME>
+    <EMAIL>otengn@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Human Resources</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>64</ID>
+    <FIRSTNAME>Taboka Barati </FIRSTNAME>
+    <SURNAME>Sechaba</SURNAME>
+    <EMAIL>tabokas@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Human Resources</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>65</ID>
+    <FIRSTNAME>Tshepiso </FIRSTNAME>
+    <SURNAME>Molatole</SURNAME>
+    <EMAIL>tshepisom@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Human Resources</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>66</ID>
+    <FIRSTNAME>Palesa Naledi </FIRSTNAME>
+    <SURNAME>Maje</SURNAME>
+    <EMAIL>palesam@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Internal Audit</DEPARTMENT>
+    <CAMPUS>Gaborone</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>67</ID>
+    <FIRSTNAME>Mavis </FIRSTNAME>
+    <SURNAME>Lekolwane</SURNAME>
+    <EMAIL>mavisl@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Internal Audit</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>68</ID>
+    <FIRSTNAME>Phodiso Gracious </FIRSTNAME>
+    <SURNAME>Ogaketse</SURNAME>
+    <EMAIL>phodisoo@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Internal Audit</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>69</ID>
+    <FIRSTNAME>Victoria goitsemang </FIRSTNAME>
+    <SURNAME>Pule</SURNAME>
+    <EMAIL>victoriap@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Internal Audit</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>70</ID>
+    <FIRSTNAME>Amantle </FIRSTNAME>
+    <SURNAME>Relemogeng</SURNAME>
+    <EMAIL>amantlet@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Information and Communication Technologies</DEPARTMENT>
+    <CAMPUS>Gaborone</CAMPUS>
+    <OFFICE/>
+    <CELLNO>72639437</CELLNO>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>71</ID>
+    <FIRSTNAME>Johanna </FIRSTNAME>
+    <SURNAME>Kgaswane</SURNAME>
+    <EMAIL>Johannak@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Information and Communication Technologies</DEPARTMENT>
+    <CAMPUS>Gaborone</CAMPUS>
+    <OFFICE/>
+    <CELLNO>72862280</CELLNO>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>72</ID>
+    <FIRSTNAME>Kabo </FIRSTNAME>
+    <SURNAME>Pilane</SURNAME>
+    <EMAIL>kabop@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Information and Communication Technologies</DEPARTMENT>
+    <CAMPUS>Gaborone</CAMPUS>
+    <OFFICE/>
+    <CELLNO>74871525</CELLNO>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>73</ID>
+    <FIRSTNAME>Letso Kutlo </FIRSTNAME>
+    <SURNAME>Dire</SURNAME>
+    <EMAIL>letsod@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Information and Communication Technologies</DEPARTMENT>
+    <CAMPUS>Gaborone</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>74</ID>
+    <FIRSTNAME>Mpho </FIRSTNAME>
+    <SURNAME>Monyamane</SURNAME>
+    <EMAIL>mphom@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Information and Communication Technologies</DEPARTMENT>
+    <CAMPUS>Gaborone</CAMPUS>
+    <OFFICE/>
+    <CELLNO>72158481</CELLNO>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>75</ID>
+    <FIRSTNAME>Otlogetswe </FIRSTNAME>
+    <SURNAME>Lebang</SURNAME>
+    <EMAIL>otlogetswel@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Information and Communication Technologies</DEPARTMENT>
+    <CAMPUS>Gaborone</CAMPUS>
+    <OFFICE/>
+    <CELLNO>72972503</CELLNO>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>76</ID>
+    <FIRSTNAME>Patience Rita </FIRSTNAME>
+    <SURNAME>Nthekeng</SURNAME>
+    <EMAIL>patiencen@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Information and Communication Technologies</DEPARTMENT>
+    <CAMPUS>Gaborone</CAMPUS>
+    <OFFICE/>
+    <CELLNO>72632804</CELLNO>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>77</ID>
+    <FIRSTNAME>Phio Lucky </FIRSTNAME>
+    <SURNAME>Maokaneng</SURNAME>
+    <EMAIL>phiom@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Information and Communication Technologies</DEPARTMENT>
+    <CAMPUS>Gaborone</CAMPUS>
+    <OFFICE/>
+    <CELLNO>72700003</CELLNO>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>78</ID>
+    <FIRSTNAME>Sylvester Mompati </FIRSTNAME>
+    <SURNAME>Kadi</SURNAME>
+    <EMAIL>sylvesterk@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Information and Communication Technologies</DEPARTMENT>
+    <CAMPUS>Gaborone</CAMPUS>
+    <OFFICE/>
+    <CELLNO>72886452</CELLNO>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>79</ID>
+    <FIRSTNAME>Tebogo </FIRSTNAME>
+    <SURNAME>Tebogo</SURNAME>
+    <EMAIL>tebogot@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Information and Communication Technologies</DEPARTMENT>
+    <CAMPUS>Gaborone</CAMPUS>
+    <OFFICE/>
+    <CELLNO>72718747</CELLNO>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>80</ID>
+    <FIRSTNAME>Aleseng </FIRSTNAME>
+    <SURNAME>Moatshe</SURNAME>
+    <EMAIL>alesengm@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Information and Communication Technologies</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>81</ID>
+    <FIRSTNAME>Baone Clifford M </FIRSTNAME>
+    <SURNAME>Nelson</SURNAME>
+    <EMAIL>baoneb@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Information and Communication Technologies</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>82</ID>
+    <FIRSTNAME>Emmanuel </FIRSTNAME>
+    <SURNAME>Ntwaetsile</SURNAME>
+    <EMAIL>emmanueln@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Information and Communication Technologies</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>83</ID>
+    <FIRSTNAME>Joel Modongo </FIRSTNAME>
+    <SURNAME>Tshwene</SURNAME>
+    <EMAIL>joelt@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Information and Communication Technologies</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>84</ID>
+    <FIRSTNAME>Kgosietsile </FIRSTNAME>
+    <SURNAME>Banda</SURNAME>
+    <EMAIL>kgosietsileb@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Information and Communication Technologies</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>85</ID>
+    <FIRSTNAME>Larona </FIRSTNAME>
+    <SURNAME>Akanyang</SURNAME>
+    <EMAIL>laronaa@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Information and Communication Technologies</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>86</ID>
+    <FIRSTNAME>Marvin </FIRSTNAME>
+    <SURNAME>Kgosipula</SURNAME>
+    <EMAIL>marvink@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Information and Communication Technologies</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO>75305704</CELLNO>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>87</ID>
+    <FIRSTNAME>Phatsimo </FIRSTNAME>
+    <SURNAME>Pheko</SURNAME>
+    <EMAIL>phatsimop@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Information and Communication Technologies</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>88</ID>
+    <FIRSTNAME>Seikaneng </FIRSTNAME>
+    <SURNAME>Kgopa</SURNAME>
+    <EMAIL>seikanengk@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Information and Communication Technologies</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>89</ID>
+    <FIRSTNAME>Bakganedi Kennedy </FIRSTNAME>
+    <SURNAME>Raphuti</SURNAME>
+    <EMAIL>bakganedir@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Library Services</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO>77000978</CELLNO>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>90</ID>
+    <FIRSTNAME>Bareng </FIRSTNAME>
+    <SURNAME>Mmopelwa</SURNAME>
+    <EMAIL>barengm@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Library Services</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO>73664337</CELLNO>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>91</ID>
+    <FIRSTNAME>Bongiwe </FIRSTNAME>
+    <SURNAME>Magocha</SURNAME>
+    <EMAIL>Bongiwem@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Library Services</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO>74406715</CELLNO>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>92</ID>
+    <FIRSTNAME>Bosa </FIRSTNAME>
+    <SURNAME>Masibi</SURNAME>
+    <EMAIL>Bosam@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Library Services</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>93</ID>
+    <FIRSTNAME>kelebogile </FIRSTNAME>
+    <SURNAME>Madliso</SURNAME>
+    <EMAIL>kelebogilem@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Library Services</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>94</ID>
+    <FIRSTNAME>Rebanyana Meme </FIRSTNAME>
+    <SURNAME>Mahalelo</SURNAME>
+    <EMAIL>memem@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Library Services</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>95</ID>
+    <FIRSTNAME>Qaphela Kebone. </FIRSTNAME>
+    <SURNAME>Moloi</SURNAME>
+    <EMAIL>qaphelam@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Library Services</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO>72740492</CELLNO>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>96</ID>
+    <FIRSTNAME>Tebo </FIRSTNAME>
+    <SURNAME>Motlhabane</SURNAME>
+    <EMAIL>tebom@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Library Services</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>97</ID>
+    <FIRSTNAME>Duncan</FIRSTNAME>
+    <SURNAME>Tau</SURNAME>
+    <EMAIL>duncant@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Marketing and Corporate Communications</DEPARTMENT>
+    <CAMPUS>Gaborone</CAMPUS>
+    <OFFICE/>
+    <CELLNO>72886490</CELLNO>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>98</ID>
+    <FIRSTNAME>Fiona</FIRSTNAME>
+    <SURNAME>Kebalefetse</SURNAME>
+    <EMAIL>fionak@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Marketing and Corporate Communications</DEPARTMENT>
+    <CAMPUS>Gaborone</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>99</ID>
+    <FIRSTNAME>Goitsemodimo</FIRSTNAME>
+    <SURNAME>Botshelo-Fundira</SURNAME>
+    <EMAIL>goitsemodimob@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Marketing and Corporate Communications</DEPARTMENT>
+    <CAMPUS>Gaborone</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>100</ID>
+    <FIRSTNAME>Kesaobaka</FIRSTNAME>
+    <SURNAME>Tayane</SURNAME>
+    <EMAIL>kesaobakat@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Marketing and Corporate Communications</DEPARTMENT>
+    <CAMPUS>Gaborone</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>101</ID>
+    <FIRSTNAME>Kitso Mygirl</FIRSTNAME>
+    <SURNAME>Gulubane</SURNAME>
+    <EMAIL>kitsoo@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Marketing and Corporate Communications</DEPARTMENT>
+    <CAMPUS>Gaborone</CAMPUS>
+    <OFFICE/>
+    <CELLNO>74813018</CELLNO>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>102</ID>
+    <FIRSTNAME>Martha Moribame</FIRSTNAME>
+    <SURNAME>Tabane</SURNAME>
+    <EMAIL>marthat@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Marketing and Corporate Communications</DEPARTMENT>
+    <CAMPUS>Gaborone</CAMPUS>
+    <OFFICE/>
+    <CELLNO>72146707</CELLNO>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>103</ID>
+    <FIRSTNAME>Mogomotsi Victor</FIRSTNAME>
+    <SURNAME>Petoro</SURNAME>
+    <EMAIL>mogomotsip@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Marketing and Corporate Communications</DEPARTMENT>
+    <CAMPUS>Gaborone</CAMPUS>
+    <OFFICE/>
+    <CELLNO>71895045</CELLNO>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>104</ID>
+    <FIRSTNAME>Mpho</FIRSTNAME>
+    <SURNAME>Mokgosi</SURNAME>
+    <EMAIL>mphomo@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Marketing and Corporate Communications</DEPARTMENT>
+    <CAMPUS>Gaborone</CAMPUS>
+    <OFFICE/>
+    <CELLNO>72405211</CELLNO>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>105</ID>
+    <FIRSTNAME>Phinah</FIRSTNAME>
+    <SURNAME>Kututa</SURNAME>
+    <EMAIL>phinahk@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Marketing and Corporate Communications</DEPARTMENT>
+    <CAMPUS>Gaborone</CAMPUS>
+    <OFFICE>BIFM</OFFICE>
+    <CELLNO>71659165</CELLNO>
+    <TEL_EXT>1698</TEL_EXT>
+  </rowElement>
+  <rowElement>
+    <ID>106</ID>
+    <FIRSTNAME>Refilwe</FIRSTNAME>
+    <SURNAME>Tlamelo</SURNAME>
+    <EMAIL>refilwet@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Marketing and Corporate Communications</DEPARTMENT>
+    <CAMPUS>Gaborone</CAMPUS>
+    <OFFICE/>
+    <CELLNO>72851548</CELLNO>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>107</ID>
+    <FIRSTNAME>Sadi</FIRSTNAME>
+    <SURNAME>Itheetseng</SURNAME>
+    <EMAIL>sadii@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Marketing and Corporate Communications</DEPARTMENT>
+    <CAMPUS>Gaborone</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>108</ID>
+    <FIRSTNAME>Amogelang</FIRSTNAME>
+    <SURNAME>Mautenyane</SURNAME>
+    <EMAIL>Amogelangm@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Marketing and Corporate Communications</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE>FT Campus</OFFICE>
+    <CELLNO>75102853</CELLNO>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>109</ID>
+    <FIRSTNAME>Benedict</FIRSTNAME>
+    <SURNAME>Sebifelo</SURNAME>
+    <EMAIL>benedicts@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Marketing and Corporate Communications</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>110</ID>
+    <FIRSTNAME>Botshelo</FIRSTNAME>
+    <SURNAME>Nnaasu</SURNAME>
+    <EMAIL>botshelon@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Marketing and Corporate Communications</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>111</ID>
+    <FIRSTNAME>Kealeboga</FIRSTNAME>
+    <SURNAME>Eole</SURNAME>
+    <EMAIL>kealebogae@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Marketing and Corporate Communications</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>112</ID>
+    <FIRSTNAME>Odirile</FIRSTNAME>
+    <SURNAME>Kasale</SURNAME>
+    <EMAIL>odirilek@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Marketing and Corporate Communications</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>113</ID>
+    <FIRSTNAME>Precious pearl</FIRSTNAME>
+    <SURNAME>Modise</SURNAME>
+    <EMAIL>preciousm@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Marketing and Corporate Communications</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>114</ID>
+    <FIRSTNAME>Tahirah</FIRSTNAME>
+    <SURNAME>Kenosi</SURNAME>
+    <EMAIL>tahirahk@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Marketing and Corporate Communications</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>115</ID>
+    <FIRSTNAME>Hendrick </FIRSTNAME>
+    <SURNAME>Tshomane</SURNAME>
+    <EMAIL>hendrickt@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Quality Assurance, Teaching and Learning Enhancement</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>116</ID>
+    <FIRSTNAME>Lorato </FIRSTNAME>
+    <SURNAME>Matsheng</SURNAME>
+    <EMAIL>loratoma@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Quality Assurance, Teaching and Learning Enhancement</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO>75024699</CELLNO>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>117</ID>
+    <FIRSTNAME>Maipelo </FIRSTNAME>
+    <SURNAME>Seisa</SURNAME>
+    <EMAIL>maipelos@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Quality Assurance, Teaching and Learning Enhancement</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>118</ID>
+    <FIRSTNAME>Masego </FIRSTNAME>
+    <SURNAME>Kgosidialwa</SURNAME>
+    <EMAIL>masegok@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Quality Assurance, Teaching and Learning Enhancement</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO>75723199</CELLNO>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>119</ID>
+    <FIRSTNAME>Pono Fionah </FIRSTNAME>
+    <SURNAME>Oletile</SURNAME>
+    <EMAIL>ponoo@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Quality Assurance, Teaching and Learning Enhancement</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>120</ID>
+    <FIRSTNAME>Unangoni </FIRSTNAME>
+    <SURNAME>Smith</SURNAME>
+    <EMAIL>unangonis@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Quality Assurance, Teaching and Learning Enhancement</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>121</ID>
+    <FIRSTNAME>dorcas </FIRSTNAME>
+    <SURNAME>Seitshiro</SURNAME>
+    <EMAIL>dorcass@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Registry and Admissions</DEPARTMENT>
+    <CAMPUS>Gaborone</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>122</ID>
+    <FIRSTNAME>Gaongalelwe </FIRSTNAME>
+    <SURNAME>Kgomanyane</SURNAME>
+    <EMAIL>gaongalelwek@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Registry and Admissions</DEPARTMENT>
+    <CAMPUS>Gaborone</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>123</ID>
+    <FIRSTNAME>Itumeleng </FIRSTNAME>
+    <SURNAME>Tshekoetsile</SURNAME>
+    <EMAIL>Itumelengt@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Registry and Admissions</DEPARTMENT>
+    <CAMPUS>Gaborone</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>124</ID>
+    <FIRSTNAME>Lebang </FIRSTNAME>
+    <SURNAME>Sejoe</SURNAME>
+    <EMAIL>lebangs@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Registry and Admissions</DEPARTMENT>
+    <CAMPUS>Gaborone</CAMPUS>
+    <OFFICE/>
+    <CELLNO>72886485</CELLNO>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>125</ID>
+    <FIRSTNAME>One </FIRSTNAME>
+    <SURNAME>Selei</SURNAME>
+    <EMAIL>ones@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Registry and Admissions</DEPARTMENT>
+    <CAMPUS>Gaborone</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>126</ID>
+    <FIRSTNAME>Ohaletse Sadie </FIRSTNAME>
+    <SURNAME>Dick</SURNAME>
+    <EMAIL>sadies@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Registry and Admissions</DEPARTMENT>
+    <CAMPUS>Gaborone</CAMPUS>
+    <OFFICE/>
+    <CELLNO>72886496</CELLNO>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>127</ID>
+    <FIRSTNAME>Tebogo </FIRSTNAME>
+    <SURNAME>Williams</SURNAME>
+    <EMAIL>tebogog@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Registry and Admissions</DEPARTMENT>
+    <CAMPUS>Gaborone</CAMPUS>
+    <OFFICE/>
+    <CELLNO>3980667</CELLNO>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>128</ID>
+    <FIRSTNAME>Thapelo Trevor </FIRSTNAME>
+    <SURNAME>Motshidisi</SURNAME>
+    <EMAIL>Thapelom@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Registry and Admissions</DEPARTMENT>
+    <CAMPUS>Gaborone</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>129</ID>
+    <FIRSTNAME>Thero </FIRSTNAME>
+    <SURNAME>Mokgano</SURNAME>
+    <EMAIL>therom@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Registry and Admissions</DEPARTMENT>
+    <CAMPUS>Gaborone</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>130</ID>
+    <FIRSTNAME>Tshepho </FIRSTNAME>
+    <SURNAME>Kgopana</SURNAME>
+    <EMAIL>tshephok@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Registry and Admissions</DEPARTMENT>
+    <CAMPUS>Gaborone</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>131</ID>
+    <FIRSTNAME>Tshepo Evah </FIRSTNAME>
+    <SURNAME>Mogotsi</SURNAME>
+    <EMAIL>tshepom@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Registry and Admissions</DEPARTMENT>
+    <CAMPUS>Gaborone</CAMPUS>
+    <OFFICE/>
+    <CELLNO>72886489</CELLNO>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>132</ID>
+    <FIRSTNAME>Waboraro </FIRSTNAME>
+    <SURNAME>Moatswi</SURNAME>
+    <EMAIL>waborarom@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Registry and Admissions</DEPARTMENT>
+    <CAMPUS>Gaborone</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>133</ID>
+    <FIRSTNAME>William </FIRSTNAME>
+    <SURNAME>Sekgatsa</SURNAME>
+    <EMAIL>williams@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Registry and Admissions</DEPARTMENT>
+    <CAMPUS>Gaborone</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>134</ID>
+    <FIRSTNAME>Bakisani </FIRSTNAME>
+    <SURNAME>Simon</SURNAME>
+    <EMAIL>bakisanis@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Registry and Admissions</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>135</ID>
+    <FIRSTNAME>Keitumetse </FIRSTNAME>
+    <SURNAME>Rajane</SURNAME>
+    <EMAIL>keitumetsem@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Registry and Admissions</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO>72886487</CELLNO>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>136</ID>
+    <FIRSTNAME>Matildah </FIRSTNAME>
+    <SURNAME>Tshweneyagae</SURNAME>
+    <EMAIL>matildaht@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Registry and Admissions</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>137</ID>
+    <FIRSTNAME>Naledi </FIRSTNAME>
+    <SURNAME>Webb</SURNAME>
+    <EMAIL>nalediw@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Registry and Admissions</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>138</ID>
+    <FIRSTNAME>Oniah </FIRSTNAME>
+    <SURNAME>Moloko</SURNAME>
+    <EMAIL>oniahm@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Registry and Admissions</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>139</ID>
+    <FIRSTNAME>Othusitse </FIRSTNAME>
+    <SURNAME>Siele</SURNAME>
+    <EMAIL>othusitses@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Registry and Admissions</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>140</ID>
+    <FIRSTNAME>Pearso</FIRSTNAME>
+    <SURNAME>Pearso</SURNAME>
+    <EMAIL>Pearson@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Registry and Admissions</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>141</ID>
+    <FIRSTNAME>Thabang Mmoloki </FIRSTNAME>
+    <SURNAME>Mathake</SURNAME>
+    <EMAIL>thabangm@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Registry and Admissions</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>142</ID>
+    <FIRSTNAME>Wabo </FIRSTNAME>
+    <SURNAME>Othamile</SURNAME>
+    <EMAIL>waboo@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Registry and Admissions</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>143</ID>
+    <FIRSTNAME>Kabelo </FIRSTNAME>
+    <SURNAME>Hlabangaan</SURNAME>
+    <EMAIL>kabeloh@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Records Management</DEPARTMENT>
+    <CAMPUS>Gaborone</CAMPUS>
+    <OFFICE/>
+    <CELLNO>72265656</CELLNO>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>144</ID>
+    <FIRSTNAME>Gladys </FIRSTNAME>
+    <SURNAME>Moruti</SURNAME>
+    <EMAIL>gladysm@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Records Management</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>145</ID>
+    <FIRSTNAME>Tiroyaone Vincent </FIRSTNAME>
+    <SURNAME>Ramadi</SURNAME>
+    <EMAIL>tiroyaoner@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Records Management</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>146</ID>
+    <FIRSTNAME>Alice </FIRSTNAME>
+    <SURNAME>Njoroge</SURNAME>
+    <EMAIL>alicen@bac.ac.bw</EMAIL>
+    <DEPARTMENT>School of Business and Leisure</DEPARTMENT>
+    <CAMPUS>Gaborone</CAMPUS>
+    <OFFICE/>
+    <CELLNO>76764880</CELLNO>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>147</ID>
+    <FIRSTNAME>Aubrey </FIRSTNAME>
+    <SURNAME>Mbewe</SURNAME>
+    <EMAIL>aubreym@bac.ac.bw</EMAIL>
+    <DEPARTMENT>School of Business and Leisure</DEPARTMENT>
+    <CAMPUS>Gaborone</CAMPUS>
+    <OFFICE/>
+    <CELLNO>72455385</CELLNO>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>148</ID>
+    <FIRSTNAME>Blessing </FIRSTNAME>
+    <SURNAME>Mandizha</SURNAME>
+    <EMAIL>blessingm@bac.ac.bw</EMAIL>
+    <DEPARTMENT>School of Business and Leisure</DEPARTMENT>
+    <CAMPUS>Gaborone</CAMPUS>
+    <OFFICE/>
+    <CELLNO>75723208</CELLNO>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>149</ID>
+    <FIRSTNAME>Botlhe </FIRSTNAME>
+    <SURNAME>Ndoma</SURNAME>
+    <EMAIL>botlhen@bac.ac.bw</EMAIL>
+    <DEPARTMENT>School of Business and Leisure</DEPARTMENT>
+    <CAMPUS>Gaborone</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>150</ID>
+    <FIRSTNAME>Cynthia </FIRSTNAME>
+    <SURNAME>Chakahwata</SURNAME>
+    <EMAIL>cynthiac@bac.ac.bw</EMAIL>
+    <DEPARTMENT>School of Business and Leisure</DEPARTMENT>
+    <CAMPUS>Gaborone</CAMPUS>
+    <OFFICE/>
+    <CELLNO>75232114</CELLNO>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>151</ID>
+    <FIRSTNAME>John </FIRSTNAME>
+    <SURNAME>Mukuna</SURNAME>
+    <EMAIL>johnm@bac.ac.bw</EMAIL>
+    <DEPARTMENT>School of Business and Leisure</DEPARTMENT>
+    <CAMPUS>Gaborone</CAMPUS>
+    <OFFICE/>
+    <CELLNO>71790922</CELLNO>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>152</ID>
+    <FIRSTNAME>Kelebogile </FIRSTNAME>
+    <SURNAME>Kenalemang</SURNAME>
+    <EMAIL>kelebogilen@bac.ac.bw</EMAIL>
+    <DEPARTMENT>School of Business and Leisure</DEPARTMENT>
+    <CAMPUS>Gaborone</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>153</ID>
+    <FIRSTNAME>Lelokwane Lockie. </FIRSTNAME>
+    <SURNAME>Mokgalo</SURNAME>
+    <EMAIL>lelokwanem@bac.ac.bw</EMAIL>
+    <DEPARTMENT>School of Business and Leisure</DEPARTMENT>
+    <CAMPUS>Gaborone</CAMPUS>
+    <OFFICE/>
+    <CELLNO>77524950</CELLNO>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>154</ID>
+    <FIRSTNAME>Lewis </FIRSTNAME>
+    <SURNAME>Phiri</SURNAME>
+    <EMAIL>lewisp@bac.ac.bw</EMAIL>
+    <DEPARTMENT>School of Business and Leisure</DEPARTMENT>
+    <CAMPUS>Gaborone</CAMPUS>
+    <OFFICE/>
+    <CELLNO>75232109</CELLNO>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>155</ID>
+    <FIRSTNAME>Marian </FIRSTNAME>
+    <SURNAME>Taimu</SURNAME>
+    <EMAIL>mariant@bac.ac.bw</EMAIL>
+    <DEPARTMENT>School of Business and Leisure</DEPARTMENT>
+    <CAMPUS>Gaborone</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>156</ID>
+    <FIRSTNAME>Mercy </FIRSTNAME>
+    <SURNAME>Manhotoma</SURNAME>
+    <EMAIL>mercyma@bac.ac.bw</EMAIL>
+    <DEPARTMENT>School of Business and Leisure</DEPARTMENT>
+    <CAMPUS>Gaborone</CAMPUS>
+    <OFFICE/>
+    <CELLNO>74439184</CELLNO>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>157</ID>
+    <FIRSTNAME>Meshack Thato </FIRSTNAME>
+    <SURNAME>Letlhare</SURNAME>
+    <EMAIL>meshackl@bac.ac.bw</EMAIL>
+    <DEPARTMENT>School of Business and Leisure</DEPARTMENT>
+    <CAMPUS>Gaborone</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>158</ID>
+    <FIRSTNAME>Munyaradzi </FIRSTNAME>
+    <SURNAME>Nyandoro</SURNAME>
+    <EMAIL>munyaradzin@bac.ac.bw</EMAIL>
+    <DEPARTMENT>School of Business and Leisure</DEPARTMENT>
+    <CAMPUS>Gaborone</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>159</ID>
+    <FIRSTNAME>Patience </FIRSTNAME>
+    <SURNAME>Conlon</SURNAME>
+    <EMAIL>patiencec@bac.ac.bw</EMAIL>
+    <DEPARTMENT>School of Business and Leisure</DEPARTMENT>
+    <CAMPUS>Gaborone</CAMPUS>
+    <OFFICE/>
+    <CELLNO>76368677</CELLNO>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>160</ID>
+    <FIRSTNAME>Tapiwa </FIRSTNAME>
+    <SURNAME>Gande</SURNAME>
+    <EMAIL>tapiwag@bac.ac.bw</EMAIL>
+    <DEPARTMENT>School of Business and Leisure</DEPARTMENT>
+    <CAMPUS>Gaborone</CAMPUS>
+    <OFFICE/>
+    <CELLNO>74408137</CELLNO>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>161</ID>
+    <FIRSTNAME>Tshepang </FIRSTNAME>
+    <SURNAME>Molosiwa</SURNAME>
+    <EMAIL>tshepangm@bac.ac.bw</EMAIL>
+    <DEPARTMENT>School of Business and Leisure</DEPARTMENT>
+    <CAMPUS>Gaborone</CAMPUS>
+    <OFFICE/>
+    <CELLNO>71268179</CELLNO>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>162</ID>
+    <FIRSTNAME>Unity </FIRSTNAME>
+    <SURNAME>Nyakudya</SURNAME>
+    <EMAIL>Unityn@bac.ac.bw</EMAIL>
+    <DEPARTMENT>School of Business and Leisure</DEPARTMENT>
+    <CAMPUS>Gaborone</CAMPUS>
+    <OFFICE/>
+    <CELLNO>74458453</CELLNO>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>163</ID>
+    <FIRSTNAME>Wilbert </FIRSTNAME>
+    <SURNAME>Mutoko</SURNAME>
+    <EMAIL>wilbertm@bac.ac.bw</EMAIL>
+    <DEPARTMENT>School of Business and Leisure</DEPARTMENT>
+    <CAMPUS>Gaborone</CAMPUS>
+    <OFFICE/>
+    <CELLNO>71824591</CELLNO>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>164</ID>
+    <FIRSTNAME>Aobakwe Setso </FIRSTNAME>
+    <SURNAME>Motang</SURNAME>
+    <EMAIL>aobakwem@bac.ac.bw</EMAIL>
+    <DEPARTMENT>School of Business and Leisure</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>165</ID>
+    <FIRSTNAME>Bayang </FIRSTNAME>
+    <SURNAME>Modo</SURNAME>
+    <EMAIL>bayangm@bac.ac.bw</EMAIL>
+    <DEPARTMENT>School of Business and Leisure</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>166</ID>
+    <FIRSTNAME>Charles Kidega </FIRSTNAME>
+    <SURNAME>Ocaya</SURNAME>
+    <EMAIL>charleso@bac.ac.bw</EMAIL>
+    <DEPARTMENT>School of Business and Leisure</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>167</ID>
+    <FIRSTNAME>Colleen </FIRSTNAME>
+    <SURNAME>Magogodi</SURNAME>
+    <EMAIL>colleenm@bac.ac.bw</EMAIL>
+    <DEPARTMENT>School of Business and Leisure</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>168</ID>
+    <FIRSTNAME>Golelwang </FIRSTNAME>
+    <SURNAME>Mosiiwa</SURNAME>
+    <EMAIL>golelwangm@bac.ac.bw</EMAIL>
+    <DEPARTMENT>School of Business and Leisure</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>169</ID>
+    <FIRSTNAME>Jane </FIRSTNAME>
+    <SURNAME>Chikanza</SURNAME>
+    <EMAIL>janec@bac.ac.bw</EMAIL>
+    <DEPARTMENT>School of Business and Leisure</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>170</ID>
+    <FIRSTNAME>Joseph </FIRSTNAME>
+    <SURNAME>Mukasa</SURNAME>
+    <EMAIL>josephm@bac.ac.bw</EMAIL>
+    <DEPARTMENT>School of Business and Leisure</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>171</ID>
+    <FIRSTNAME>Lisimba </FIRSTNAME>
+    <SURNAME>Lukando</SURNAME>
+    <EMAIL>lisimbal@bac.ac.bw</EMAIL>
+    <DEPARTMENT>School of Business and Leisure</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>172</ID>
+    <FIRSTNAME>Memory </FIRSTNAME>
+    <SURNAME>Mukoroverwa</SURNAME>
+    <EMAIL>memorym@bac.ac.bw</EMAIL>
+    <DEPARTMENT>School of Business and Leisure</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO>76493815</CELLNO>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>173</ID>
+    <FIRSTNAME>Mose Mercy </FIRSTNAME>
+    <SURNAME>Mozumbi</SURNAME>
+    <EMAIL>mercym@bac.ac.bw</EMAIL>
+    <DEPARTMENT>School of Business and Leisure</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO>76360831</CELLNO>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>174</ID>
+    <FIRSTNAME>Mpho </FIRSTNAME>
+    <SURNAME>Motlalekgosi</SURNAME>
+    <EMAIL>mphomt@bac.ac.bw</EMAIL>
+    <DEPARTMENT>School of Business and Leisure</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>175</ID>
+    <FIRSTNAME>Dr. Naledi T. </FIRSTNAME>
+    <SURNAME>Moyo</SURNAME>
+    <EMAIL>naledim@bac.ac.bw</EMAIL>
+    <DEPARTMENT>School of Business and Leisure</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>176</ID>
+    <FIRSTNAME>Omphile </FIRSTNAME>
+    <SURNAME>Kgotla</SURNAME>
+    <EMAIL>omphilek@bac.ac.bw</EMAIL>
+    <DEPARTMENT>School of Business and Leisure</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>177</ID>
+    <FIRSTNAME>Phillip </FIRSTNAME>
+    <SURNAME>Gabapelo</SURNAME>
+    <EMAIL>phillipg@bac.ac.bw</EMAIL>
+    <DEPARTMENT>School of Business and Leisure</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>178</ID>
+    <FIRSTNAME>Pule Levy </FIRSTNAME>
+    <SURNAME>Mogale</SURNAME>
+    <EMAIL>pulem@bac.ac.bw</EMAIL>
+    <DEPARTMENT>School of Business and Leisure</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>179</ID>
+    <FIRSTNAME>Refilwe </FIRSTNAME>
+    <SURNAME>Ramadi</SURNAME>
+    <EMAIL>refilwer@bac.ac.bw</EMAIL>
+    <DEPARTMENT>School of Business and Leisure</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>180</ID>
+    <FIRSTNAME>Reuben Mokwena </FIRSTNAME>
+    <SURNAME>Badubi</SURNAME>
+    <EMAIL>reubenb@bac.ac.bw</EMAIL>
+    <DEPARTMENT>School of Business and Leisure</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>181</ID>
+    <FIRSTNAME>Dr Tebogo </FIRSTNAME>
+    <SURNAME>Magang</SURNAME>
+    <EMAIL>tmagang@bac.ac.bw</EMAIL>
+    <DEPARTMENT>School of Business and Leisure</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>182</ID>
+    <FIRSTNAME>Tshoganetso </FIRSTNAME>
+    <SURNAME>Ketlhokile</SURNAME>
+    <EMAIL>Tshoganetsok@bac.ac.bw</EMAIL>
+    <DEPARTMENT>School of Business and Leisure</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>183</ID>
+    <FIRSTNAME>Tsitsi </FIRSTNAME>
+    <SURNAME>Chipfuva</SURNAME>
+    <EMAIL>tsitsic@bac.ac.bw</EMAIL>
+    <DEPARTMENT>School of Business and Leisure</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO>72727376</CELLNO>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>184</ID>
+    <FIRSTNAME>Winnet </FIRSTNAME>
+    <SURNAME>Masikati</SURNAME>
+    <EMAIL>winnetm@bac.ac.bw</EMAIL>
+    <DEPARTMENT>School of Business and Leisure</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>185</ID>
+    <FIRSTNAME>Botlhe</FIRSTNAME>
+    <SURNAME>Moitho</SURNAME>
+    <EMAIL>botlhem@bac.ac.bw</EMAIL>
+    <DEPARTMENT>School of Computing and Information Systems</DEPARTMENT>
+    <CAMPUS>Gaborone</CAMPUS>
+    <OFFICE>Main Campus</OFFICE>
+    <CELLNO>72320815</CELLNO>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>186</ID>
+    <FIRSTNAME>Freedmore</FIRSTNAME>
+    <SURNAME>Sidume</SURNAME>
+    <EMAIL>freedmores@bac.ac.bw</EMAIL>
+    <DEPARTMENT>School of Computing and Information Systems</DEPARTMENT>
+    <CAMPUS>Gaborone</CAMPUS>
+    <OFFICE>Main Campus</OFFICE>
+    <CELLNO>74343365</CELLNO>
+    <TEL_EXT>1638</TEL_EXT>
+  </rowElement>
+  <rowElement>
+    <ID>187</ID>
+    <FIRSTNAME>Galamoyo</FIRSTNAME>
+    <SURNAME>Male</SURNAME>
+    <EMAIL>galamoyom@bac.ac.bw</EMAIL>
+    <DEPARTMENT>School of Computing and Information Systems</DEPARTMENT>
+    <CAMPUS>Gaborone</CAMPUS>
+    <OFFICE>Main Campus</OFFICE>
+    <CELLNO>72300927</CELLNO>
+    <TEL_EXT>1620</TEL_EXT>
+  </rowElement>
+  <rowElement>
+    <ID>188</ID>
+    <FIRSTNAME>Gibson</FIRSTNAME>
+    <SURNAME>Chengetanai</SURNAME>
+    <EMAIL>gibsonc@bac.ac.bw</EMAIL>
+    <DEPARTMENT>School of Computing and Information Systems</DEPARTMENT>
+    <CAMPUS>Gaborone</CAMPUS>
+    <OFFICE>Main Campus</OFFICE>
+    <CELLNO>73238201</CELLNO>
+    <TEL_EXT>1636</TEL_EXT>
+  </rowElement>
+  <rowElement>
+    <ID>189</ID>
+    <FIRSTNAME>Goodwill</FIRSTNAME>
+    <SURNAME>Nkala</SURNAME>
+    <EMAIL>goodwilln@bac.ac.bw</EMAIL>
+    <DEPARTMENT>School of Computing and Information Systems</DEPARTMENT>
+    <CAMPUS>Gaborone</CAMPUS>
+    <OFFICE>Main Campus</OFFICE>
+    <CELLNO>72455384</CELLNO>
+    <TEL_EXT>1632</TEL_EXT>
+  </rowElement>
+  <rowElement>
+    <ID>190</ID>
+    <FIRSTNAME>Karabo</FIRSTNAME>
+    <SURNAME>Mokotedi</SURNAME>
+    <EMAIL>karabod@bac.ac.bw</EMAIL>
+    <DEPARTMENT>School of Computing and Information Systems</DEPARTMENT>
+    <CAMPUS>Gaborone</CAMPUS>
+    <OFFICE>Skills Center</OFFICE>
+    <CELLNO>75513241</CELLNO>
+    <TEL_EXT>2868</TEL_EXT>
+  </rowElement>
+  <rowElement>
+    <ID>191</ID>
+    <FIRSTNAME>Karabo</FIRSTNAME>
+    <SURNAME>Macheng</SURNAME>
+    <EMAIL>karabom@bac.ac.bw</EMAIL>
+    <DEPARTMENT>School of Computing and Information Systems</DEPARTMENT>
+    <CAMPUS>Gaborone</CAMPUS>
+    <OFFICE>Main Campus</OFFICE>
+    <CELLNO>71415305</CELLNO>
+    <TEL_EXT>1634</TEL_EXT>
+  </rowElement>
+  <rowElement>
+    <ID>192</ID>
+    <FIRSTNAME>Keitumetse</FIRSTNAME>
+    <SURNAME>Gobotsamang</SURNAME>
+    <EMAIL>keitumetseg@bac.ac.bw</EMAIL>
+    <DEPARTMENT>School of Computing and Information Systems</DEPARTMENT>
+    <CAMPUS>Gaborone</CAMPUS>
+    <OFFICE>Main Campus</OFFICE>
+    <CELLNO>77494385</CELLNO>
+    <TEL_EXT>1639</TEL_EXT>
+  </rowElement>
+  <rowElement>
+    <ID>193</ID>
+    <FIRSTNAME>Kentsenao</FIRSTNAME>
+    <SURNAME>Baseki</SURNAME>
+    <EMAIL>kentsenaob@bac.ac.bw</EMAIL>
+    <DEPARTMENT>School of Computing and Information Systems</DEPARTMENT>
+    <CAMPUS>Gaborone</CAMPUS>
+    <OFFICE>Main Campus</OFFICE>
+    <CELLNO>72972522</CELLNO>
+    <TEL_EXT>1614</TEL_EXT>
+  </rowElement>
+  <rowElement>
+    <ID>194</ID>
+    <FIRSTNAME>Kerotswe</FIRSTNAME>
+    <SURNAME>Zacharia</SURNAME>
+    <EMAIL>kerotswez@bac.ac.bw</EMAIL>
+    <DEPARTMENT>School of Computing and Information Systems</DEPARTMENT>
+    <CAMPUS>Gaborone</CAMPUS>
+    <OFFICE>Main Campus</OFFICE>
+    <CELLNO>72227778</CELLNO>
+    <TEL_EXT>1620</TEL_EXT>
+  </rowElement>
+  <rowElement>
+    <ID>195</ID>
+    <FIRSTNAME>Mandla</FIRSTNAME>
+    <SURNAME>Ndlovu</SURNAME>
+    <EMAIL>mandlan@bac.ac.bw</EMAIL>
+    <DEPARTMENT>School of Computing and Information Systems</DEPARTMENT>
+    <CAMPUS>Gaborone</CAMPUS>
+    <OFFICE>Main Campus</OFFICE>
+    <CELLNO>74182160</CELLNO>
+    <TEL_EXT>1635</TEL_EXT>
+  </rowElement>
+  <rowElement>
+    <ID>196</ID>
+    <FIRSTNAME>Monamodi</FIRSTNAME>
+    <SURNAME>Masake</SURNAME>
+    <EMAIL>monamodim@bac.ac.bw</EMAIL>
+    <DEPARTMENT>School of Computing and Information Systems</DEPARTMENT>
+    <CAMPUS>Gaborone</CAMPUS>
+    <OFFICE>Main Campus</OFFICE>
+    <CELLNO>74264000</CELLNO>
+    <TEL_EXT>1619</TEL_EXT>
+  </rowElement>
+  <rowElement>
+    <ID>197</ID>
+    <FIRSTNAME>Nkosinathi</FIRSTNAME>
+    <SURNAME>Mpofu</SURNAME>
+    <EMAIL>nkosinathim@bac.ac.bw</EMAIL>
+    <DEPARTMENT>School of Computing and Information Systems</DEPARTMENT>
+    <CAMPUS>Gaborone</CAMPUS>
+    <OFFICE>Main Campus</OFFICE>
+    <CELLNO>72953130</CELLNO>
+    <TEL_EXT>1674</TEL_EXT>
+  </rowElement>
+  <rowElement>
+    <ID>198</ID>
+    <FIRSTNAME>Rabson</FIRSTNAME>
+    <SURNAME>Tamukate</SURNAME>
+    <EMAIL>rabsont@bac.ac.bw</EMAIL>
+    <DEPARTMENT>School of Computing and Information Systems</DEPARTMENT>
+    <CAMPUS>Gaborone</CAMPUS>
+    <OFFICE>Main Campus</OFFICE>
+    <CELLNO>75001919</CELLNO>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>199</ID>
+    <FIRSTNAME>Rachna</FIRSTNAME>
+    <SURNAME>Verma</SURNAME>
+    <EMAIL>rachnav@bac.ac.bw</EMAIL>
+    <DEPARTMENT>School of Computing and Information Systems</DEPARTMENT>
+    <CAMPUS>Gaborone</CAMPUS>
+    <OFFICE>Main Campus</OFFICE>
+    <CELLNO>72431928</CELLNO>
+    <TEL_EXT>1643</TEL_EXT>
+  </rowElement>
+  <rowElement>
+    <ID>200</ID>
+    <FIRSTNAME>Rebaone Riccardo</FIRSTNAME>
+    <SURNAME>Mogomela</SURNAME>
+    <EMAIL>rebaonem@bac.ac.bw</EMAIL>
+    <DEPARTMENT>School of Computing and Information Systems</DEPARTMENT>
+    <CAMPUS>Gaborone</CAMPUS>
+    <OFFICE>Skills Center</OFFICE>
+    <CELLNO>72846588</CELLNO>
+    <TEL_EXT>2868</TEL_EXT>
+  </rowElement>
+  <rowElement>
+    <ID>201</ID>
+    <FIRSTNAME>Resego Tom</FIRSTNAME>
+    <SURNAME>Rabalone</SURNAME>
+    <EMAIL>resegor@bac.ac.bw</EMAIL>
+    <DEPARTMENT>School of Computing and Information Systems</DEPARTMENT>
+    <CAMPUS>Gaborone</CAMPUS>
+    <OFFICE>Main Campus</OFFICE>
+    <CELLNO>75123377</CELLNO>
+    <TEL_EXT>1636</TEL_EXT>
+  </rowElement>
+  <rowElement>
+    <ID>202</ID>
+    <FIRSTNAME>Ronald</FIRSTNAME>
+    <SURNAME>Chikati</SURNAME>
+    <EMAIL>ronaldc@bac.ac.bw</EMAIL>
+    <DEPARTMENT>School of Computing and Information Systems</DEPARTMENT>
+    <CAMPUS>Gaborone</CAMPUS>
+    <OFFICE>Main Campus</OFFICE>
+    <CELLNO>72710849</CELLNO>
+    <TEL_EXT>1666</TEL_EXT>
+  </rowElement>
+  <rowElement>
+    <ID>203</ID>
+    <FIRSTNAME>Simon</FIRSTNAME>
+    <SURNAME>Chirambira</SURNAME>
+    <EMAIL>simonc@bac.ac.bw</EMAIL>
+    <DEPARTMENT>School of Computing and Information Systems</DEPARTMENT>
+    <CAMPUS>Gaborone</CAMPUS>
+    <OFFICE>BIFM</OFFICE>
+    <CELLNO>73224888</CELLNO>
+    <TEL_EXT>2831</TEL_EXT>
+  </rowElement>
+  <rowElement>
+    <ID>204</ID>
+    <FIRSTNAME>Stewart</FIRSTNAME>
+    <SURNAME>Muchuchuti</SURNAME>
+    <EMAIL>stewartm@bac.ac.bw</EMAIL>
+    <DEPARTMENT>School of Computing and Information Systems</DEPARTMENT>
+    <CAMPUS>Gaborone</CAMPUS>
+    <OFFICE>Main Campus</OFFICE>
+    <CELLNO>72539646</CELLNO>
+    <TEL_EXT>1690</TEL_EXT>
+  </rowElement>
+  <rowElement>
+    <ID>205</ID>
+    <FIRSTNAME>Sylvester</FIRSTNAME>
+    <SURNAME>Mokgwe</SURNAME>
+    <EMAIL>sylvesterm@bac.ac.bw</EMAIL>
+    <DEPARTMENT>School of Computing and Information Systems</DEPARTMENT>
+    <CAMPUS>Gaborone</CAMPUS>
+    <OFFICE>Main Campus</OFFICE>
+    <CELLNO>72620290</CELLNO>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>206</ID>
+    <FIRSTNAME>Tebatso</FIRSTNAME>
+    <SURNAME>Nage</SURNAME>
+    <EMAIL>tebatson@bac.ac.bw</EMAIL>
+    <DEPARTMENT>School of Computing and Information Systems</DEPARTMENT>
+    <CAMPUS>Gaborone</CAMPUS>
+    <OFFICE>BIFM</OFFICE>
+    <CELLNO>75568150</CELLNO>
+    <TEL_EXT>2817</TEL_EXT>
+  </rowElement>
+  <rowElement>
+    <ID>207</ID>
+    <FIRSTNAME>Tendai</FIRSTNAME>
+    <SURNAME>Chandigere</SURNAME>
+    <EMAIL>tendaic@bac.ac.bw</EMAIL>
+    <DEPARTMENT>School of Computing and Information Systems</DEPARTMENT>
+    <CAMPUS>Gaborone</CAMPUS>
+    <OFFICE>Main Campus</OFFICE>
+    <CELLNO>75568150</CELLNO>
+    <TEL_EXT>1637</TEL_EXT>
+  </rowElement>
+  <rowElement>
+    <ID>208</ID>
+    <FIRSTNAME>Themba</FIRSTNAME>
+    <SURNAME>Moeng</SURNAME>
+    <EMAIL>thembam@bac.ac.bw</EMAIL>
+    <DEPARTMENT>School of Computing and Information Systems</DEPARTMENT>
+    <CAMPUS>Gaborone</CAMPUS>
+    <OFFICE>Main Campus</OFFICE>
+    <CELLNO>76644950, 72231110</CELLNO>
+    <TEL_EXT>1636</TEL_EXT>
+  </rowElement>
+  <rowElement>
+    <ID>209</ID>
+    <FIRSTNAME>Thobo</FIRSTNAME>
+    <SURNAME>Maruatona</SURNAME>
+    <EMAIL>thobom@bac.ac.bw</EMAIL>
+    <DEPARTMENT>School of Computing and Information Systems</DEPARTMENT>
+    <CAMPUS>Gaborone</CAMPUS>
+    <OFFICE>BIFM</OFFICE>
+    <CELLNO>71405290</CELLNO>
+    <TEL_EXT>2818</TEL_EXT>
+  </rowElement>
+  <rowElement>
+    <ID>210</ID>
+    <FIRSTNAME>Tshepo</FIRSTNAME>
+    <SURNAME>Gobonamang</SURNAME>
+    <EMAIL>tshepog@bac.ac.bw</EMAIL>
+    <DEPARTMENT>School of Computing and Information Systems</DEPARTMENT>
+    <CAMPUS>Gaborone</CAMPUS>
+    <OFFICE>Main Campus</OFFICE>
+    <CELLNO>72293348</CELLNO>
+    <TEL_EXT>1640</TEL_EXT>
+  </rowElement>
+  <rowElement>
+    <ID>211</ID>
+    <FIRSTNAME>Vuyo Robert</FIRSTNAME>
+    <SURNAME>Mfazi</SURNAME>
+    <EMAIL>vuyom@bac.ac.bw</EMAIL>
+    <DEPARTMENT>School of Computing and Information Systems</DEPARTMENT>
+    <CAMPUS>Gaborone</CAMPUS>
+    <OFFICE>Main Campus</OFFICE>
+    <CELLNO>74192045</CELLNO>
+    <TEL_EXT>1639</TEL_EXT>
+  </rowElement>
+  <rowElement>
+    <ID>212</ID>
+    <FIRSTNAME>Bakang</FIRSTNAME>
+    <SURNAME>Hiri</SURNAME>
+    <EMAIL>bakangh@bac.ac.bw</EMAIL>
+    <DEPARTMENT>School of Computing and Information Systems</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE>FT Campus</OFFICE>
+    <CELLNO>76097031</CELLNO>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>213</ID>
+    <FIRSTNAME>Charles</FIRSTNAME>
+    <SURNAME>Kaondera</SURNAME>
+    <EMAIL>charlesk@bac.ac.bw</EMAIL>
+    <DEPARTMENT>School of Computing and Information Systems</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE>FT Campus</OFFICE>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>214</ID>
+    <FIRSTNAME>Gape</FIRSTNAME>
+    <SURNAME>Maplanka</SURNAME>
+    <EMAIL>gapem@bac.ac.bw</EMAIL>
+    <DEPARTMENT>School of Computing and Information Systems</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE>FT Campus</OFFICE>
+    <CELLNO>72453242</CELLNO>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>215</ID>
+    <FIRSTNAME>Goaba</FIRSTNAME>
+    <SURNAME>Ramatsitla</SURNAME>
+    <EMAIL>goabar@bac.ac.bw</EMAIL>
+    <DEPARTMENT>School of Computing and Information Systems</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE>FT Campus</OFFICE>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>216</ID>
+    <FIRSTNAME>Innocent</FIRSTNAME>
+    <SURNAME>Njini</SURNAME>
+    <EMAIL>Innocentn@bac.ac.bw</EMAIL>
+    <DEPARTMENT>School of Computing and Information Systems</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE>FT Campus</OFFICE>
+    <CELLNO>77457166</CELLNO>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>217</ID>
+    <FIRSTNAME>Kennedy</FIRSTNAME>
+    <SURNAME>Kenosi</SURNAME>
+    <EMAIL>kennedyk@bac.ac.bw</EMAIL>
+    <DEPARTMENT>School of Computing and Information Systems</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE>FT Campus</OFFICE>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>218</ID>
+    <FIRSTNAME>Matthews</FIRSTNAME>
+    <SURNAME>Pheto</SURNAME>
+    <EMAIL>matthewsp@bac.ac.bw</EMAIL>
+    <DEPARTMENT>School of Computing and Information Systems</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE>FT Campus</OFFICE>
+    <CELLNO>75973808</CELLNO>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>219</ID>
+    <FIRSTNAME>Oratile Maureen</FIRSTNAME>
+    <SURNAME>Samakabadi</SURNAME>
+    <EMAIL>oratiles@bac.ac.bw</EMAIL>
+    <DEPARTMENT>School of Computing and Information Systems</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE>FT Campus</OFFICE>
+    <CELLNO>74757571</CELLNO>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>220</ID>
+    <FIRSTNAME>Pedro</FIRSTNAME>
+    <SURNAME>Letshwiti</SURNAME>
+    <EMAIL>pedrol@bac.ac.bw</EMAIL>
+    <DEPARTMENT>School of Computing and Information Systems</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE>FT Campus</OFFICE>
+    <CELLNO>77457164, 72308119</CELLNO>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>221</ID>
+    <FIRSTNAME>Rebaone</FIRSTNAME>
+    <SURNAME>Mlalazi</SURNAME>
+    <EMAIL>rebaoneml@bac.ac.bw</EMAIL>
+    <DEPARTMENT>School of Computing and Information Systems</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE>FT Campus</OFFICE>
+    <CELLNO>74346524</CELLNO>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>222</ID>
+    <FIRSTNAME>Roy</FIRSTNAME>
+    <SURNAME>Chabata</SURNAME>
+    <EMAIL>royc@bac.ac.bw</EMAIL>
+    <DEPARTMENT>School of Computing and Information Systems</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE>FT Campus</OFFICE>
+    <CELLNO>75451782</CELLNO>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>223</ID>
+    <FIRSTNAME>Sethunya</FIRSTNAME>
+    <SURNAME>Joseph</SURNAME>
+    <EMAIL>sethunyaj@bac.ac.bw</EMAIL>
+    <DEPARTMENT>School of Computing and Information Systems</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE>FT Campus</OFFICE>
+    <CELLNO>75451782, 71204744</CELLNO>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>224</ID>
+    <FIRSTNAME>Simon</FIRSTNAME>
+    <SURNAME>Matoso</SURNAME>
+    <EMAIL>simonm@bac.ac.bw</EMAIL>
+    <DEPARTMENT>School of Computing and Information Systems</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE>FT Campus</OFFICE>
+    <CELLNO>72431927</CELLNO>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>225</ID>
+    <FIRSTNAME>Arabang </FIRSTNAME>
+    <SURNAME>Buka</SURNAME>
+    <EMAIL>Arabangb@bac.ac.bw</EMAIL>
+    <DEPARTMENT>School of Finance and Professional Studies</DEPARTMENT>
+    <CAMPUS>Gaborone</CAMPUS>
+    <OFFICE/>
+    <CELLNO>71719986</CELLNO>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>226</ID>
+    <FIRSTNAME>Ayton </FIRSTNAME>
+    <SURNAME>Banda</SURNAME>
+    <EMAIL>Aytonb@bac.ac.bw</EMAIL>
+    <DEPARTMENT>School of Finance and Professional Studies</DEPARTMENT>
+    <CAMPUS>Gaborone</CAMPUS>
+    <OFFICE/>
+    <CELLNO>72431944</CELLNO>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>227</ID>
+    <FIRSTNAME>Bakani </FIRSTNAME>
+    <SURNAME>Masuku</SURNAME>
+    <EMAIL>Bakanim@bac.ac.bw</EMAIL>
+    <DEPARTMENT>School of Finance and Professional Studies</DEPARTMENT>
+    <CAMPUS>Gaborone</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>228</ID>
+    <FIRSTNAME>Believer </FIRSTNAME>
+    <SURNAME>Ndlovu</SURNAME>
+    <EMAIL>believern@bac.ac.bw</EMAIL>
+    <DEPARTMENT>School of Finance and Professional Studies</DEPARTMENT>
+    <CAMPUS>Gaborone</CAMPUS>
+    <OFFICE/>
+    <CELLNO>74079772</CELLNO>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>229</ID>
+    <FIRSTNAME>Cecilia </FIRSTNAME>
+    <SURNAME>Ramabu</SURNAME>
+    <EMAIL>ceciliar@bac.ac.bw</EMAIL>
+    <DEPARTMENT>School of Finance and Professional Studies</DEPARTMENT>
+    <CAMPUS>Gaborone</CAMPUS>
+    <OFFICE/>
+    <CELLNO>72455317</CELLNO>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>230</ID>
+    <FIRSTNAME>Elliot </FIRSTNAME>
+    <SURNAME>Luka</SURNAME>
+    <EMAIL>elliotl@bac.ac.bw</EMAIL>
+    <DEPARTMENT>School of Finance and Professional Studies</DEPARTMENT>
+    <CAMPUS>Gaborone</CAMPUS>
+    <OFFICE/>
+    <CELLNO>72431940</CELLNO>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>231</ID>
+    <FIRSTNAME>Eugene </FIRSTNAME>
+    <SURNAME>Mwaba</SURNAME>
+    <EMAIL>eugenem@bac.ac.bw</EMAIL>
+    <DEPARTMENT>School of Finance and Professional Studies</DEPARTMENT>
+    <CAMPUS>Gaborone</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>232</ID>
+    <FIRSTNAME>Fortunate </FIRSTNAME>
+    <SURNAME>Ndlovu</SURNAME>
+    <EMAIL>Fortunaten@bac.ac.bw</EMAIL>
+    <DEPARTMENT>School of Finance and Professional Studies</DEPARTMENT>
+    <CAMPUS>Gaborone</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>233</ID>
+    <FIRSTNAME>Gaolatlhe </FIRSTNAME>
+    <SURNAME>Medupe</SURNAME>
+    <EMAIL>gaolatlhem@bac.ac.bw</EMAIL>
+    <DEPARTMENT>School of Finance and Professional Studies</DEPARTMENT>
+    <CAMPUS>Gaborone</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>234</ID>
+    <FIRSTNAME>Gorata </FIRSTNAME>
+    <SURNAME>Goepamang</SURNAME>
+    <EMAIL>goratag@bac.ac.bw</EMAIL>
+    <DEPARTMENT>School of Finance and Professional Studies</DEPARTMENT>
+    <CAMPUS>Gaborone</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>235</ID>
+    <FIRSTNAME>Ignatius </FIRSTNAME>
+    <SURNAME>Dikgole</SURNAME>
+    <EMAIL>Ignatiusd@bac.ac.bw</EMAIL>
+    <DEPARTMENT>School of Finance and Professional Studies</DEPARTMENT>
+    <CAMPUS>Gaborone</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>236</ID>
+    <FIRSTNAME>Isaac </FIRSTNAME>
+    <SURNAME>Gondwe</SURNAME>
+    <EMAIL>isaacg@bac.ac.bw</EMAIL>
+    <DEPARTMENT>School of Finance and Professional Studies</DEPARTMENT>
+    <CAMPUS>Gaborone</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>237</ID>
+    <FIRSTNAME>James John </FIRSTNAME>
+    <SURNAME>Tinarwo</SURNAME>
+    <EMAIL>jamest@bac.ac.bw</EMAIL>
+    <DEPARTMENT>School of Finance and Professional Studies</DEPARTMENT>
+    <CAMPUS>Gaborone</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>238</ID>
+    <FIRSTNAME>kenneth </FIRSTNAME>
+    <SURNAME>Thindwa</SURNAME>
+    <EMAIL>kennetht@bac.ac.bw</EMAIL>
+    <DEPARTMENT>School of Finance and Professional Studies</DEPARTMENT>
+    <CAMPUS>Gaborone</CAMPUS>
+    <OFFICE/>
+    <CELLNO>77406314</CELLNO>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>239</ID>
+    <FIRSTNAME>Lindiwe </FIRSTNAME>
+    <SURNAME>Modubule</SURNAME>
+    <EMAIL>lindiwem@bac.ac.bw</EMAIL>
+    <DEPARTMENT>School of Finance and Professional Studies</DEPARTMENT>
+    <CAMPUS>Gaborone</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>240</ID>
+    <FIRSTNAME>Moses </FIRSTNAME>
+    <SURNAME>Mwalambwila</SURNAME>
+    <EMAIL>mosesm@bac.ac.bw</EMAIL>
+    <DEPARTMENT>School of Finance and Professional Studies</DEPARTMENT>
+    <CAMPUS>Gaborone</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>241</ID>
+    <FIRSTNAME>nametsegang nm. </FIRSTNAME>
+    <SURNAME>mothupi</SURNAME>
+    <EMAIL>nametsegangm@bac.ac.bw</EMAIL>
+    <DEPARTMENT>School of Finance and Professional Studies</DEPARTMENT>
+    <CAMPUS>Gaborone</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>242</ID>
+    <FIRSTNAME>Nthutang </FIRSTNAME>
+    <SURNAME>Ramoloko</SURNAME>
+    <EMAIL>nthutangr@bac.ac.bw</EMAIL>
+    <DEPARTMENT>School of Finance and Professional Studies</DEPARTMENT>
+    <CAMPUS>Gaborone</CAMPUS>
+    <OFFICE/>
+    <CELLNO>75118213</CELLNO>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>243</ID>
+    <FIRSTNAME>Phatsimo </FIRSTNAME>
+    <SURNAME>Selelo</SURNAME>
+    <EMAIL>phatsimos@bac.ac.bw</EMAIL>
+    <DEPARTMENT>School of Finance and Professional Studies</DEPARTMENT>
+    <CAMPUS>Gaborone</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>244</ID>
+    <FIRSTNAME>Rose </FIRSTNAME>
+    <SURNAME>Mafhoko</SURNAME>
+    <EMAIL>Rosem@bac.ac.bw</EMAIL>
+    <DEPARTMENT>School of Finance and Professional Studies</DEPARTMENT>
+    <CAMPUS>Gaborone</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>245</ID>
+    <FIRSTNAME>Shingani </FIRSTNAME>
+    <SURNAME>Sebonego</SURNAME>
+    <EMAIL>shinganis@bac.ac.bw</EMAIL>
+    <DEPARTMENT>School of Finance and Professional Studies</DEPARTMENT>
+    <CAMPUS>Gaborone</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>246</ID>
+    <FIRSTNAME>Sylvia </FIRSTNAME>
+    <SURNAME>Segone</SURNAME>
+    <EMAIL>sylvias@bac.ac.bw</EMAIL>
+    <DEPARTMENT>School of Finance and Professional Studies</DEPARTMENT>
+    <CAMPUS>Gaborone</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>247</ID>
+    <FIRSTNAME>Tlholwe </FIRSTNAME>
+    <SURNAME>Tlholwe</SURNAME>
+    <EMAIL>tlholwet@bac.ac.bw</EMAIL>
+    <DEPARTMENT>School of Finance and Professional Studies</DEPARTMENT>
+    <CAMPUS>Gaborone</CAMPUS>
+    <OFFICE/>
+    <CELLNO>72498821</CELLNO>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>248</ID>
+    <FIRSTNAME>Absolom </FIRSTNAME>
+    <SURNAME>Mukonyo</SURNAME>
+    <EMAIL>absolomm@bac.ac.bw</EMAIL>
+    <DEPARTMENT>School of Finance and Professional Studies</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>249</ID>
+    <FIRSTNAME>Albert  </FIRSTNAME>
+    <SURNAME>Bere</SURNAME>
+    <EMAIL>albertb@bac.ac.bw</EMAIL>
+    <DEPARTMENT>School of Finance and Professional Studies</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>250</ID>
+    <FIRSTNAME>Amantle </FIRSTNAME>
+    <SURNAME>Motsilanyane</SURNAME>
+    <EMAIL>amantlemo@bac.ac.bw</EMAIL>
+    <DEPARTMENT>School of Finance and Professional Studies</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>251</ID>
+    <FIRSTNAME>Andrew Sankoloba </FIRSTNAME>
+    <SURNAME>Matlhabaphi</SURNAME>
+    <EMAIL>andrewm@bac.ac.bw</EMAIL>
+    <DEPARTMENT>School of Finance and Professional Studies</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>252</ID>
+    <FIRSTNAME>Bame </FIRSTNAME>
+    <SURNAME>Boitshoko</SURNAME>
+    <EMAIL>bameb@bac.ac.bw</EMAIL>
+    <DEPARTMENT>School of Finance and Professional Studies</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>253</ID>
+    <FIRSTNAME>Botho </FIRSTNAME>
+    <SURNAME>Nkawana</SURNAME>
+    <EMAIL>bothonk@bac.ac.bw</EMAIL>
+    <DEPARTMENT>School of Finance and Professional Studies</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>254</ID>
+    <FIRSTNAME>Brendan </FIRSTNAME>
+    <SURNAME>McConville</SURNAME>
+    <EMAIL>Brendanm@bac.ac.bw</EMAIL>
+    <DEPARTMENT>School of Finance and Professional Studies</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>255</ID>
+    <FIRSTNAME>Doreen </FIRSTNAME>
+    <SURNAME>Moekhwa</SURNAME>
+    <EMAIL>doreenm@bac.ac.bw</EMAIL>
+    <DEPARTMENT>School of Finance and Professional Studies</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>256</ID>
+    <FIRSTNAME>Mumbi </FIRSTNAME>
+    <SURNAME>Ernest</SURNAME>
+    <EMAIL>ernestm@bac.ac.bw</EMAIL>
+    <DEPARTMENT>School of Finance and Professional Studies</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>257</ID>
+    <FIRSTNAME>Frank </FIRSTNAME>
+    <SURNAME>Mulungu</SURNAME>
+    <EMAIL>frankm@bac.ac.bw</EMAIL>
+    <DEPARTMENT>School of Finance and Professional Studies</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>258</ID>
+    <FIRSTNAME>Jacob </FIRSTNAME>
+    <SURNAME>Muchuchuti</SURNAME>
+    <EMAIL>jacobm@bac.ac.bw</EMAIL>
+    <DEPARTMENT>School of Finance and Professional Studies</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>259</ID>
+    <FIRSTNAME>Kennedy </FIRSTNAME>
+    <SURNAME>Tafirenyika</SURNAME>
+    <EMAIL>kennedyt@bac.ac.bw</EMAIL>
+    <DEPARTMENT>School of Finance and Professional Studies</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>260</ID>
+    <FIRSTNAME>Maalila </FIRSTNAME>
+    <SURNAME>Malambo</SURNAME>
+    <EMAIL>Maalilam@bac.ac.bw</EMAIL>
+    <DEPARTMENT>School of Finance and Professional Studies</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>261</ID>
+    <FIRSTNAME>Malebogo vuyelwa </FIRSTNAME>
+    <SURNAME>Motswiri</SURNAME>
+    <EMAIL>malebogom@bac.ac.bw</EMAIL>
+    <DEPARTMENT>School of Finance and Professional Studies</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>262</ID>
+    <FIRSTNAME>Masego </FIRSTNAME>
+    <SURNAME>Pharithi</SURNAME>
+    <EMAIL>masegop@bac.ac.bw</EMAIL>
+    <DEPARTMENT>School of Finance and Professional Studies</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>263</ID>
+    <FIRSTNAME>Maxwell </FIRSTNAME>
+    <SURNAME>Ncube</SURNAME>
+    <EMAIL>maxwelln@bac.ac.bw</EMAIL>
+    <DEPARTMENT>School of Finance and Professional Studies</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>264</ID>
+    <FIRSTNAME>Mbusi Mbeko </FIRSTNAME>
+    <SURNAME>Ndebele</SURNAME>
+    <EMAIL>mbekon@bac.ac.bw</EMAIL>
+    <DEPARTMENT>School of Finance and Professional Studies</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>265</ID>
+    <FIRSTNAME>Mendisi R. </FIRSTNAME>
+    <SURNAME>Masika</SURNAME>
+    <EMAIL>mendisim@bac.ac.bw</EMAIL>
+    <DEPARTMENT>School of Finance and Professional Studies</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>266</ID>
+    <FIRSTNAME>Munei </FIRSTNAME>
+    <SURNAME>Dube</SURNAME>
+    <EMAIL>muneid@bac.ac.bw</EMAIL>
+    <DEPARTMENT>School of Finance and Professional Studies</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>267</ID>
+    <FIRSTNAME>Odirile </FIRSTNAME>
+    <SURNAME>Molobe</SURNAME>
+    <EMAIL>odirilem@bac.ac.bw</EMAIL>
+    <DEPARTMENT>School of Finance and Professional Studies</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>268</ID>
+    <FIRSTNAME>Patience </FIRSTNAME>
+    <SURNAME>Mbangiwa</SURNAME>
+    <EMAIL>patiencem@bac.ac.bw</EMAIL>
+    <DEPARTMENT>School of Finance and Professional Studies</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>269</ID>
+    <FIRSTNAME>Sumburani </FIRSTNAME>
+    <SURNAME>Sigauke</SURNAME>
+    <EMAIL>sumburanis@bac.ac.bw</EMAIL>
+    <DEPARTMENT>School of Finance and Professional Studies</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>270</ID>
+    <FIRSTNAME>Masala </FIRSTNAME>
+    <SURNAME>Taboka</SURNAME>
+    <EMAIL>tabokam@bac.ac.bw</EMAIL>
+    <DEPARTMENT>School of Finance and Professional Studies</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>271</ID>
+    <FIRSTNAME>Taduma </FIRSTNAME>
+    <SURNAME>Sebekwa</SURNAME>
+    <EMAIL>tadumas@bac.ac.bw</EMAIL>
+    <DEPARTMENT>School of Finance and Professional Studies</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>272</ID>
+    <FIRSTNAME>Thato </FIRSTNAME>
+    <SURNAME>Kebaetse</SURNAME>
+    <EMAIL>thatok@bac.ac.bw</EMAIL>
+    <DEPARTMENT>School of Finance and Professional Studies</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>273</ID>
+    <FIRSTNAME>Theetso </FIRSTNAME>
+    <SURNAME>Ntsima</SURNAME>
+    <EMAIL>theetson@bac.ac.bw</EMAIL>
+    <DEPARTMENT>School of Finance and Professional Studies</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>274</ID>
+    <FIRSTNAME>Tinotenda Douglas </FIRSTNAME>
+    <SURNAME>Hwara</SURNAME>
+    <EMAIL>tinotendah@bac.ac.bw</EMAIL>
+    <DEPARTMENT>School of Finance and Professional Studies</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>275</ID>
+    <FIRSTNAME>Lisbon</FIRSTNAME>
+    <SURNAME>Ketshabile</SURNAME>
+    <EMAIL>lisbonk@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Strategy and Institutional Planning</DEPARTMENT>
+    <CAMPUS>Gaborone</CAMPUS>
+    <OFFICE/>
+    <CELLNO>77473106</CELLNO>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>276</ID>
+    <FIRSTNAME>Thato</FIRSTNAME>
+    <SURNAME>Siska</SURNAME>
+    <EMAIL>thatos@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Strategy and Institutional Planning</DEPARTMENT>
+    <CAMPUS>Gaborone</CAMPUS>
+    <OFFICE/>
+    <CELLNO>72998655</CELLNO>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>277</ID>
+    <FIRSTNAME>Theophilus</FIRSTNAME>
+    <SURNAME>Melaetsa</SURNAME>
+    <EMAIL>Theophilusm@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Strategy and Institutional Planning</DEPARTMENT>
+    <CAMPUS>Gaborone</CAMPUS>
+    <OFFICE/>
+    <CELLNO>76556067</CELLNO>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>278</ID>
+    <FIRSTNAME>Veronica gorata</FIRSTNAME>
+    <SURNAME>Mphathi</SURNAME>
+    <EMAIL>veronicam@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Strategy and Institutional Planning</DEPARTMENT>
+    <CAMPUS>Gaborone</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>279</ID>
+    <FIRSTNAME>Dimakatso</FIRSTNAME>
+    <SURNAME>Bokadi</SURNAME>
+    <EMAIL>Dimakatsob@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Strategy and Institutional Planning</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO>72610974</CELLNO>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>280</ID>
+    <FIRSTNAME>Gofiwa</FIRSTNAME>
+    <SURNAME>Masokwane</SURNAME>
+    <EMAIL>gofiwam@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Strategy and Institutional Planning</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO>72125066</CELLNO>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>281</ID>
+    <FIRSTNAME>Dr Jacob</FIRSTNAME>
+    <SURNAME>Holland</SURNAME>
+    <EMAIL>Jacobh@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Strategy and Institutional Planning</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO>71883524</CELLNO>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>282</ID>
+    <FIRSTNAME>Oboletse</FIRSTNAME>
+    <SURNAME>Makhala</SURNAME>
+    <EMAIL>oboletsem@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Strategy and Institutional Planning</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>283</ID>
+    <FIRSTNAME>Maatla</FIRSTNAME>
+    <SURNAME>Queen</SURNAME>
+    <EMAIL>queenm@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Strategy and Institutional Planning</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>284</ID>
+    <FIRSTNAME>Atamelang </FIRSTNAME>
+    <SURNAME>Olefile</SURNAME>
+    <EMAIL>atamelango@bac.ac.bw</EMAIL>
+    <DEPARTMENT>School of Postgraduate Studies</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO>3980830</CELLNO>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>285</ID>
+    <FIRSTNAME>Boikie </FIRSTNAME>
+    <SURNAME>Tema</SURNAME>
+    <EMAIL>boikiet@bac.ac.bw</EMAIL>
+    <DEPARTMENT>School of Postgraduate Studies</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO>72110718</CELLNO>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>286</ID>
+    <FIRSTNAME>Dr. charles m. </FIRSTNAME>
+    <SURNAME>Mungule</SURNAME>
+    <EMAIL>charlesm@bac.ac.bw</EMAIL>
+    <DEPARTMENT>School of Postgraduate Studies</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>287</ID>
+    <FIRSTNAME>Fred </FIRSTNAME>
+    <SURNAME>Opeda</SURNAME>
+    <EMAIL>fredo@bac.ac.bw</EMAIL>
+    <DEPARTMENT>School of Postgraduate Studies</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>288</ID>
+    <FIRSTNAME>Michel </FIRSTNAME>
+    <SURNAME>Katombe</SURNAME>
+    <EMAIL>michelk@bac.ac.bw</EMAIL>
+    <DEPARTMENT>School of Postgraduate Studies</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO>77473112</CELLNO>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>289</ID>
+    <FIRSTNAME>Monei G. </FIRSTNAME>
+    <SURNAME>Nthebolan</SURNAME>
+    <EMAIL>Monein@bac.ac.bw</EMAIL>
+    <DEPARTMENT>School of Postgraduate Studies</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO>3980813</CELLNO>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>290</ID>
+    <FIRSTNAME>Remofilwe Onkutule </FIRSTNAME>
+    <SURNAME>Segana</SURNAME>
+    <EMAIL>onkutules@bac.ac.bw</EMAIL>
+    <DEPARTMENT>School of Postgraduate Studies</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>291</ID>
+    <FIRSTNAME>Tebogo </FIRSTNAME>
+    <SURNAME>Bantshitswe</SURNAME>
+    <EMAIL>tebogob@bac.ac.bw</EMAIL>
+    <DEPARTMENT>School of Postgraduate Studies</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>292</ID>
+    <FIRSTNAME>Dr Veronica </FIRSTNAME>
+    <SURNAME>Makwinja</SURNAME>
+    <EMAIL>veronicamak@bac.ac.bw</EMAIL>
+    <DEPARTMENT>School of Postgraduate Studies</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>293</ID>
+    <FIRSTNAME>Alee B. </FIRSTNAME>
+    <SURNAME>Manyoni</SURNAME>
+    <EMAIL>aleem@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Student Suport and Welfare</DEPARTMENT>
+    <CAMPUS>Gaborone</CAMPUS>
+    <OFFICE/>
+    <CELLNO>75339291</CELLNO>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>294</ID>
+    <FIRSTNAME>Mbatili </FIRSTNAME>
+    <SURNAME>Ntobe</SURNAME>
+    <EMAIL>mbatilin@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Student Suport and Welfare</DEPARTMENT>
+    <CAMPUS>Gaborone</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>295</ID>
+    <FIRSTNAME>Mpho </FIRSTNAME>
+    <SURNAME>Mmopi</SURNAME>
+    <EMAIL>mphob@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Student Suport and Welfare</DEPARTMENT>
+    <CAMPUS>Gaborone</CAMPUS>
+    <OFFICE/>
+    <CELLNO>72273416</CELLNO>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>296</ID>
+    <FIRSTNAME>Dorcus Lesedi </FIRSTNAME>
+    <SURNAME>Monyamane</SURNAME>
+    <EMAIL>dorcusm@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Student Suport and Welfare</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>297</ID>
+    <FIRSTNAME>German </FIRSTNAME>
+    <SURNAME>Keikwaletse</SURNAME>
+    <EMAIL>Germank@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Student Suport and Welfare</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO>72777738</CELLNO>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>298</ID>
+    <FIRSTNAME>Ketlwaelo </FIRSTNAME>
+    <SURNAME>Rahube</SURNAME>
+    <EMAIL>ketlwaelor@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Student Suport and Welfare</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>299</ID>
+    <FIRSTNAME>Nonofho </FIRSTNAME>
+    <SURNAME>Othusitse</SURNAME>
+    <EMAIL>nonofoo@bac.ac.bw</EMAIL>
+    <DEPARTMENT>Student Suport and Welfare</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>300</ID>
+    <FIRSTNAME>Abang innocentia </FIRSTNAME>
+    <SURNAME>Marope</SURNAME>
+    <EMAIL>abangm@bac.ac.bw</EMAIL>
+    <DEPARTMENT>UNSPECIFIED</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>301</ID>
+    <FIRSTNAME>Chandapiwa </FIRSTNAME>
+    <SURNAME>Nfila</SURNAME>
+    <EMAIL>chandapiwan@bac.ac.bw</EMAIL>
+    <DEPARTMENT>UNSPECIFIED</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>302</ID>
+    <FIRSTNAME>Dinah </FIRSTNAME>
+    <SURNAME>Balangani</SURNAME>
+    <EMAIL>Dinahb@bac.ac.bw</EMAIL>
+    <DEPARTMENT>UNSPECIFIED</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>303</ID>
+    <FIRSTNAME>Edith </FIRSTNAME>
+    <SURNAME>Gabotshajwe</SURNAME>
+    <EMAIL>edithg@bac.ac.bw</EMAIL>
+    <DEPARTMENT>UNSPECIFIED</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>304</ID>
+    <FIRSTNAME>Gaone </FIRSTNAME>
+    <SURNAME>Seloka</SURNAME>
+    <EMAIL>gaones@bac.ac.bw</EMAIL>
+    <DEPARTMENT>UNSPECIFIED</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>305</ID>
+    <FIRSTNAME>Gobopaone </FIRSTNAME>
+    <SURNAME>Mosarwe</SURNAME>
+    <EMAIL>gobopaonem@bac.ac.bw</EMAIL>
+    <DEPARTMENT>UNSPECIFIED</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>306</ID>
+    <FIRSTNAME>Hadzisani </FIRSTNAME>
+    <SURNAME>Mokgethi</SURNAME>
+    <EMAIL>hadzisanim@bac.ac.bw</EMAIL>
+    <DEPARTMENT>UNSPECIFIED</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO>72265706</CELLNO>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>307</ID>
+    <FIRSTNAME>Kaboyaone </FIRSTNAME>
+    <SURNAME>Lekwete</SURNAME>
+    <EMAIL>kaboyaonel@bac.ac.bw</EMAIL>
+    <DEPARTMENT>UNSPECIFIED</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>308</ID>
+    <FIRSTNAME>Kagiso </FIRSTNAME>
+    <SURNAME>Mosege</SURNAME>
+    <EMAIL>kagisomo@bac.ac.bw</EMAIL>
+    <DEPARTMENT>UNSPECIFIED</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>309</ID>
+    <FIRSTNAME>Lorato connie </FIRSTNAME>
+    <SURNAME>Telere</SURNAME>
+    <EMAIL>loratot@bac.ac.bw</EMAIL>
+    <DEPARTMENT>UNSPECIFIED</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>310</ID>
+    <FIRSTNAME>Dr. Mackson </FIRSTNAME>
+    <SURNAME>Gilika</SURNAME>
+    <EMAIL>macksong@bac.ac.bw</EMAIL>
+    <DEPARTMENT>UNSPECIFIED</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>311</ID>
+    <FIRSTNAME>Monty </FIRSTNAME>
+    <SURNAME>Rapula</SURNAME>
+    <EMAIL>montyr@bac.ac.bw</EMAIL>
+    <DEPARTMENT>UNSPECIFIED</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>312</ID>
+    <FIRSTNAME>Ndiko nancy </FIRSTNAME>
+    <SURNAME>Mokoka</SURNAME>
+    <EMAIL>ndikom@bac.ac.bw</EMAIL>
+    <DEPARTMENT>UNSPECIFIED</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+  <rowElement>
+    <ID>313</ID>
+    <FIRSTNAME>Thuso </FIRSTNAME>
+    <SURNAME>Nthobogeng</SURNAME>
+    <EMAIL>thuson@bac.ac.bw</EMAIL>
+    <DEPARTMENT>UNSPECIFIED</DEPARTMENT>
+    <CAMPUS>Francistown</CAMPUS>
+    <OFFICE/>
+    <CELLNO/>
+    <TEL_EXT/>
+  </rowElement>
+</rootElement>
