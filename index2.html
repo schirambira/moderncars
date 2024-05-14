@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SpeedSter-Motors</title>
+        <link rel="icon" type="image/jpg" href="images/favicon.jpg">
+        <link rel="stylesheet" href="css/style1.css">
+    </head>
+
+    <body>
+
+        <div id="divmaincontainer" class="master">
+
+            <header id="divbanner" class="master">
+                <span id="sitetitle">SpeedSter-Motors</span>
+                <span id="sitemotto">The Home Of Quality Automobiles For Every Lifestyle</span>
+            </header>
+
+            <nav id="navmenu" class="master">
+                <ul id="ulmenu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="MultiplicationTable.html">Multiplication Table</a></li>
+                    <li><a href="slideshow.html">Gallery</a></li>
+                    <li><a href="sales.html">Sales</a></li>
+                    <li><a href="register.html">Register</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </nav>
+
+            <div id="divcolcontainer" class="master">
+
+                <section id="leftsidebar" class="master">
+                    <div id="divsearch" class="sidebar">
+                        <label for="txtsearch">Search :</label>
+                        <input type="search">
+                    </div>
+                    <div id="divquicklinks" class="sidebar">
+                        <ul>
+                            <li><a href="#">Latest Models</a></li>
+                            <li><a href="#">Monthly Specials</a></li>
+                            <li><a href="#">Pre-Owned Cars</a></li>
+                            <li><a href="#">Cars By Model</a></li>
+                            <li><a href="#">On Auction</a></li>
+                        </ul>
+                    </div>
+                    <div id="divgallery" class="sidebar">
+                        <img id="slide" src="images/slide/image_16.jpg">
+                    </div>
+                    <div id="divadvert" class="sidebar">
+                        <p>Advertising Space Available</p>
+                        <p>To Advertise Here Please Call</p>
+                        <p>395 1111</p>
+                    </div>
+                    <div id="divcalendar" class="sidebar">
+                        <p>Monthly Calender</p>
+                    </div>
+                </section>
+                <section id="maincontent" class="master">
+
+
+
+                </section>
+
+            </div>
+
+            <footer id="footer" class="master">
+                <p id="pfooter">Copyright@SpeedSter-Motors-<span id="currentdate"></span></p>
+
+                <div id="divsocialmedia">
+                    <a href="https://www.facebook.com/speedstermotors/" target="_blank"><img src="images/fb.JPG" title="Like us on Facebook"></a> 
+                    <a href="https://web.whatsapp.com/" target="_blank"><img src="images/wa.JPG" title="Follow us on WhatsApp"></a> 
+                    <a href="https://www.youtube.com/user/speedstermotors" target="_blank"><img src="images/yt.JPG" title="Follow us on Youtube"></a> 
+                    <a href="https://twitter.com/speedstermotors" target="_blank"><img src="images/tt.JPG" title="Follow us on Twitter"></a>
+                </div>
+            </div>
+
+        </div>
+
+    </body>
+
+    <script>
+        //set default date to today JS
+        window.onload=function(){ 
+            document.querySelector('#currentdate').innerHTML = new Date().getFullYear(); //.toLocaleDateString('en-GB'); //en-CA
+
+            //load_content_page();
+        }
+
+        function load_content_page(page){
+            var page_content = `<object type="text/html" data="${page}.html"></object>`; //read into variable
+            document.innerHTML = `<object type="text/html" data="master.html"></object>`;
+            document.getElementById('maincontent').innerHTML = `<object type="text/html" data="${page}.html"></object>`;
+        }
+
+        async function load_content_page1(){ //CORS : http://
+            document.getElementById('maincontent').innerHTML = await( await( fetch('home.html')).text());
+        }
+    </script>
+
+</html>

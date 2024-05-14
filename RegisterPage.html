@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registration</title>
+        <meta charset="utf-8">
+        <link rel="stysheet" href="style.css">
+        <style>
+            input.error, select.error{
+                border:1px solid red; /* !important; //last resort */
+                border-radius: 3px;
+            }
+            /*input:not([type=checkbox]):not([type=radio]):not([type=reset]):not([type=submit]):not([type=button]), select{*/
+            input, select{
+                margin-bottom: 5px;
+                border: 1px solid lightskyblue;
+                height: 26px;
+                border-radius: 3px;
+                width: 300px;
+                box-sizing: border-box;
+            }
+            label{
+                display: inline-block;
+                width: 150px;
+                color: green;
+            }
+            input[type='button'],input[type='submit'],input[type='reset']{
+                width: 110px;
+            }
+            #divcontainer{
+                border:1px solid turquoise;
+                border-radius: 5px;
+                background-image: linear-gradient(greenyellow, yellow, cyan, ivory);
+                padding: 10px;
+                width: 60%;
+                margin:auto;
+            }
+        </style>
+        <script></script>
+    </head>
+    <body>
+        <header>
+            
+        </header>
+
+            <form id="frmcustomer" name="frmcustomer">
+                <div id="divcontainer">
+
+                <label for="customerid">Customer ID</label>
+                <input type="text" id="customerid" name="customerid" placeholder="Customer ID" required oninvalid="this.setCustomValidity('Please enter customer id')" oninput="this.setCustomValidity('')"/><br>
+                <label for="firstname">Firstname</label>
+                <input type="text" id="firstname" name="firstname" placeholder="Firstname" required oninvalid="this.setCustomValidity('Please enter firstname')" oninput="this.setCustomValidity('')"/><br>
+                <label for="lastname">Lastname</label>
+                <input type="text" id="lastname" name="lastname" placeholder="Lastname" required oninvalid="this.setCustomValidity('Please enter Last name')" oninput="this.setCustomValidity('')"/><br>
+                <label for="gender">Gender</label>
+                <select id="gender" name="gender">
+                    <option value="0">Select...</option>
+                    <option value="F">Female</option>
+                    <option value="M">Male</option>
+                </select><br>
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Email Address" required oninvalid="this.setCustomValidity('Please enter email address')" oninput="this.setCustomValidity('')"/><br>
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Password" required oninvalid="this.setCustomValidity('Please enter password')" oninput="this.setCustomValidity('')"/><br>
+
+                <!--adding buttons-->
+                <input type="button" id="btnsave" name="btnsave" value="Save" onclick="var result = ValidateData(); if(result){alert(result);}" />
+                <input type="button" id="btnupdate" name="btnupdate"  value="Update"/>
+                <input type="reset" id="btnclear" name="btnclear" value="Clear"/>
+                <input type="submit" value="Process"/>
+
+            </div>
+
+        </form>
+
+    </body>
+
+
+    <script>
+         function ValidateData(){
+            //alert('Hello Guys'); //testing
+            var objcustid= document.getElementById('customerid');
+            var objfname = document.getElementById('firstname');
+            var objsname = document.getElementsByName("lastname")[0];
+            var objgender= document.querySelector("#gender");
+            var objemail = document.getElementById('email');
+            var objpswd  = document.forms[0].password;
+            //
+            var custid= objcustid.value;
+            var fname = objfname.value;
+            var sname = objsname.value;
+            var gender= objgender.value;
+            var email = objemail.value;
+            var pswd  = objpswd.value;
+            //alert('Hello '+ fname); //testing
+            //alert(`Hello : ${custid} ${fname} ${sname}  ${gender} ${email} ${pswd} `);
+
+            //validate
+            var x;
+            x = (custid=="" || custid==null)? objcustid.classList.add('error'): objcustid.classList.remove('error');
+            x = (fname =="" || fname ==null)? objfname.classList.add('error') : objfname.classList.remove('error');
+            x = (sname =="" || sname ==null)? objsname.classList.add('error') : objsname.classList.remove('error');
+            x = (gender==0  || gender=="")  ? objgender.classList.add('error'): objgender.classList.remove('error');
+            x = (email =="" || email ==null)? objemail.classList.add('error') : objemail.classList.remove('error');
+            x = (pswd  =="" || pswd  ==null)? objpswd.classList.add('error')  : objpswd.classList.remove('error');
+
+
+            //validate
+            /*
+            var msg = "";
+            if(custid=="" || custid==null){
+                msg = "Please enter customer id";
+                objcustid.classList.toggle('error');
+            }else{
+                objcustid.classList.remove('error');
+            }
+            if(fname=="" || fname==null){
+                msg = "Please enter firstname";
+                objfname.classList.toggle('error');
+            }
+            if(sname=="" || sname==null){
+                msg = "Please enter lastname";
+                objsname.classList.toggle('error');
+            }
+            if(gender==0 || gender==""){
+                msg = "Please select gender";
+                objgender.classList.toggle('error');
+            }
+            if(email=="" || email==null){
+                msg = "Please enter email";
+                objemail.classList.toggle('error');
+            }
+            if(pswd=="" || pswd==null){
+                msg = "Please enter password";
+                objpswd.classList.toggle('error');
+            }
+            return msg;
+            */
+
+        };
+
+        //javascript switch
+        //better than: switch(d){case 1: case 2: case 3: alert('less that 4'); break; default: alert('Remaining'); break;}
+        RunCase(7);
+        function RunCase(y){
+            var x = y;
+            switch (true) {
+                case (x < 5):
+                    alert("less than five");
+                    break;
+                case (x < 9):
+                    alert("between 5 and 8");
+                    break;
+                case (x < 12):
+                    alert("between 9 and 11");
+                    break;
+                default:
+                    alert("none");
+                    break;
+            }
+        }
+
+    </script>
+
+</html>

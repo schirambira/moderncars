@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Read File Data</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/jpeg" href="images/favicon.JPG">
+        <style>
+            table#tbl,#tbl>tbody>tr,#tbl>tbody>tr>td,#tbl>tbody>tr>th{
+                border:1px solid turquoise;
+            }
+            table#tbl{
+                border-collapse: collapse;
+            }
+            #tbl>tbody>tr>th{
+                background-image: radial-gradient(yellow, cyan, lime);
+                font-weight: bold;
+            }
+            #tbl>tbody>tr:nth-child(even){
+                background-color: honeydew;
+            }
+
+            #divmaincontent{
+                overflow-x: scroll;
+            }
+            label#lbl_fd{
+                color:mediumvioletred;
+                font-weight: bold;
+                font-size: 15px;
+            }
+        </style>
+        <script src="scripts/jsHandler.js"></script>
+    </head>
+    <body>
+
+        <div id="divmaincontainer">
+
+            <label id="lbl_fd">SELECT FILE TO VIEW DATA (*.csv, *.tsv, *.json, *.xml, *.xlsx) :</label>
+            <input type="file" id="fileupload" onchange="ProcessFileData(this)"><!--test(this.files[0])"> -->
+            <br>
+            <label for="firstRowIsHeader">First Row Is Header</label>
+            <input type="checkbox" id="firstRowIsHeader">
+
+            <div id="divmaincontent">
+
+                
+
+            </div>
+
+        </div>
+
+        
+
+        <script>
+
+            function ProcessFileData(input){
+                let file = input.files[0];
+                //get file extension
+                let ext = file.name.split('.').pop();
+                var url = (window.URL || window.webkitURL).createObjectURL(file); //get full path of uploaded file
+
+                //enumerate and execute
+                if(ext === 'txt'){ //text file
+                    ReadTextData(url, GetTextArrayData);
+                }else if(ext === 'json'){ //json file
+                    ReadJsonData(url, GetJsonArrayData);
+                }else if(ext === 'xml'){ //xml file
+                    ReadXmlData(url, GetXmlArrayData);
+                }else if(ext === 'xlsx'){ //excel file
+                    ProcessExcelData();
+                }
+                //
+            }
+
+            
+            //~~~~~~~~~~~~Read JSON Data~~~~~~~~~~
+            const url1 = 'data/contacts.json' // provide file location
+            function ReadJsonData(url, callback){
+                fetch(url)
+                    .then(response => response.json())
+                    .then(data => callback(data))
+                    .catch(console.error);
+            }
+
+            //ReadJsonData(url, GetJsonArrayData);
+
+            //~~~~~~~~~~~~Read TEXT Data~~~~~~~~~~
+            const url2 = 'data/team_data.txt' // provide file location
+            function ReadTextData(url, callback){
+                var firstRowIsHeader = document.querySelector("#firstRowIsHeader").checked;
+                fetch(url)
+                    .then(response => response.text())
+                    .then(data => callback(data, "\t", firstRowIsHeader))
+                    .catch(console.error);
+            }
+
+            //ReadTextData(url, GetTextArrayData);
+
+            //~~~~~~~~~~~~Read XML Data~~~~~~~~~~
+            const url3 = 'data/countries.xml' // provide file location
+            function ReadXmlData(url, callback){
+                fetch(url)
+                    .then(response => response.text())
+                    .then(data => {
+                        const parser = new DOMParser();
+                        const xml = parser.parseFromString(data, "application/xml");
+                        callback(xml);
+                    })
+                    .catch(console.error);
+            }
+
+            //ReadXmlData(url, GetXmlArrayData);
+
+
+            //+++++++++++++++++++++++++++++++
+            function GetJsonArrayData(filedata){
+                //console.log(filedata);
+                var arrdata = {};
+                //arrdata['key'] = {key1:'val1', key2:'val2'};  // store an Object at data.key 
+                //arrdata.key.key1;  // 'val1'
+                //console.log(Object.keys(Object.values(filedata)[0]))) //to get key names
+
+                //get keys / column names []
+                var keys = Object.keys(Object.values(filedata)[0]); //get first value [0], then get its keys
+
+                //~~~~~~~~~~~~~build body data~~~~~~~~~~~~
+                for(var k=0; k<Object.values(filedata).length; k++){
+                    //arrdata['key'] = {key1:'val1', key2:'val2'};  // store an Object at data.key 
+                    var kvp = {};
+
+                    //if attributes were used
+                    for(var i=0; i<keys.length; i++){ 
+                        kvp[keys[i].toUpperCase()]=(Object.values(filedata)[k])[keys[i]];  
+                    }
+
+                    //add to array
+                    arrdata[k] = { ...kvp };
+                }
+                //console.log(arrdata);
+                LoadHtmlTable(arrdata);
+            }
+            //--------------great------------
+
+
+            //+++++++++++++++++++++++++++++++
+            function GetTextArrayData(filedata, seperator = "\t", firstRowIsHeader=false){
+                //console.log(filedata);
+                var arrdata = {};
+                //arrdata['key'] = {key1:'val1', key2:'val2'};  // store an Object at data.key 
+                //arrdata.key.key1;  // 'val1'
+                //console.log(Object.keys(Object.values(data)[0]))) //to get key names
+
+               //get all file lines
+                var arr = filedata.split("\n"); //split by new line to get all rows into array
+
+                 //get keys / column names []
+                 var keys = new Array();
+                 if(firstRowIsHeader==true){
+                     keys = arr[0].split(seperator); //split first line get column names
+                 }else{
+                     (arr[0].split(seperator)).forEach((element, index)=>{keys[index]='COLUMN_'+(parseInt(index)+1);}); //create dynamic keys
+                 }
+
+                //~~~~~~~~~~~~~build body data~~~~~~~~~~~~
+                for(var k=0; k<arr.length; k++){
+                    //arrdata['key'] = {key1:'val1', key2:'val2'};  // store an Object at data.key 
+                    var kvp = {};
+
+                    //get line data
+                    var linedata = arr[k].split(seperator); //split line to create array of row data
+                    if(!linedata[0]) { continue; }  //if row is blank skip
+       
+                    //if attributes were used
+                    for(var i=0; i<linedata.length; i++){ 
+                        kvp[keys[i].toUpperCase()]=linedata[i]; 
+                    }
+                    
+                    //skip header row when firstRowIsHeader==true
+                    if(firstRowIsHeader==true && k==0){ continue ; }
+                     //if firstRowIsHeader: skip first row and adjust index to k-1
+                    var n = (firstRowIsHeader == true)? k-1 : k;
+                    
+                    //add to array
+                    arrdata[n] = { ...kvp };
+                }
+                //console.log(arrdata);
+                LoadHtmlTable(arrdata);
+            }
+            //--------------great------------
+
+
+            //++++++++++++++++++++++++++++++++
+            function GetXmlArrayData(filedata){
+                //console.log(filedata);
+                var arrdata = {};
+                //arrdata['key'] = {key1:'val1', key2:'val2'};  // store an Object at data.key 
+                //arrdata.key.key1;  // 'val1'
+
+                var root=filedata.documentElement; //alert(root.getElementsByTagName('country').length); //alert(root.textContent.split('\n'));
+                var nodes = root.querySelectorAll("*"); //get all nodes
+                //alert(nodes[0].childNodes.length);
+                //root.textContent; //displays all elements
+
+                //~~~~~~~~~~~~~build body data~~~~~~~~~~~~
+                for(var k=0; k<nodes.length; k++){
+                    //arrdata['key'] = {key1:'val1', key2:'val2'};  // store an Object at data.key 
+                    var kvp = {};
+
+                        var childNode = nodes[k]; //alert(childNode.childNodes.length); //children.length; //attributes.count;
+
+                        //if attributes were used
+                        for(var i=0; i<childNode.attributes.length; i++){ 
+                            kvp[childNode.attributes[i].name.toUpperCase()]=childNode.attributes[i].value;  
+                        }
+
+                        //if children were used
+                        for(var i=0; i<childNode.children.length; i++){ 
+                            kvp[childNode.children[i].nodeName.toUpperCase()]=childNode.children[i].textContent; 
+                        }
+
+                        //if childNodes were used
+                        for(var i=0; i<childNode.children.length; i++){ 
+                            kvp[childNode.children[i].nodeName.toUpperCase()]=childNode.children[i].textContent; 
+                        }
+
+                    //kvp = (kvp.trim().endsWith(','))? kvp.substring(0,kvp.length-2): kvp; //remove last comma
+                    //add to array
+                    arrdata[k] = { ...kvp };
+                }
+                //console.log(arrdata);
+                LoadHtmlTable(arrdata);
+            }
+            //--------------great------------
+
+            
+            //++++++++++++++++get excel data in json array+++++++++++++++++
+            </script>
+            <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.13.5/xlsx.full.min.js"></script>
+            <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.13.5/jszip.js"></script>
+            <script>
+            function ProcessExcelData() {
+                //https://www.aspforums.net/Threads/700183/Read-Excel-sheet-with-column-names-having-space-using-JavaScript/
+                //Reference the FileUpload element.
+                var fileUpload = document.getElementById("fileupload");
+
+                //Validate whether File is valid Excel file.
+                var regex = /^([a-zA-Z0-9\s_\\.\-:])+(.xls|.xlsx)$/;
+                if (regex.test(fileUpload.value.toLowerCase())) {
+                    if (typeof (FileReader) != "undefined") {
+                        var reader = new FileReader();
+                        var data;
+
+                        //For Browsers other than IE.
+                        if (reader.readAsBinaryString) {
+                            reader.onload = function (e, callback) {
+                                GetExcelJsonArrayData(e.target.result);
+                            };
+                            reader.readAsBinaryString(fileUpload.files[0]);
+                        } else {
+                            //For IE Browser.
+                            reader.onload = function (e) {
+                                var bytes = new Uint8Array(e.target.result);
+                                for (var i = 0; i < bytes.byteLength; i++) {
+                                    data += String.fromCharCode(bytes[i]);
+                                }
+                                GetExcelJsonArrayData(data);
+                            };
+                            reader.readAsArrayBuffer(fileUpload.files[0]);
+                        }
+                    } else {
+                        alert("This browser does not support HTML5.");
+                    }
+                } else {
+                    alert("Please upload a valid Excel file.");
+                }
+            
+                //---NESTED function to process data into json array---
+                function GetExcelJsonArrayData(data) {
+                    //Read the Excel File data.
+                    var workbook = XLSX.read(data, {  type: 'binary'  });
+
+                    //Fetch the name of First Sheet.
+                    var firstSheet = workbook.SheetNames[0];
+
+                    //Read all rows from First Sheet into an JSON array.
+                    var excelRows = XLSX.utils.sheet_to_row_object_array(workbook.Sheets[firstSheet]);
+
+                    //load html table
+                    LoadHtmlTableNew(excelRows);
+                };
+                //-----
+            } 
+            //----------end funtion---great------------
+
+
+            //+++++++++++display array data in table++++++++++++
+            function LoadHtmlTable(arr){
+                //+++++
+                var tbl="<table id='tbl'>";
+                //~~~~~~~~~~~~~build header columns~~~~~~~~~~~~
+                var headerRow = Object.keys(arr[0]); 
+                for(var i=0; i<headerRow.length; i++){  //loop first row to get columns
+                    tbl += `<th>${headerRow[i]}</th>`;  
+                }
+                //~~~~~~~~~~~~~build body data~~~~~~~~~~~~
+                var arrkeys = Object.keys(arr);
+                for(var k=0; k<arrkeys.length; k++){
+                    tbl += `<tr>`;
+                    var coldata = Object.values(arr[k]); 
+                    for(var i=0; i<coldata.length; i++){ 
+                        tbl += `<td>${coldata[i]}</td>`; 
+                    }
+                    tbl += `</tr>`;
+                }
+                tbl += `</table>`;
+                document.querySelector('#divmaincontent').innerHTML = tbl;
+                //+++++
+            }
+
+            function LoadHtmlTableNew(data, columns="") {
+                try{
+                    //Create a HTML Table element.
+                    var table = document.createElement("table");
+                    table.setAttribute('id', 'tbl');
+            
+                    //Add the header row. (-1 add last)
+                    var row = table.insertRow(-1);
+
+                    //get keys from first row, if non kvp: 0,1,2... returned
+                    columns=Object.keys(data[0]); 
+            
+                    //Add the header cells.
+                    columns.forEach((col, i)=>{
+                        var headerCell = document.createElement("TH");
+                        headerCell.innerHTML = col;
+                        row.appendChild(headerCell);
+                    });
+            
+                    //Add the data rows from Excel file.
+                    for (var k = 0; k < data.length; k++) {
+                        //Add the data row.
+                        var row = table.insertRow(-1);
+            
+                        //Add the data cells.
+                        for(var i=0; i<columns.length; i++){
+                            var cell = row.insertCell(-1);
+                            cell.innerHTML = data[k][columns[i]];
+                        }
+                    }
+            
+                    var divTable = document.querySelector("#divmaincontent");
+                    divTable.innerHTML = "";
+                    divTable.appendChild(table);
+                }catch(error){
+                    throw error;
+                }
+            };
+
+
+             /*~~~~~~~~~~~~~~~~~~Show Top And Bottom ScrollBar~~~~~~~~~~~~~~~*/
+             function DoubleScroll(element) {
+                var elementid = element.id;
+                var scrollbar= document.createElement('div');
+                scrollbar.appendChild(document.createElement('div'));
+                scrollbar.setAttribute('id','sb');
+                scrollbar.style.overflow= 'auto';   
+                scrollbar.style.overflowY= 'hidden';
+                scrollbar.firstChild.style.width= element.scrollWidth+'px';
+                scrollbar.firstChild.style.paddingTop= '1px';
+                scrollbar.firstChild.appendChild(document.createTextNode('\xA0'));
+                element.parentNode.insertBefore(scrollbar, element);
+                //--
+                document.onload=function(){ //use document instead of window which clashes with window in LoadMasterPage
+                    var running = false;
+                    //
+                    var sb = document.querySelector("#sb");
+                    var elem = document.querySelector(`#${elementid}`);
+                    sb.onscroll= function() {
+                        if(running) {
+                            running = false;
+                            return;
+                        }
+                        running = true;
+                        elem.scrollLeft= sb.scrollLeft;
+                    };
+
+                    //
+                    elem.onscroll= function() {
+                        if(running) {
+                            running = false;
+                            return;
+                        }
+                        running = true;
+                        sb.scrollLeft= elem.scrollLeft;
+                    };
+                    //
+                }
+                //--
+            }
+            DoubleScroll(document.querySelector('#divmaincontent')); 
+            //~~~~~~~~~~~~~~~Add Double Horizental Scrollbar | use id ~~~~~~~~~~~~~~~~~~~//
+            
+
+            //test arrays
+            function LoadData(){
+            var columns = ["Id", "Name", "Country"];
+            var data=[
+                [100, 'Peter VeeJay', 'Zimbabwe'],
+                [200, 'James Jacobs', 'Namibia' ],
+                [300, 'Simon Thomas', 'Botswana']
+            ];
+            var data1=[
+                {Id:100, Name:'Peter VeeJay', Country:'Zimbabwe'},
+                {Id:200, Name:'James Jacobs', Country:'Namibia' },
+                {Id:300, Name:'Simon Thomas', Country:'Botswana'}
+            ];
+            LoadHtmlTableNew(data1, columns);
+        }
+        //document.onload=LoadData(); //TEST
+        //testArray.some(function(o){return o["key1"] === "value2";}) //will be true if pair is found, otherwise false. //check if KVP exists in array object
+
+    </script>
+
+
+
+    </body>
+</html>

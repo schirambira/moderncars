@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SpeedSterMotors Home</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/jpg" href="images/favicon.jpg"/>
+        <script>
+        </script>
+
+        <style>
+            /* embedded/internal css */
+
+        </style>
+
+        <link rel="stylesheet" href="styles/mystyle.css">
+
+    </head>
+    <body>
+        <div id="divcontainer">
+            <header>
+                <div id="divbanner">
+                    <p id="sitetitle">SpeedSter Motors</p>
+                    <p id="sitemotto">The Home Of Quality Automobiles For Every Lifestyle</p>
+                </div>
+            </header>
+
+            <div id="divmenu">
+                <nav>
+                    <a href="index.html">Home</a> | 
+                    <a href="aboutus.html">About Us</a> | 
+                    <a href="background.html">Our Background</a> | 
+                    <a href="services.html">Services</a> | 
+                    <a href="sales.html">Sales</a> | 
+                    <a href="gallery.html">Gallery</a> | 
+                    <a href="#">Register</a> | 
+                    <a href="#">Login</a>
+                </nav>
+            </div>
+
+            <div id="divcol-container">
+                <div id="divsidebar"  class="col">
+                    <ul>
+
+                        <li><a href="latestmodels.html"><img src="images/latestmodels.jpg" alt="Latest Models" title="Latest Models 2021" width="100%"></a></li>
+
+                        <li><a href="blockflexbox.html">Block And FlexBox Layouts</a></li>
+
+                        <li><a href="combinators.html">Combinators</a></li>
+
+                        <li><a href="imagesandmaps.html">Images and Maps</a></li>
+
+                        <li><a href="multimedia.html">Multimedia - Videos & Audio</a></li>
+
+                        <li><a href="htmltables.html">HTML Tables</a></li>
+
+                        <li><a href="dropdownmenu.html">Dropdown Menus</a></li>
+
+                        <li><a href="forms.html">HTML Forms</a></li>
+
+                        <li><a href="javascript.html">JavaScript</a></li>
+                    </ul>
+                </div>
+
+
+                <div id="divcontent" class="col">
+
+                    <h2>Our contact details are as follows:</h2> 
+
+                    <table border="1" cellpadding="5" cellspacing="0">
+                        <tr>
+                            <td>ID</td><td>PLATFORM</td><td>HANDLE</td>
+                        </tr>
+                        <tr>
+                            <td>1</td><td>Twitter</td><td>@SpeedSterMotors</td>
+                        </tr>
+                        <tr>
+                            <td>2</td><td>Facebook</td><td>SpeedSterMotors</td>
+                        </tr>
+                        <tr>
+                            <td>3</td><td>WhatsApp</td><td>0026771717171</td>
+                        </tr>
+                        <tr>
+                            <td>4</td><td>Cell No</td><td>0026771717171</td>
+                        </tr>
+                        <tr>
+                            <td>5</td><td>Tel No</td><td>00267 391 2678</td>
+                        </tr>
+                        <tr>
+                            <td>6</td><td>Website</td><td>www.speedstermotors.com</td>
+                        </tr>
+                    </table>
+
+                </div>
+
+            </div>
+
+            <div id="divfooter">
+                <p id="footer" >
+                    copyright@SpeedSterMotors.co.bw : 
+                </p>
+            </div>
+
+        </div>
+
+        <script>
+            var months = ('Jan,Feb,Mar,Apr,May,Jun,Jul,Aug,Sep,Oct,Nov,Dec').split(',');
+            var today = new Date();
+            var d = today.getDate();
+            var m = today.getMonth()+1;
+            var y = today.getFullYear();
+            d = (d < 10)? '0'+d : d;
+            m = (m < 10)? '0'+m : m;
+            dt = `${d}-${months[m-1]}-${y}`;
+            document.querySelector('#footer').innerHTML += dt;
+        </script>
+
+    </body>
+</html>
+
+

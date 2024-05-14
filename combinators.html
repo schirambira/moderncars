@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SpeedSterMotors Home</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/jpg" href="images/favicon.jpg"/>
+        <script src="scripts/LoadMasterPage.js"></script>
+
+        <style>
+            /* embedded/internal css */
+
+        </style>
+
+        <link rel="stylesheet" href="styles/mystyle.css">
+
+    </head>
+    <body>
+       
+        <!------------------------>
+        <div id="divbackground">
+
+            <h1>CSS, SELECTORS, AND COMBINATORS</h1>
+            
+            <div>
+
+                <h2>3 Types of CSS - Cascading Style Sheets</h2>
+                <hr>
+
+                <ol type="1">
+                   <li> ->Inline</li>
+                        <p>- same line as tag to be styled -> takes highest priority (no code reuse / not recommended)</p>
+                        <p> 
+                            &lt;p style="color:green"&gt;Hello&lt;/p&gt;
+                        </p>
+
+                    <li>->Embedded/Internal </li>
+                        <p>- written in the head of the html page to be styled (applies code reuse within the same page, average recommendation)</p>
+                    <li>->External </li>
+                        <p>- written in a seperate file/ external css (100% code reuse / the most recommended)</p>
+                    <p>*NB :(Priority between Internal and External depends on the position of the linking line and your embedded css style tag...<br> if linking line for external comes last, external takes precedence, otherwise internal takes priority)</p>
+                </ol>
+
+                <hr>
+
+                <h2>How does css identify tags to be styled</h2>
+                -> we make use of Selectors
+
+                <h3>There are 2 types of selectors</h3> 
+                    <ol type=1>
+                        <li> Element selectors - selectors based on tag names eg: hr, h1, p, table, tr eg: p{ color: red;}</li>
+                        <li> Named Selectors   - Selectors which identifies elements by names (are of 2 types): </li>
+                            <ol type="a">
+                                <li> -> id (#)- an element is assigned an id, which is used to identify it for styling (only one element may have a unique id)
+                                &lt;input type="text" id="fname"&gt;
+                                #fname{color: blue;}</li>
+                                <li> -> class (.) - an element is assigned a class name, which is used to identify it for styling (more than one elements may belong to  a class)
+                                    &lt;p class="bida" id="p1">Hi</p>
+                                    &lt;p class="bida"&gt;hello&lt;/p&gt;
+                                    &lt;p class="status"&gt;hello&lt;/p&gt;
+                                    .bida{letter-spacing:2px;}</li>
+                            </ol>
+                    </ol>
+
+                    <h2>*** COMBINING SELECTORS ***</h2>
+                    <h3> We may combine Selectors as follows: </h3>
+                    <ol type="i">
+                        <li>-> element selector then class (Select a Paragraph with a class called bida)</li>
+                            <p>p.bida{background-color:cyan;}</p>
+                        <li>-> element selector and id (select a div with an id called footer)</li>
+                            <p>div#footer{color:navy;}</p>
+                        </ol> 
+
+                    
+                    <h2>*** USING MULTIPLE CLASSES ***</h2>
+                    -> elements may be assigned multiple classes for example to set the classes details and status to a div:
+                        &lt;div class="details status bida"&gt;...&lt;/div&gt;  (any class that matches' styling will be applied)
+                        <pre></pre>
+                            .details{ color: navy; }
+                            .status { font-weight:bold;}
+                            .bida{text-align:center;}
+                        </pre>
+
+                    <h2>*** GROUPING  ***</h2>
+                    - Elements sharing the same styles may be grouped to eliminate style redundancies
+                    - Example :
+                    h1,h2,p{color: blue;}
+
+                    <h2> *** COMBINATORS ***</h2>
+                    -> CSS allows to select elements by their nesting level ie: 
+                        <pre>
+                            &lt;div id="divcontent" class="content">
+                                &lt;div id="divc1"&gt;
+                                    &lt;div id="divc1c1"&gt;
+                                        &lt;p&gt;Child of Child&lt;/p&gt;
+                                    &lt;/div&gt;
+                                    &lt;h1 id="hc1"&gt;Hello&lt;/h1&gt;
+                                    &lt;h1 id="hc2"&gt;Good Day&lt;/h1&gt;
+                                    &lt;p&gt;Enjoy&lt;/p&gt;
+                                    &lt;p&gt;Always&lt;/p&gt;
+                                &lt;/div&gt;
+                                &lt;div id="divc2"&gt;
+                                    &lt;p id="gc"&gt;Welcome&lt;/p&gt;
+                                &lt;/div&gt;
+                                &lt;p id="gs"&gt;Styling is cool&lt;/p&gt;
+                            &lt;/div&gt;
+                        </pre>
+                    <ol type="i">
+                        <li>Child(>)</li>
+                            <p> -> selects direct children of an element eg: </p>
+                            <p> div>div{color:red;}   [picks 3 divs] WHICH ONES?</p>
+                            <p> div>p{color:blue;}    [picks 4 paragraph] WHICH ONES?</p>
+
+                        <li>Grandchild( ) / descendant</li>
+                            <p>-> selects elements which are grand children/descendants of a given element e.g.</p> 
+                            <p> div div{font-weight:bold;} [Picks 3 divs] WHICH ONES?</p> 
+
+                        <li>Sibling(+)</li>
+                            <p>-> selects elements which are direct siblings of a given element e.g.</ol> 
+                            <p> h1+p{color:green;} [selects one p] WHICH ONE?</p> 
+
+                        <li>General sibling (~)</li>
+                        <p> -> selects elements which are  general siblings of a given element e.g.</p> 
+                        <p> h1~*{ color: purple; } [selects 3 elements] WHICH ONES?</p> 
+                    </ol>
+
+                    <h2>*** THE ALL SELECTOR (*) ***</h2>
+                    <p>-> The all (*) selector selects all elements belonging to the specified element eg: </p> 
+                    <pre> body * {
+                            font-size:12px;
+                        }
+                    </pre>
+                
+                    
+
+                   <h2> *** PSEUDO SELECTORS (:) ***</h2>
+                   <p> - Helps to select elements upon some action being performed to the element or elements by some qualification eg :first-child</p>
+                   <pre> Examples;
+                        a:link{color:blue; }
+                        a:visited{color:purple;}
+                        a:hover{color:pink;}
+                        a:active{color:red;}
+
+                        p:first-child{background-color:lime;}
+                        p:first-child+(2){background-color:lime;}
+                        p:last-child{...}
+                        p:first-of-type{...}
+
+                        input:read-only{...}
+
+                        :not(selector)	
+                        :not(p)	Selects every element that is not a <p> element
+                    </pre>
+
+                    <h2>*** PSEUDO ELEMENTS ***</h2>
+                    <pre>p::after{content:'🏆'}
+                        ::after	p::after	Insert content after every <p> element
+                        ::before	p::before	Insert content before every <p> element
+                        ::first-letter	p::first-letter	Selects the first letter of every <p> element
+                        ::first-line	p::first-line	Selects the first line of every <p> element
+                        ::selection	p::selection	Selects the portion of an element that is selected by a user
+                    </pre>
+
+
+                    <h2>EXAMPLES</h2>
+                    <pre>
+                        * {
+                            box-sizing: border-box;
+                        }
+
+                        #divcontainer {
+                            background-color: ghostwhite;
+                            width: 90%;
+                            height: auto;
+                            margin: auto;
+                            padding: 0;
+                        }
+
+                        div.col {
+                            display: table-cell; /* Make elements inside the container behave like table cells */
+                            height: 70vh;
+                            overflow-x: scroll;
+                        }
+
+                        #divcontent > :not(p)+fieldset:nth-child(9){ /*color children, skip paragraphs */
+                            background-color: red;
+                        }
+
+                        #divcontent>p:nth-child(2)::first-letter{
+                            padding-top:10px;
+                            padding-right:10px;
+                            padding-bottom: 10px;
+                            padding-left:10px;
+                            border:1px solid green;
+                            margin:50px;
+                        }
+
+
+                        /*~~~~~~~~~~~~~form controls styling~~~~~~~~~~~~~~*/
+                        button, input[type='submit'], input[type='reset'], input[type='button']{
+                            background-color: #5ba3e0;
+                            border: #2e6da4;
+                            font-family: Arial, Geneva, Arial, Helvetica,  sans-serif;
+                            color: #fff;
+                            letter-spacing: 1px;
+                            padding: 8px 12px;
+                            font-size: 14px;
+                            font-weight: normal;
+                            border-radius: 2px;
+                            line-height: 1.2;
+                            text-decoration:none;
+                        }
+
+                        fieldset>label:not(.check){
+                            color:green;
+                            width:150px;
+                            display: inline-block;
+                            text-align: left;
+                        }
+                        fieldset>label:not(.check)::after{
+                            content:" : ";
+                            float: right;
+                        }
+                        label.check{
+                            color:royalblue;
+                        }
+                        label[for="customerid"]+input[type="text"]{
+                            color: red;
+                            background-image:radial-gradient(yellowgreen, azure, lightcyan);
+                        }
+                        fieldset{
+                            border:1px solid turquoise;
+                            border-radius: 8px;
+                            background-image:linear-gradient(lightcyan, peachpuff);
+                            padding: 20px;
+                        }
+                        legend{
+                            border:1px solid turquoise;
+                            border-radius: 2px;
+                            background-image: linear-gradient(lightcyan, lightyellow, lightcyan);
+                            height:22px;
+                            padding: 3px;
+                        }
+                        /*select desired input types leaving undesired*/
+                        input[type="text"],input[type="date"],input[type="time"],input[type="password"], select{
+                            border:1px solid lightskyblue;
+                            border-radius: 3px;
+                            margin-bottom: 3px;
+                            height:24px;
+                            width:350px;
+                        }
+                        /*select all inputs and filter out undesired || same results as above*/
+                        input:not([type=checkbox]):not([type=radio]):not([type=reset]):not([type=submit]):not([type=button]), select{
+                            border:1px solid lightskyblue;
+                            border-radius: 3px;
+                            margin-bottom: 3px;
+                            height:24px;
+                            width:350px;
+                        }
+                    </pre>
+
+            </div>
+      
+        </div>
+
+        <!------------------------->
+
+    </body>
+</html>
+
+

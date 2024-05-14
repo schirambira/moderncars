@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            table{
+                border-collapse: collapse;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 15px;
+            }
+            table,tr,th,td{
+                border:1px solid rgb(182, 235, 228);
+            }
+            th{
+                background-color: honeydew;
+                color: green;
+            }
+            tr:nth-child(odd){
+                background-color: rgb(247, 248, 248);
+            }
+            tr:hover{
+                background-image: radial-gradient(greenyellow, cyan, azure, lightcyan);
+            }
+            /*hide all columns except desired*/
+            td:not(:nth-child(2),:nth-child(5),:nth-child(6),:nth-child(8),:nth-child(11),:nth-child(16)),
+            th:not(:nth-child(2),:nth-child(5),:nth-child(6),:nth-child(8),:nth-child(11),:nth-child(16)){
+                display:none;
+            }
+
+            #divheader{
+                border: 1px solid rgb(182, 235, 228);;
+                border-radius: 3px;
+                background-image: radial-gradient(greenyellow, honeydew, lightcyan);
+                padding: 5px;
+                margin-bottom: 5px;
+                text-align: center;
+                color: navy;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            #cboperiod{
+                color: navy;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+        </style>
+    </head>
+    <body>
+
+        <div id="divheader">
+            <label for="cboperiod">Select news recency : </label>
+            <select id=cboperiod onchange="fetchArticles(cboperiod.value)">
+                <option value=1 >Current News For Today</option>
+                <option value=7 >Current News For The Past 7 Days</option>
+                <option value=30>Current News For The Past 30 Days</option>
+            </select>
+
+            <input type="text" id="searchtext" placeholder="Search Text">
+            <input type="button" value="Search" onclick="SearchText()">
+        </div>
+
+        <div id="divmaincontent"></div>
+        <script>
+            //https://api.nytimes.com/svc/topstories/v2/home.json?api-key=CcKC9oAraxDvOksAf589cQUvPUoPThC8
+            fetchArticles=(period)=>{ //CcKC9oAraxDvOksAf589cQUvPUoPThC8   //BqfJeDE476wXK5M7
+                fetch(`https://api.nytimes.com/svc/mostpopular/v2/shared/${period}/facebook.json?api-key=wix8qQtrlfoaYBPGri0uA6r0xy8GMkQP`)
+                .then((res) => {
+                    DisplayData(res.json()) 
+                    });
+            }
+
+            //call function to get news json data
+            var period = 1; //default value
+            fetchArticles(period);
+
+            //function to handle displaying data
+            async function DisplayData(data){
+                var d = await data;
+                d = d.results; //get or access results object
+                console.log(d);
+
+                var keys = Object.values(d); //get first value [0], then get its keys
+
+               //~~~~~~~~~~~~~build body data~~~~~~~~~~~~
+               var arrdata = {};
+                //arrdata['key'] = {key1:'val1', key2:'val2'};  // store an Object at data.key 
+                //arrdata.key.key1;  // 'val1'
+                //console.log(Object.keys(Object.values(filedata)[0]))) //to get key names
+
+                //get keys / column names []
+                var keys = Object.keys(Object.values(d)[0]); //get first value [0], then get its keys
+
+                //~~~~~~~~~~~~~build body data~~~~~~~~~~~~
+                for(var k=0; k<Object.values(d).length; k++){
+                    //arrdata['key'] = {key1:'val1', key2:'val2'};  // store an Object at data.key 
+                    var kvp = {};
+
+                    //if attributes were used
+                    for(var i=0; i<keys.length; i++){ 
+                        kvp[keys[i].toUpperCase()]=(Object.values(d)[k])[keys[i]];  
+                    }
+
+                    //add to array
+                    arrdata[k] = { ...kvp };
+                }
+                //console.log(arrdata);
+                LoadHtmlTable(arrdata);
+            }
+            //--------------great------------
+
+            function LoadHtmlTable(arr){
+                //+++++
+                var tbl="<table id='tbl'>";
+                //~~~~~~~~~~~~~build header columns~~~~~~~~~~~~
+                var headerRow = Object.keys(arr[0]); 
+                for(var i=0; i<headerRow.length; i++){  //loop first row to get columns
+                    tbl += `<th>${headerRow[i]}</th>`;  
+                }
+                //~~~~~~~~~~~~~build body data~~~~~~~~~~~~
+                var arrkeys = Object.keys(arr);
+                for(var k=0; k<arrkeys.length; k++){
+                    tbl += `<tr>`;
+                    var coldata = Object.values(arr[k]); 
+                    for(var i=0; i<coldata.length; i++){ 
+                        if(isValidURL(coldata[i])){
+                            tbl += `<td><a href='${coldata[i]}' target=_blank>${coldata[14]}</a></td>`; 
+                        }else{
+                            tbl += `<td>${coldata[i]}</td>`; 
+                        }
+                    }
+                    tbl += `</tr>`;
+                }
+                tbl += `</table>`;
+                document.querySelector('#divmaincontent').innerHTML = tbl;
+                //+++++
+            }
+
+            //check if url
+            function isURL(url) { //to be fixed
+                var urlRegex = '/(http(s)?:\/\/.)?(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)/g';
+                var reg = new RegExp(urlRegex, 'i');
+                return url.length < 2083 && reg.test(url);
+            }
+
+            function isValidURL(string) { //to be fixed
+                var res = string.match(/(http(s)?:\/\/.)?(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)/g);
+                return (res !== null)
+            };
+
+            //check if string is url : When true : create hyperlink
+            function isValidURL(url){
+                var elem;
+                if(!elem){
+                    elem = document.createElement('input');
+                    elem.setAttribute('type', 'url');
+                }
+                elem.value = url;
+                return elem.validity.valid;
+            }
+            //tests
+            /*console.log(isValidURL('http://www.google.com/'));
+            console.log(isValidURL('//google.com'));
+            console.log(isValidURL('google.com'));
+            console.log(isValidURL('localhost:8000'));
+            */
+
+            /**/
+            function SearchText(){
+                var txt = document.querySelector("#searchtext").value;
+                var n=0; //for total count of matches
+                //Array.from(document.querySelectorAll("td")).forEach((elem, i)=>{
+                [...document.querySelectorAll("td")].forEach((elem, i)=>{ //using spread
+                    //alert(elem.innerText);
+                    elem.style.backgroundColor = ''; elem.style.backgroundImage = '' //restore to default first, to clear any prev highlights - only single quotes works : ''
+                    if(elem.innerText.toLocaleLowerCase().includes(txt.toLocaleLowerCase())){ //ignore case
+                        //elem.style.backgroundColor = "yellow";
+                        elem.style.backgroundImage = "radial-gradient(yellow, greenyellow, lightcyan)";
+                        n+=1; //increment
+                    }
+                });
+                alert(`${n} Total Matches Found !!`);
+            }
+            /**/
+
+            /*
+            var div_list = document.querySelectorAll('div'); // returns NodeList
+            var div_array = [...div_list]; // converts NodeList to Array using spread
+            div_array.forEach(div => {
+
+            // do something awesome with each div
+
+            });
+            */
+
+        </script>
+    </body>
+</html>

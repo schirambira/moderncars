@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document</title>
+    <style>
+        div{
+            width: 0;
+            height: 0;
+            /*border-bottom: 40px solid #5eff2e;*/
+            border-top: 40px solid #fdaf92;
+            /*border-right: 40px solid #6fa5ff;*/
+            border-left: 40px solid #ffe676;
+        }
+    </style>
+</head>
+<body>
+<div></div>
+
+
+<canvas id="circlecanvas" width="400" height="400"></canvas>
+
+<script>
+    var canvas = document.getElementById("circlecanvas");
+    var context = canvas.getContext("2d");
+    context.arc(200, 200, 100, 0, Math.PI * 2, false); //xc, yc, r, st_angle, clockwise=false
+    context.fillStyle = "red";
+    context.fill();
+
+
+    //bring to top
+    canvas.position="relative";
+    canvas.style.zIndex = 99;
+
+    context.fillRect(350, 350, 40, 40);
+
+
+    context.fillRect(25, 25, 100, 100);
+    context.clearRect(45, 45, 60, 60);
+    context.strokeRect(50, 50, 50, 50);
+</script>
+
+<script>
+    //parse dom by url
+    function GetHtmlDOMFromURL(url){
+        xmlhttp=new XMLHttpRequest();
+        xmlhttp.open("GET",url,false);
+        xmlhttp.send();
+        parser=new DOMParser();
+        return parser.parseFromString(xmlhttp.responseText,"text/html");      
+    }
+
+    var dom = GetHtmlDOMFromURL("master.html");
+    dom.querySelectorAll("div").forEach((div, i)=>{
+        alert("Div "+ (i+1) +" Has ID Of: "+div.id);
+    });
+
+    //create querystring
+    const params = new URLSearchParams({
+        var1: "value",
+        var2: "value2",
+        arr: "foo",
+    });
+    //console.log(params.toString()); //Prints "var1=value&var2=value2&arr=foo"
+    var queryString = params.toString();
+
+    //to add new after creation use append : eg
+    //params.append(key, value)
+    
+</script>
+
+
+
+<!-- 
+    https://stackoverflow.com/questions/32543919/html5-video-play-any-video-from-folder
+    create a slideshow of videos, and play clicked one
+    here's an example of how you can list your movies in the folder as links and add them to your video source attribute when clicking at them. 
+    In this example let's assume we add all the script to the same file. 
+-->
+
+
+<!-- this is your video element Put the following between your body tags in your index.php -->
+<video width="400" controls>
+    <!-- your video source, verify so that type is accurate -->
+    <source id="vidsrc" src="myvideo.mp4" type="video/mp4">
+</video>
+
+<?php
+    //PHP
+    //Put the following script somewhere between your body tags in the index.php file
+    //fetch and list all the files found in the video folder. Make sure to change the path to your video folder.
+    foreach(glob('path-to-your-video-folder/*') as $video){
+        echo '- <a href="#" class="isVideo" data-video="'.$video.'">'.$video.'</a><br/>';
+    }
+ ?>
+
+<script type="text/javascript">
+    //Put the following script at the bottom, right before your body close tag.
+    //js code that will trigger when you click on one of the links displayed by the PHP script
+    document.querySelector('.isVideo').addEventListener('click', function(){
+        //this will change the video source to the chosen video
+        document.querySelector('#vidsrc').setAttribute('src', this.dataset['video']);
+        return false;
+    });
+
+
+    //The difference between AddEventListener and onclick :you could see if you had another couple of functions:
+    var h = document.getElementById('a111');
+    h.onclick = doThing_1;
+    h.onclick = doThing_2;
+    h.addEventListener('click', doThing_3);
+    h.addEventListener('click', doThing_4);
+    //Functions 2, 3 and 4 work, but 1 does not. This is because addEventListener does not overwrite existing event handlers, whereas onclick overrides any existing onclick = fn event handlers.
+    //The other significant difference, of course, is that onclick will always work, whereas addEventListener does not work in Internet Explorer before version 9. You can use the analogous attachEvent (which has slightly different syntax) in IE <9.
+</script>
+
+
+
+</body>
+</html>

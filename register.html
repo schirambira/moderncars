@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SpeedSterMotors Home</title>
+        <meta charset="utf-8">
+  
+        <link rel="icon" type="image/jpg" href="images/favicon.jpg"/>
+        <script src="scripts/LoadMasterPage.js"></script>
+
+        <style>
+            /* embedded/internal css */
+
+        </style>
+
+    </head>
+    <body>
+
+            <form name="register" id="register" action="home.html" target="_self" autocomplete="on" method="GET" onsubmit="return ValidateFormData()" > 
+                <fieldset>
+                    <legend>Register Customer Details</legend>
+                    <!-- hidden fields to hide some content-->
+                    <input type="hidden" id="custid" name="custid">
+
+                    <label for="customerid" class="lbl">Customer ID</label>
+                    <input type="text" id="customerid" name="customerid" placeholder="Customer ID" required  oninvalid="this.setCustomValidity('Please Enter Customer ID Here')" oninput="this.setCustomValidity('')" value="">
+                    <br>
+
+                    <label for="firstname" class="lbl">Firstname</label>
+                    <input type="text" id="firstname" name="firstname" placeholder="Firstname" required  oninvalid="this.setCustomValidity('Please Enter Firstname Here')" oninput="this.setCustomValidity('')" value="">
+                    <br>
+
+                    <label for="surname" class="lbl">Surname</label>
+                    <input type="text" id="surname" name="surname" placeholder="Surname" required  oninvalid="this.setCustomValidity('Please Enter Surname Here')" oninput="this.setCustomValidity('')" value="">
+                    <br>
+
+                    <label for="gender" class="lbl">Gender</label>
+                    <select id="gender" name="gender" required  oninvalid="this.setCustomValidity('Please Select Gender Here')" oninput="this.setCustomValidity('')" >
+                        <option>Select...</option>
+                        <option value="F">Female</option>
+                        <option value="M">Male</option>
+                    </select> 
+                    <br>
+
+                    <label for="maritalstatus" class="lbl">Marital Status</label>
+                    <label class="check"><input type="radio" id="maritalstatus" name="maritalstatus" value="M"/> : Married</label>
+                    <label class="check"><input type="radio" id="maritalstatus" name="maritalstatus" value="S" checked/> : Single</label>
+                    <label class="check"><input type="radio" id="maritalstatus" name="maritalstatus" value="D"/> : Divorced</label>
+                    <label class="check"><input type="radio" id="maritalstatus" name="maritalstatus" value="W"/> : Widowed</label>
+                    <br>
+
+                    <label for="dob" class="lbl">DOB</label>
+                    <input type="date" id="dob" name="dob" required  oninvalid="this.setCustomValidity('Please Select Your DOB Here')" oninput="this.setCustomValidity('')" value="">
+                    <br>
+
+                    <label for="omang" class="lbl">Omang/Passport</label>
+                    <input type="text" id="omang" name="omang" placeholder="Omang/Passport" required  oninvalid="this.setCustomValidity('Please Enter Your Omang / Passport Here')" oninput="this.setCustomValidity('')" value="">
+                    <br>
+
+                    <label for="cellno" class="lbl">Cell Number</label>
+                    <input type="text" id="cellno" name="cellno" placeholder="Cell Number" required  oninvalid="this.setCustomValidity('Please Enter Cell Number Here')" oninput="this.setCustomValidity('')" value="">
+                    <br>
+
+                    <label for="email" class="lbl">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="Email Address" required  oninvalid="this.setCustomValidity('Please Enter Email Address Here')" oninput="this.setCustomValidity('')" >
+                    <br>
+
+                    <label for="password" class="lbl">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Password" required oninvalid="setCustomValidity('Please Enter Your Password')" oninput="setCustomValidity('')" value=""/>
+                    <br>
+
+                    <label for="country" class="lbl">Country</label>
+                    <select id="country" name="country"  required  oninvalid="this.setCustomValidity('Please Select Your Country Here')" oninput="this.setCustomValidity('')" value="">
+                        <option value="0" >Select..</option>
+                        <option value="BW">Botswana</option>
+                        <option value="ZA">South Africa</option>
+                        <option value="NA">Namibia</option>
+                        <option value="ZW">Zimbabwe</option>
+                        <option value="ZM">Zambia</option>
+                        <option value="AU">Australia</option>
+                        <option value="UK">United Kingdom</option>
+                        <option value="US">United States of America</option>
+                        <option value="KE">Kenya</option>
+                    </select> 
+                    <br>
+
+                    <label for="dateregistered" class="lbl">Date Registered</label>
+                    <input type="date" id="dateregistered" name="dateregistered" required  oninvalid="this.setCustomValidity('Please Enter Date Registered Here')" oninput="this.setCustomValidity('')" value="">
+                    <br>
+
+                    <label for="timeregistered" class="lbl">Time Registered</label>
+                    <input type="time" id="timeregistered" name="timeregistered" required oninvalid="setCustomValidity('Please Enter Time Registered')" oninput="setCustomValidity('')" value=""/>
+                    <br>
+
+                    <label for="preference" class="lbl">Car Preferences</label>
+                    <label class="check"><input type="checkbox" id="preference" name="preference" value="T"> : Truck</label>
+                    <label class="check"><input type="checkbox" id="preference" name="preference" value="S"> : SUV</label>
+                    <label class="check"><input type="checkbox" id="preference" name="preference" value="D"> : Sedan</label>
+                    <label class="check"><input type="checkbox" id="preference" name="preference" value="X"> : 4 X 4</label>
+                    <br>
+
+                    <input type="submit" id="save" name="save" value="Save"/>
+                    <input type="reset" id="clear" name="clear" value="Clear"/>
+                </fieldset>
+            </form>
+
+            <script>
+                /*first approach*/
+                function ValidateFormData(){
+                    var msg = "";
+                    var frm = document.getElementById("register");
+                    if(frm.customerid.value == ""){
+                        msg = "Please enter missing customer id before proceeding to submitting !!";
+                    }else if(! Number(frm.customerid.value)){
+                        msg = "Customer ID Should be a Number !!";
+                    }else if(Number(frm.customerid.value) < 100 || Number(frm.customerid.value) > 999){
+                        msg = "Customer ID Should be a 3 Digit Number !!";
+                    }else  if(frm.firstname.value == ""){
+                        msg = "Please enter missing firstname before proceeding to submitting !!";
+                    }else  if(frm.surname.value == ""){
+                        msg = "Please enter missing surname before proceeding to submitting !!";
+                    }
+                    /*return value*/
+                    if(msg.length>0){ //if(msg != "")
+                        alert(msg);
+                    }
+                    return (msg.length>0)? false : true;
+                }
+
+                //clear selected radio button | no looping
+                function ClearRadioButtons(){
+                    document.querySelector('input[name="maritalstatus"]:checked').checked = false;
+                }
+
+                /*alternative approach*/
+                function ValidateFormData1(){
+                    var return_value = true;
+                    var frm = document.getElementById("register");
+                    if(frm.customerid.value == ""){
+                        alert("Please enter missing customer id before proceeding to submitting !!");
+                        return_value = false;
+                    }else  if(frm.firstname.value == ""){
+                        alert("Please enter missing firstname before proceeding to submitting !!");
+                        return_value = false;
+                    }else  if(frm.surname.value == ""){
+                        alert("Please enter missing surname before proceeding to submitting !!");
+                        return_value = false;
+                    }
+                    /*return value*/
+                    return return_value;
+                }
+            </script>
+
+    </body>
+</html>
+
+

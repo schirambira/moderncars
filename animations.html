@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS ANIMATIONS</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/jpg" href="images/favicon.JPG">
+        <script src="scripts/LoadMasterPage.js"></script>
+        <style>
+
+            /*style main content div*/
+            div#divmaincontent{
+                border:10px solid transparent;
+                border-radius: 10px;
+                border-image: url('images/border_image.JPG') 30% round;
+                padding: 5px;
+                display:flex;
+                flex-direction: column;
+                min-height:50px;
+            }
+
+            div#divmaincontent>div{
+                width:300px;
+                height:75px;
+                border:1px groove greenyellow;
+                background-color: green;
+                margin: 1px;
+                text-align: center;
+                vertical-align: middle; /*same as div height: important for centering vertically*/
+                line-height: 75px;
+                font-size:30px;
+                color: yellow;
+            } 
+
+            /*opacity=>transparency*/
+            div#divmaincontent>div:first-child{
+                opacity: 0.2;
+            }
+            div#divmaincontent>div:nth-child(2){
+                opacity: 0.4;
+            }
+            div#divmaincontent>div:nth-child(3){
+                opacity: 0.6;
+            }
+            div#divmaincontent>div:nth-child(4){
+                opacity: 0.8;
+            }
+            div#divmaincontent>div:nth-child(4){
+                opacity: 1;
+            }
+
+            /*add content from css*/
+            div#divmaincontent>div:nth-child(2)::after{
+                content:'Ranger Raptor';
+            }
+            /*add content*/
+            div#divmaincontent>div:nth-child(3)::before{
+                content:'Everest Endeavour';
+            }
+            /*add content*/
+            div#divmaincontent>div:nth-child(4)::before{
+                content:'Hilux Virgo';
+            }
+
+            /*Transformations*/
+            /*translate,rotate,scale,skew,matrix*/
+            div#divmaincontent>div:nth-child(1):hover{
+                transform: translate(305px,76px);
+            }
+            div#divmaincontent>div:nth-child(2):hover{
+                transform: rotate(270deg);
+            }
+            div#divmaincontent>div:nth-child(3):hover{
+                transform: scale(2);
+            }
+
+
+            /*css transitions - animations with respect to time*/
+            div#divmaincontent>div:nth-child(4){
+                width:300px;
+                height:75px;
+                font-size:30px;
+                background-color: turquoise;
+                transition: width 10s, font-size 10s cubic-bezier(.42,-0.56,.59,1.59);
+            }
+            div#divmaincontent>div:nth-child(4):hover{
+                width:605px;
+                font-size:60px;
+            }
+
+            /*select elements with same start/end*/
+            .parent div[id^='divc']:after{    /* ending with given chars : div[id$='ries']{}*/
+                content:'Amarok Highline';
+            }
+            div#divcountries:hover{
+                background-color: black;
+                border-color: cyan;
+                color:rgb(255, 0, 13);
+            }
+
+
+            /*css animations with @keyframes*/
+            @keyframes motioncities {
+                from{background-color: goldenrod;}
+                to{background-color: deeppink;}
+            }
+
+            #divcities{
+                background-color: brown;
+                animation-name: motioncities;
+                animation-duration: 2s;
+                animation-iteration-count: infinite;
+            }
+
+            /*animate countries iteratuively with @keyframes*/
+            :root{
+                --country:'';
+                --index:1;
+                --color:'';
+            }
+
+
+            /*@keyframes motioncountries {
+                 0% { content: 'Botswana'; }
+                10% { content: 'South Africa'; }
+                20% { content: 'Namibia'; }
+                30% { content: 'Zimbabwe'; }
+                40% { content: 'Zambia'; }
+                50% { content: 'Malawi'; }
+                60% { content: 'Angola'; }
+                70% { content: 'Mozambique'; }
+                80% { content: 'DRC-Congo'; }
+                90% { content: 'Tanzania'; }
+                90% { content: 'Swaziand'; }
+            }*/
+            @keyframes motioncountriesx {
+                 100% { content: var(--country); } 
+            }
+            #divcountries::after{
+                content:'';
+                animation-name: motioncountries;
+                animation-duration: 30s;
+                animation-iteration-count: infinite;
+            }
+            body::after{
+                content:'';
+                /*content:var(--country);
+                color:var(--color);*/
+            }
+
+        </style>
+    </head>
+    <body>
+
+        <div id="divmaincontent" class="main parent">
+
+            <div>Nissan Navara</div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div id="divcountries"></div>
+            <div id="divcities"></div>
+
+            <input type="button" value="Load" onclick="SetCssVariableValue();GetCssVariableValue();">
+
+            <!--
+                <marquee behaviour="scroll" direction=up height=200px scrollamount=5>Welcome To Sir Seretse Khama International Aiport<img src="images/favicon.JPG"></marquee>
+            -->
+
+
+
+        </div>
+
+        <script>
+            
+            // Create a function for getting a variable value
+            function GetCssVariableValue() {
+              // Get the root element
+              var r = document.querySelector(':root');
+              // Get the styles (properties and values) for the root
+              var rs = getComputedStyle(r);
+              // Alert the value of the --blue variable
+              alert("The value of --country is: " + rs.getPropertyValue('--country'));
+              alert("The value of --color is: " + rs.getPropertyValue('--color'));
+            }
+            
+            //helps to wait until dom is fully loaded
+            window.addEventListener("DOMContentLoaded", function(event) {
+               SetCssVariableValue();
+               GenerateKeyFrames();
+           });
+
+           function SetCssVariableValue() {
+                // Get the root element
+                var r = document.querySelector(':root');
+                // Get the styles (properties and values) for the root
+                // Set the value of variable --blue to another value (in this case "lightblue")
+                var countries =("Botswana,South Africa,Namibia,Zambia,Zimbabwe,Malawi,Lesotho,Swaziland,Tanzania").split(',');
+                for(var k=0; k<=countries.length-1;k++){
+                    //r.style.setProperty('--country', "'"+countries[k]+"'");
+                    //r.style.setProperty('--index', k);// alert(countries[k]);
+                    //r.style.setProperty('--color', 'green');
+                    document.documentElement.style.setProperty("--country", "'"+countries[k]+"'");
+                    document.documentElement.style.setProperty("--index", k);
+                    document.documentElement.style.setProperty("--color", 'green');
+                    //document.documentElement.setAttribute("style", "--country: '"+countries[k]+"'");  //multiple attributes are overwritten since style is reset//single quotes to make string
+                }
+            };
+            </script>
+
+            <script>
+
+                //get project path name | original pathname is affected by replacing whn creating MasterPage
+                function GetProjectURL(){
+                    return window.location.origin+'/'+window.location.pathname.split('/')[1];
+                }
+
+                //dynamic generation of transition frames
+                function GenerateKeyFrames(filedata){
+                     //var arrdata =("Botswana,South Africa,Namibia,Zambia,Zimbabwe,Malawi,Lesotho,Swaziland,Tanzania,Mozambique").split(',');
+                    //----------------------------------------------
+                    var arrdata=new Array();
+                    var i=0;
+                    filedata.split('\n').forEach(rowdata => {
+                        var linedata = rowdata.split('\t');
+                        var cisno  = linedata[0]; 
+                        var fname  = linedata[1];
+                        var sname  = linedata[2];
+                        var fullname = cisno+" "+fname+" "+sname;
+                        if(!cisno) { return; }  //if row is blank skip
+                        arrdata[i]=fullname;
+                        i+=1;
+                    });//close foreach
+                            //----------------------------------------------
+                            var keyframename = "motioncountries";
+                            var interval     = 10;
+                            var keyframes    = `@keyframes ${keyframename} { \n `
+                                for(var k=0; k<=arrdata.length-1;k++){
+                                    var intval = k*interval; //0*10=0, 1*10=10, 1*3=30 ...
+                                    keyframes += `${intval}% { content: '${arrdata[k]}'; } \n` //text animation
+                                }
+                                keyframes += `}`;
+                            //
+                            var textNode = null;
+                            textNode = document.createTextNode(keyframes);
+                            document.getElementsByTagName("style")[0].appendChild(textNode);
+                            //document.write(keyframes);
+
+                }
+
+
+
+
+
+               /* function LoadTeam(filedata){
+                    filedata.split('\n').forEach(rowdata => {
+                        var linedata = rowdata.split('\t');
+                        var cisno  = linedata[0]; 
+                        var fname  = linedata[1];
+                        var sname  = linedata[2];
+                        if(!cisno) { return; }  //if row is blank skip
+                    });
+                }//end function
+
+                /*load data using callback*/
+                const fileUrl = 'data/team_data.txt' // provide file location
+                function GetTextData(fileUrl, callback){
+                    fetch(fileUrl)
+                        .then( r => r.text() )
+                        .then( t => callback(t) ); //console.log(t)
+                }
+                GetTextData('data/team_data.txt', GenerateKeyFrames); //called ondomcontentloaded above
+                /*load data using callback*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </script>
+
+    </body>
+</html>

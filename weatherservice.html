@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            :root { /*css variables*/
+                --bg_main: #0a1f44;
+                --text_light: #fff;
+                --text_med: #53627c;
+                --text_dark: #1e2432;
+                --red: #ff1e42;
+                --darkred: #c3112d;
+                --orange: #ff8c00;
+                --error: '';
+            }
+            table{
+                border-collapse: collapse;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 15px;
+                text-align: center;
+                margin-bottom: 5px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            table,tr,th,td{
+                border:1px solid rgb(182, 235, 228);
+            }
+            table>caption{text-align: center; background-color: lightcyan;color:navy;}
+            th{
+                background-color: honeydew;
+                color: green;
+            }
+            tr:nth-child(odd){
+                background-color: rgb(247, 248, 248);
+            }
+            tr:hover{
+                background-image: radial-gradient(greenyellow, cyan, azure, lightcyan);
+            }
+            /*hide all columns except desired -- if any*//*
+            td:not(:nth-child(2),:nth-child(5),:nth-child(6)),
+            th:not(:nth-child(2),:nth-child(5),:nth-child(6)){
+                displays:none;
+            }*/
+
+            #divheader{
+                border: 1px solid rgb(182, 235, 228);;
+                border-radius: 3px;
+                background-image: radial-gradient(greenyellow, honeydew, lightcyan);
+                padding: 5px;
+                margin-bottom: 5px;
+                text-align: center;
+                color: navy;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            #cityname{
+                color: navy;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            #icon{width:75%; margin: auto; display: block;}
+            #flag{width:30%; margin: auto; display: block;}
+            #all{border-radius: 50%; opacity: 0.6;}
+            #divmaincontent{
+                border:1px groove darkturquoise;
+                width: 100%;
+                text-align: center;
+                background-image: radial-gradient(greenyellow,lightblue,lightgoldenrodyellow, lightcyan, lavender, ivory, honeydew );
+            }
+            #divmaincontent>p#msg{
+                color: red;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 15px;
+            }
+            span#loc{
+                background-color: powderblue;
+            }
+        </style>
+    </head>
+    <body>
+
+        <div id="divheader">
+            <form method="GET">
+                <label for="cityname">City Name : </label>
+                <input type="text" id="cityname" placeholder="City Name" required oninvalid="setCustomValidity('Please Enter A Valid City Name')" oninput="setCustomValidity('')" value=""/>
+                <select id="language">
+                    <option value="en-US">English</option>
+                    <option value="af">Afrikans</option>
+                    <option value="de">Germany</option>
+                    <option value="el">Greek</option>
+                    <option value="fr">French</option>
+                    <option value="he">Hebrew</option>
+                    <option value="it">Italian</option>
+                    <option value="ja">Japanese</option>
+                    <option value="pt">Portugese</option>
+                    <option value="ru">Russian</option>
+                    <option value="sp">Spanish</option>
+                    <option value="zh_cn">Chinese</option>
+                    <option value="zu">Zulu</option>
+                </select>
+                <input type="button" value="Get Weather" onclick="fetchArticles()">
+            </form>
+        </div>
+
+        <div id="divmaincontent"></div><label id="ttt"></label>
+        <script>
+            
+            var data;
+            var cityname;
+
+            //get weather data
+            fetchArticles=()=>{ 
+                const apiKey = "08a755f015ce4fbdc4f8c3d3e4d62bd6";
+                var lang = document.querySelector('#language').value;
+                cityname = document.querySelector('#cityname').value;
+                if(cityname==""){alert("Please enter a valid city name !!"); return;}
+                const url = `https://api.openweathermap.org/data/2.5/weather?q=${cityname}&appid=${apiKey}&units=metric&lang=${lang}`;
+                //alert(url);
+                fetch(url)
+                .then((res) => {
+                    DisplayData(res.json()) 
+                    });
+            }
+
+            //function to handle displaying data
+            async function DisplayData(data){
+                var dataset = await data;
+                //validate if found
+                if (Object.keys(dataset)[1] === "message"){
+                    var message = `${cityname} - ${dataset[Object.keys(dataset)[1]]} , check spelling and retry !!`;
+                    //alert(message);
+                    document.querySelector('#divmaincontent').innerHTML = `<p id='msg'>${message}</p>`; 
+                    return;
+                }
+
+                //main elements array
+                var elements = ["weather","main","wind","clouds","coord","name","sys"]; 
+                var other = ["name","timezone","visibility","cod"]; //custom from main dataset
+
+                //clear display first
+                document.querySelector('#divmaincontent').innerHTML = ""; 
+
+                //loop through elements creating tabular displays
+                for(var k=0; k<elements.length; k++){
+                    elem = elements[k];
+
+                    d = (k==0)? dataset[elem][0] : dataset[elem]; //get or access element object : weather is nested object
+                    console.log(d);
+
+                    //~~~~~~~~~~~~~build body data~~~~~~~~~~~~
+                    var arrdata = {};
+                    //arrdata['key'] = {key1:'val1', key2:'val2'};  // store an Object at data.key 
+                    //arrdata.key.key1;  // 'val1'
+                    //console.log(Object.keys(Object.values(filedata)[0]))) //to get key names
+
+                    //get keys / column names []
+                    var keys = (elem!=="name")? Object.keys(d) : other; //get first value [0], then get its keys
+
+                    //~~~~~~~~~~~~~build body data~~~~~~~~~~~~1D
+                    var kvp = {};
+
+                    //if attributes were used
+                    for(var i=0; i<keys.length; i++){ 
+                        kvp[keys[i].toUpperCase()]= (elem!=="name")? (Object.values(d)[i])  : dataset[keys[i]]; 
+                        var current_timezone = new Date().getTimezoneOffset() / -60 * 3600; //console.log(offset); // if offset equals -60 then the time zone offset is UTC+01 
+                        var locname = dataset.name; 
+                        if(keys[i]==="icon"){ //weather
+                            kvp[keys[i].toUpperCase()]= (`<img id="icon" src='images/weather_icons/${Object.values(d)[i]}'.png>`);  
+                        }else if(keys[i]==="all"){ //clouds
+                            var cloud_unit = Math.round( Number(Object.values(d)[i]) / 10 , 0);
+                            kvp[keys[i].toUpperCase()]= (`${Object.values(d)[i]} <br><img id="all" src='images/weather_icons/c${cloud_unit}'.jpg>`);  
+                        }else if(keys[i].includes("temp") || keys[i].includes("feels_like")){ //temperature add : <sup>°C</sup>
+                            kvp[keys[i].toUpperCase()]= (`${Object.values(d)[i]} &#8451; `);  
+                        }else if(keys[i].includes("sunrise")){ //sunrise : convert to time || unix tick units are actually seconds so we must multiply by 1000 to construct a correct javascript Date.
+                            var sunrise = new Date( Object.values(d)[i] * 1000 ).toLocaleTimeString([], {hour12: false, hour: '2-digit', minute:'2-digit', second:'2-digit' });
+                            //kvp[keys[i].toUpperCase()]= (`${sunrise} `);
+                            var Tsunrise = new Date( (Object.values(d)[i] + dataset.timezone - current_timezone) * 1000 ).toLocaleTimeString([], {hour12: false, hour: '2-digit', minute:'2-digit', second:'2-digit' });
+                            kvp[keys[i].toUpperCase()]= (`${sunrise} <span id='loc'>(${locname} : ${Tsunrise})</span>`);    
+                        }else if(keys[i].includes("sunset")){ //sunset : convert to time  || unix tick units are actually seconds so we must multiply by 1000 to construct a correct javascript Date.
+                            var sunset = new Date( Object.values(d)[i] * 1000 ).toLocaleTimeString([], {hour12: false, hour: '2-digit', minute:'2-digit', second:'2-digit' });
+                            //kvp[keys[i].toUpperCase()]= (`${sunset} `); 
+                            //time-there
+                            var Tsunset = new Date( (Object.values(d)[i] + dataset.timezone - current_timezone) * 1000 ).toLocaleTimeString([], {hour12: false, hour: '2-digit', minute:'2-digit', second:'2-digit' });
+                            kvp[keys[i].toUpperCase()]= (`${sunset} <span id='loc'>(${locname} : ${Tsunset})</span>`);  
+                        }
+                    }
+
+                    //if elem is sys add 2 columns for country name and flag, outside for each col above to allow adding new cols
+                    if(elem==="sys"){
+                        var code = kvp["COUNTRY"];
+                        var arrcountry = await GetCountryDetails(code);
+                        console.log(arrcountry[0]["COUNTRY"]);
+                        kvp["COUNTRY_NAME"] = arrcountry[0]["COUNTRY"];
+                        kvp["FLAG"] = `<img id="flag" src='images/flags/${code}'.png>`;  
+                    }
+
+                    //add to array
+                    arrdata[0] = { ...kvp };
+                    console.log(arrdata);
+
+                    //caption
+                    var tblcaption = (elem!=="name")? elem : "Other Elements";
+
+                    //console.log(arrdata);
+                    LoadHtmlTable(arrdata, tblcaption.toUpperCase());
+
+                }; //end foreach loop
+            }
+            //--------------great------------
+
+            function LoadHtmlTable(arr, tablecaption){
+                //+++++
+                var tbl="<table id='tbl'>";
+                //~~~~~~~~~~~~add caption~~~~~~~~~~~~~~
+                tbl += `<caption>${tablecaption}</caption>`;
+                //~~~~~~~~~~~~~build header columns~~~~~~~~~~~~
+                var headerRow = Object.keys(arr[0]); 
+                for(var i=0; i<headerRow.length; i++){  //loop first row to get columns
+                    tbl += `<th>${headerRow[i]}</th>`;  
+                }
+                //~~~~~~~~~~~~~build body data~~~~~~~~~~~~
+                var arrkeys = Object.keys(arr);
+                for(var k=0; k<arrkeys.length; k++){
+                    tbl += `<tr>`;
+                    var coldata = Object.values(arr[k]); 
+                    for(var i=0; i<coldata.length; i++){ 
+                        if(isValidURL(coldata[i])){
+                            tbl += `<td><a href='${coldata[i]}' target=_blank>${coldata[14]}</a></td>`; 
+                        }else{
+                            tbl += `<td>${coldata[i]}</td>`; 
+                        }
+                    }
+                    tbl += `</tr>`;
+                }
+                tbl += `</table>`;
+                document.querySelector('#divmaincontent').innerHTML += tbl;
+                //+++++
+            }
+
+            //check if string is url : When true : create hyperlink
+            function isValidURL(url){
+                var elem;
+                if(!elem){
+                    elem = document.createElement('input');
+                    elem.setAttribute('type', 'url');
+                }
+                elem.value = url;
+                return elem.validity.valid;
+            }
+            //
+
+
+            //-----------------------------------------
+            async function GetCountryDetails(code){
+                const isocode = [code];
+                let url = "data/countries_data_csv.txt";
+                //get data
+                filedata = await ReadTextData(url);
+                //prepare data
+                arrdata = await GetTextArrayData(filedata, "\t", true);
+                //filter data
+                //arrdata = Object.values(arrdata).filter(user => user.user_id === 1);
+                arrdata = Object.values(arrdata).filter( i => i.ISO2_CODE.includes( isocode ) );
+                console.log(arrdata[0]["COUNTRY"]);
+                return arrdata;
+            }
+            //~~~~~~~~~~~~Read TEXT Data~~~~~~~~~~
+            function ReadTextData(url){
+                return fetch(url)
+                    .then(response => response.text())
+                    .then(data => data)
+                    .catch(console.error);
+            }
+            //+++++++++++++++++++++++++++++++
+            function GetTextArrayData(filedata, seperator = "\t", firstRowIsHeader=false){
+                //console.log(filedata);
+                var arrdata = {};
+                //arrdata['key'] = {key1:'val1', key2:'val2'};  // store an Object at data.key 
+                //arrdata.key.key1;  // 'val1'
+                //console.log(Object.keys(Object.values(data)[0]))) //to get key names
+
+               //get all file lines
+                var arr = filedata.split("\n"); //split by new line to get all rows into array
+
+                 //get keys / column names []
+                 var keys = new Array();
+                 if(firstRowIsHeader==true){
+                     keys = arr[0].split(seperator); //split first line get column names
+                 }else{
+                     (arr[0].split(seperator)).forEach((element, index)=>{keys[index]='COLUMN_'+(parseInt(index)+1);}); //create dynamic keys
+                 }
+
+                //~~~~~~~~~~~~~build body data~~~~~~~~~~~~
+                for(var k=0; k<arr.length; k++){
+                    //arrdata['key'] = {key1:'val1', key2:'val2'};  // store an Object at data.key 
+                    var kvp = {};
+
+                    //get line data
+                    var linedata = arr[k].split(seperator); //split line to create array of row data
+                    if(!linedata[0]) { continue; }  //if row is blank skip
+       
+                    //if attributes were used
+                    for(var i=0; i<linedata.length; i++){ 
+                        kvp[keys[i].toUpperCase()]=linedata[i]; 
+                    }
+                    
+                    //skip header row when firstRowIsHeader==true
+                    if(firstRowIsHeader==true && k==0){ continue ; }
+                     //if firstRowIsHeader: skip first row and adjust index to k-1
+                    var n = (firstRowIsHeader == true)? k-1 : k;
+                    
+                    //add to array
+                    arrdata[n] = { ...kvp };
+                }
+                //console.log(arrdata);
+                return arrdata;
+            }
+            //--------------great------------
+
+            //-----------------------------------------
+
+        </script>
+    </body>
+</html>
+
+
+<script>
+    /*
+    For sunrise/sunset, I did this:
+
+    let date = new Date(data.sys.sunrise * 1000).toString();
+    let sunrise = date.slice(16, 24);
+    ...
+    `<h1>${sunrise}</h1>`
+    And I get what I want, like 03:50:36
+
+    Problem is it is always my local time, it shows me when sunrises in Tokyo but in my local time and not in Tokyo's local time. Obviously I would like to get Tokyo's local time. Is this doable?
+
+
+    I faced the exact same problem with openweather. Add the timezone to the time and then times by 1000.
+
+    for sunrise/sunset:
+
+    const sunrise = new Date((data.sys.sunrise + data.timezone) * 1000)
+    You will get the local time
+    */
+
+
+    /* //get location / country of user
+        fetch('https://extreme-ip-lookup.com/json/')
+        .then( res => res.json())
+        .then(response => {
+            console.log("Country: ", response.country);
+        })
+        .catch((data, status) => {
+            console.log('Request failed');
+        })
+    */
+
+
+</script>

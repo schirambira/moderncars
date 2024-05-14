@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Welcome to the Mighty JS</title>
+        <style>
+            .info{
+                background-color: greenyellow;
+            }
+            table,tr,td{
+                border:1px solid turquoise;
+                padding: 10px;
+            }
+            table{
+                border-collapse: collapse;
+            }
+
+            table>tbody>tr:first-child{
+                background-image: radial-gradient(yellow, cyan);
+                color: navy;
+                font-weight: bold;
+            }
+
+            table>tbody>tr>td:first-child{
+                background-image: radial-gradient(yellow, cyan);
+                color: navy;
+                font-weight: bold;
+            }
+
+            table>tbody>tr:hover{
+                background-image: radial-gradient(yellow, lime);
+            }
+
+            h1{
+                display: block;
+                text-align: left;
+            }
+
+        </style>
+        <script src="scripts/LoadMasterPage.js"></script>
+    </head>
+    <body>
+        <header>
+
+        </header>
+        <fieldset>
+            <legend>JavaScript Introduction</legend>
+
+
+            <label for="test1" class="lbl">Test 1</label>
+            <input type="text" id="test1" name="test1" placeholder="Test 1 Mark" required  oninvalid="this.setCustomValidity('Please Enter Test1 Here')" oninput="this.setCustomValidity('')" value="">
+            <br>
+
+            <label for="test2" class="lbl">Test 2</label>
+            <input type="text" id="test2" name="test2" class="txt" placeholder="Test 2 Mark" required  oninvalid="this.setCustomValidity('Please Enter Test2 Here')" oninput="this.setCustomValidity('')" value="">
+            <input type="button" value="Calculate" onclick="calculateTotal()">
+
+            <br>
+            <label for="total" class="lbl">Total Mark </label>
+            <input type="text" id="total" name="total" class="txt info" placeholder="Total Mark" readonly >
+            <br>
+
+            <label for="grade" class="lbl">Total Mark </label>
+            <input type="text" id="grade" name="grade" class="txt info" placeholder="Grade" readonly >
+            <br>
+
+            <br>
+            <h1>Current Time : <input type="text" readonly id="ctime" style="color:chartreuse;border:1px solid cyan;outline:1px solid black;outline-offset: 0px;background-color: black;width: 100px;"></h1>
+            <br>
+            <h1>Multiplication Table</h1>
+
+            <label for="start" class="lbl">Start</label>
+            <input type="number" id="start" name="start" placeholder="Start" required  oninvalid="this.setCustomValidity('Please Enter Start Value Here')" oninput="this.setCustomValidity('')" value="0">
+
+            <label for="end" class="lbl">End</label>
+            <input type="number" id="end" name="end" class="txt" placeholder="End" required  oninvalid="this.setCustomValidity('Please Enter End Value Here')" oninput="this.setCustomValidity('')" value="30">
+            <input type="button" value="Re-Load" onclick="LoadTable()">
+            <br>
+            <br>
+
+            <div id="tblcontainer">
+
+            </div>
+
+            <!--
+            <table>
+                <tr>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                </tr>
+            </table>
+        -->
+
+            <script>
+
+
+                document.onload = LoadTable();
+
+                function LoadTable(){
+
+                    //get start and end values
+                    var start = Number(document.getElementById("start").value);
+                    var end = Number(document.querySelector("#end").value);
+                    start = (start == 0)? start : start-1;
+
+                    var tbl = "<table>";
+                        var k,i;
+                        for(k=start; k<=end; k++){
+                            tbl+="<tr>";
+                                for(i=start; i<=end; i++){
+                                    tbl+="<td onmouseover='highlight(this,1)' onmouseout='highlight(this,0)' onclick='display(this,"+k+ ","+i+")'>"+( (k==start && i==start)? "X" : (k==start)?i : (i==start)? k: (k*i) ) +"</td>";
+                                }
+                                tbl+="</tr>";
+                        }
+                        tbl+="</table>";
+                        document.querySelector("#tblcontainer").innerHTML = tbl;
+                }
+
+                function highlight(cell,flag){
+                    //alert(cell.cellIndex);
+                    var style = document.createElement('style');
+                    var bgcolor = (flag==1)?"yellow": "transparent";
+                    style.innerText = " tbody>tr:nth-child(n+2)>td:nth-child("+ (cell.cellIndex+1) +"){background-color:"+ bgcolor +"; } ";
+                    document.head.appendChild(style);   
+                }
+
+                function display(cell, k, i){
+                    //alert(cell.cellIndex);
+                    alert(k + " X " + i + " = " + cell.innerText);
+                }
+
+                //diagonal highlight
+                (function DiagonalHighlight(){
+                    var tbl=document.querySelector("table");
+                    for(let i=0; i<tbl.rows.length; i++){
+                        tbl.rows[i].cells[i].style.backgroundImage="radial-gradient(turquoise, ivory)";
+                    }
+                })();
+
+            </script>
+
+
+            <script>
+
+                function calculateTotal(){
+                    //var t1 = document.getElementsByClassName("txt")[0].value; 
+                    //var t1 = document.getElementById("test1").value;
+                    //var t1 = document.querySelector("#test1").value;
+                    var t1 = document.querySelector("input[id='test1']").value;
+                    var t2 = document.getElementById("test2").value;
+                    var total = Number(t1) + Number(t2);
+                    document.getElementById("total").value=total;
+
+                    //evaluate grade
+                    /*
+                    var grade;
+                    if(total < 40){
+                        grade = "Fail";
+                    }else if(total< 60){
+                        grade="Pass";
+                    }else if(total < 80){
+                        grade="Merit";
+                    }else{
+                        grade="Distinction";
+                    }
+                    */
+
+                    //Ternary Operator
+                    //var grade = (total < 40)? "Fail" : "Pass"; 
+                    var grade = (total < 40)? "Fail" : (total < 60)? "Pass" : (total < 80)? "Merit" : "Distinction"; //chaining
+
+                    //display grade
+                    document.querySelector("#grade").value=grade;
+
+                }
+
+
+
+
+                /*
+                    var test1;
+                    var test2;
+                    var total;
+
+                    test1 = 10;
+                    test2 = 20;
+                    total = test1 + test2;
+
+                    alert(total);
+                */
+
+            </script>
+
+
+            <script>
+                //for loop
+                for(var k=0; k<=100; k+=20){
+                    document.write(k + "<br>");
+                }
+
+                //while loop
+                var i=1000;
+                while(i<1010){
+                    document.write(i + "<br>");
+                    i+=1;  //manual increment;
+                }
+
+                //do while loop
+                var j=55;
+                do{
+                    document.write(j + "<br>");
+                    j+=11;  //manual increment;
+                }while(j<100);
+
+
+                //alert( new Date().toJSON().slice(0,10));
+                var arrymd = new Date().toJSON().slice(0,10).split('-');
+                var mon = new Date().toLocaleString('default', { month: 'short' });
+                var cdt = `${arrymd[2]}-${mon}-${arrymd[0]}`;
+                //alert(cdt);
+
+                function GetTime() {
+                    var ctime = new Date().toLocaleTimeString([], {hour: '2-digit', minute:'2-digit', second:'2-digit',hour12:true});
+                    document.querySelector("#ctime").value=ctime;
+                }
+
+                setInterval("GetTime()" , 1000); 
+
+                /*
+                window.onload=function(){
+                    setInterval(()=>{
+                        var ctime = new Date().toLocaleTimeString([], {hour: '2-digit', minute:'2-digit', second:'2-digit',hour12:true});
+                        document.querySelector("#ctime").innerText=ctime;
+                    }, 1000); 
+                } 
+                */
+
+                document.addEventListener("DOMContentLoaded", (event)=>{
+                    document.querySelectorAll("label").forEach((lbl, i)=>{
+                       // lbl.scrollIntoView();
+                    });
+                });
+
+                //document.getElementById(targetId).scrollIntoView();
+
+
+            </script>
+            
+
+
+
+        </fieldset>
+    </body>
+</html>

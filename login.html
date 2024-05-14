@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Log In
+        </title>
+        <style>
+            body{
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            input[type="submit"]{
+                border: none;
+                cursor: pointer;
+                width: 100%;
+            }
+            input[type="submit"]:hover{
+                opacity: 0,8px;
+            }
+            #imgContainer{
+                text-align: center;
+                margin: 30px 0 12px 0;
+                position: relative;
+            }
+            #avatar{
+                width: 25%;
+                border-radius: 220px;
+            }
+            .lbl{
+                width: 30%;
+                display:inline-block;
+            }
+            .lbl::after{
+                content: ':';
+                float:right;
+            }
+
+            form h5{
+                text-align: center;
+                color: magenta;
+                font-style: italic;
+            }
+
+        </style>
+        <link rel="stylesheet" href="styles/mystyle.css">
+        <script src="scripts/LoadMasterPage.js"></script>
+    </head>
+    <body>
+        <div id="divcontainer">
+            <form id="col-container">
+
+                <fieldset>
+                    <legend>Login</legend>
+
+                    <div id="imgContainer">
+                        <img src="images/login.JPG" id="avatar">
+                    </div>
+
+                    <div id="small-container">
+                        <label class="lbl">Username</label>
+                        <input type="text" placeholder="Username" required oninvalid="setCustomValidity('Please Enter Your username')" oninput="setCustomValidity('')" value=""/>
+                        <br>
+                        <label class="lbl">Password</label>
+                        <input type="password" placeholder="Password" required oninvalid="setCustomValidity('Please Enter Your Password')" oninput="setCustomValidity('')" value=""/>
+                        <br>
+                        <label><input type="checkbox"/>Remember Me</label>
+                        <input type="submit" onclick="alert('Invalid username or password, enter valid credentials before proceeding !!');" value="Login">
+                    </div>
+
+            </fieldset>
+
+            <h5>Created by: Warona Goitsemang, (Bida4, 2021)</h5> 
+                    
+            </form>
+        </div>
+        
+    </body>
+    
+</html>

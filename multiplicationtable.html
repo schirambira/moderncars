@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SpeedSter Home</title>
+        <meta charset="utf-8">
+        <style id="pepu">
+            .info{
+                background-color: greenyellow;
+            }
+            table,tr,td{
+                border:1px solid turquoise;
+                padding: 10px;
+            }
+            #tblcontainer{
+                border: 10px solid transparent;
+                padding: 5px;
+                border-image: url("images/border_image.JPG") 30% round;
+                overflow-x: scroll;
+            }
+            table{
+                border-collapse: collapse;
+            }
+
+            table>tbody>tr:first-child>td{
+                background-image: radial-gradient(yellow, cyan);
+                color: navy;
+                font-weight: bold;
+            }
+
+            table>tbody>tr>td:first-child{
+                background-image: radial-gradient(yellow, cyan);
+                color: navy;
+                font-weight: bold;
+            }
+
+            table>tbody>tr:hover:not(:first-child){
+                background-image: radial-gradient(yellow, lime);
+            }
+
+            #start, #end{
+                width:30%;
+            }
+        </style>
+        <script src="scripts/LoadMasterPage.js"></script> <!--linking external javascript file-->
+    </head>
+    <body>
+
+       
+        <h1>Multiplication Table</h1>
+
+        <label for="start" class="lbl">Start</label>
+        <input type="number" id="start" name="start" placeholder="Start" required  oninvalid="this.setCustomValidity('Please Enter Start Value Here')" oninput="this.setCustomValidity('')" value="0">
+
+        <label for="end" class="lbl">End</label>
+        <input type="number" id="end" name="end" class="txt" placeholder="End" required  oninvalid="this.setCustomValidity('Please Enter End Value Here')" oninput="this.setCustomValidity('')" value="30">
+        <input type="button" value="Re-Load" onclick="LoadTable()" >
+        <br>
+        <br>
+
+        <div id="tblcontainer">
+
+        </div>
+
+        <script>
+
+            function LoadTable(){var e,t,n=Number(document.getElementById("start").value),o=Number(document.querySelector("#end").value),l="<table>";for(e=n=0==n?n:n-1;e<=o;e++){for(l+="<tr>",t=n;t<=o;t++)l+="<td onmouseover='highlight(this,1)' onmouseout='highlight(this,0)' onclick='display(this,"+e+","+t+")'>"+(e==n&&t==n?"X":e==n?t:t==n?e:e*t)+"</td>";l+="</tr>"}l+="</table>",document.querySelector("#tblcontainer").innerHTML=l}function highlight(e,t){var n=document.createElement("style"),o=1==t?"yellow":"transparent";n.innerText=" tbody>tr:nth-child(n+2)>td:nth-child("+(e.cellIndex+1)+"){background-color:"+o+"; } ",document.querySelector("style").appendChild(n)}function display(e,t,n){t>0&&n>0&&alert(t+" X "+n+" = "+e.innerText)}document.onload=LoadTable();
+
+            /*~~~~~~~~~~~~~~~~~~Show Top And Bottom ScrollBar~~~~~~~~~~~~~~~*/
+            function DoubleScroll(element) {
+                var elementid = element.id;
+                var scrollbar= document.createElement('div');
+                scrollbar.appendChild(document.createElement('div'));
+                scrollbar.setAttribute('id','sb');
+                scrollbar.style.overflow= 'auto';   
+                scrollbar.style.overflowY= 'hidden';
+                scrollbar.firstChild.style.width= element.scrollWidth+'px';
+                scrollbar.firstChild.style.paddingTop= '1px';
+                scrollbar.firstChild.appendChild(document.createTextNode('\xA0'));
+                element.parentNode.insertBefore(scrollbar, element);
+                //--
+                document.onload=function(){ //use document instead of window which clashes with window in LoadMasterPage
+                    var running = false;
+                    //
+                    var sb = document.querySelector("#sb");
+                    var elem = document.querySelector(`#${elementid}`);
+                    sb.onscroll= function() {
+                        if(running) {
+                            running = false;
+                            return;
+                        }
+                        running = true;
+                        elem.scrollLeft= sb.scrollLeft;
+                    };
+
+                    //
+                    elem.onscroll= function() {
+                        if(running) {
+                            running = false;
+                            return;
+                        }
+                        running = true;
+                        sb.scrollLeft= elem.scrollLeft;
+                    };
+                    //
+                }
+                //--
+            }
+            DoubleScroll(document.querySelector('#tblcontainer')); 
+            //~~~~~~~~~~~~~~~Add Double Horizental Scrollbar | use id ~~~~~~~~~~~~~~~~~~~//
+
+        </script>
+
+    </body>
+
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SpeedSterMotors Home</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/jpg" href="images/favicon.jpg"/>
+        <script src="scripts/LoadMasterPage.js"></script>
+
+        <style>
+
+            /* embedded/internal css */
+            div#divcontent>div:nth-child(2){
+                background-image:radial-gradient(honeydew, peachpuff);
+                width:90%;
+                height: 400px;
+                margin:auto;
+                margin:35px 35px 35px 35px;
+                border:2px ridge teal;
+                resize:horizontal; /*horizontal vertical*/
+                overflow:visible; /*hidden - (hide) | scroll - (bring scrollbar) | auto - adjust vertical dimension to fit | visible - always show overflow*/
+                /* add outline */
+                outline:30px solid greenyellow;
+                outline-offset: 1px;
+            }
+
+            div#divcontent>div:nth-child(2)>div{
+                text-align: center;
+                vertical-align: middle;
+                border:1px solid green;
+                width: 49%;
+                height:50px;
+                margin:1px;
+                /*default display mode is : block */
+                display:inline-block;
+            }
+
+            /* border-box/content-box*/
+            div#divcontent>div:nth-child(2)>div:first-child{
+                width: 300px; /*total width:302px*/
+                height:100px;
+                border:1px solid red;
+            }
+            div#divcontent>div:nth-child(2)>div:nth-child(2){
+                width: 300px;  /*total width:402px*/
+                height:100px;
+                padding:50px;
+                border:1px solid blue;
+            }
+
+            /*flexbox*/
+            div.flex{
+                border:5px groove turquoise;
+                width:90%;
+                height:400px;
+                background-image: radial-gradient(lightcyan 30%, peachpuff 30%, white 30%);
+                /*display flex*/
+                display:flex;
+               flex-direction: column;
+                /*flex-direction: column-reverse;*/
+               /* flex-direction: row;
+                flex-direction: row-reverse;*/
+                /*justify-content: center;*/
+                /*justify-content: flex-start;*/
+                /*justify-content: flex-end;*/
+                /*justify-content: space-between;*/
+                justify-content: space-around;
+
+            }
+
+            div.flex > div{
+                color: black;
+                text-align: right;
+                border: 1px solid blue;
+                width:50px;
+                height:50px;
+                background-image:linear-gradient(to left,greenyellow, red);
+            }
+
+        </style>
+
+    </head>
+    <body>
+
+            <div id="divmaincontent">
+
+
+                <h1>Welcome To Block And Flexbox Model</h1>
+
+                <!-- display block -->
+                <div>
+                    <div>Amazon</div>
+                    <div>Ebay</div>
+                    <div>Aliexpress</div>
+                    <div>Alibaba</div>
+                    <div>Property.bw</div>
+                    <div>Classifieds</div>
+                </div>
+
+                <!-- display flex -->
+                <div class="flex">
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                    <div>4</div>
+                    <div>5</div>
+                    <div>6</div>
+                </div>
+
+            </div>
+
+    </body>
+</html>
+
+

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SpeedSterMotors Home</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/jpg" href="images/favicon.jpg"/>
+        <script src="scripts/LoadMasterPage.js"></script>
+
+        <style>
+            /* embedded/internal css */
+            table, td, th{
+                border:1px solid rgb(126, 192, 113);
+            }
+            table{
+                border-collapse: collapse;
+            }
+            td,th{
+                padding: 6px;
+            }
+            th{
+                background-image: linear-gradient(yellow, greenyellow, lightblue);
+                color:  magenta;
+                font-weight: bold;
+            }
+
+            tr:nth-child(even){
+                background-image: radial-gradient(rgb(207, 231, 231), rgb(243, 243, 210), rgb(224, 250, 250));
+            }
+            
+            tr:nth-child(odd){
+                background-color: lemonchiffon;
+            }
+            /*highlight selection on hover*/
+            tr:hover{
+                background-image: radial-gradient(aqua, yellow, fuchsia);
+            }
+
+            #t3{
+                background-color: yellow;
+   
+            }
+            .tbl{
+                color: green;
+            }
+            #t2 td:hover{
+                background-color: black;
+                color: aqua;
+            }
+            #t2 td:nth-child(2), #t2 td:nth-child(3){
+                text-align: right;
+                color: red;
+            }
+            
+           
+
+        </style>
+
+    </head>
+    <body>
+        <div id="divmaincontent">
+
+            <h1>Welcome To SpeedSter Motors</h1>
+
+            <table id="t1" class="tbl">
+                <caption>Best Selling Cars</caption>
+                <tr>
+                    <th rowspan="2">Make</th><th rowspan="2">ID</th><th rowspan="2">Model</th><th colspan="2">Type</th>
+                </tr>
+                <tr>
+                    <th>Truck</th><th>SUV</th>
+                </tr>
+                <tr>
+                    <td rowspan="4">Toyota</td><td>1</td><td>Hilux Legend 50</td><td>T</td><td>F</td>
+                </tr>
+                <tr>
+                                                <td>2</td><td>Tundra V8 2021</td><td>T</td><td>F</td>
+                </tr>
+                <tr>
+                                                <td>3</td><td>Prado Land Cruiser</td><td>F</td><td>T</td>
+                </tr>
+                <tr>
+                                                <td>4</td><td>FJ Cruiser 2021</td><td>F</td><td>T</td>
+                </tr>
+                <tr>
+                    <td rowspan="3">VolksWagen</td><td>1</td><td>VW Amarok</td><td>T</td><td>F</td>
+                </tr>
+                <tr>
+                    <td>2</td><td>VW Touareg</td><td>F</td><td>T</td>
+                </tr>
+                <tr>
+                    <td>3</td><td>VW X5</td><td>F</td><td>T</td>
+                </tr>
+                <tr>
+                    <td rowspan="4">Ford</td><td>1</td><td>Ranger Raptor 2021</td><td>T</td><td>F</td>
+                </tr>
+                <tr>
+                    <td>2</td><td>Ranger WildTrack 2021</td><td>T</td><td>F</td>
+                </tr>
+                <tr>
+                    <td>3</td><td>Ford Everest 4X4 XLT</td><td>F</td><td>T</td>
+                </tr>
+                <tr>
+                    <td>4</td><td>Ford F550</td><td>T</td><td>F</td>
+                </tr>
+                <tr>
+                    <td rowspan="1">Nissan</td><td>1</td><td>Nissan Navara 4X4 V6 Bi-Turbo</td><td>T</td><td>F</td>
+                </tr>
+            </table>
+            <br>
+            <br>
+
+
+            <table id="t2" class="tbl">
+                <caption>Cars Sales Statistics - 2020</caption>
+                <tr>
+                    <th>Make</th><th>Quantity</th><th>Sales</th>
+                </tr>
+                <tr>
+                    <td>Toyota</td><td>5000</td><td>50000</td>
+                </tr>
+                <tr>
+                    <td>VolksWagen</td><td>3000</td><td>45000</td>
+                </tr>
+                <tr>
+                    <td>Ford</td><td>6000</td><td>80000</td>
+                </tr>
+                <tr>
+                    <td>Nissan</td><td>3000</td><td>45000</td>
+                </tr>
+            </table>
+
+            <br>
+
+            <script>
+                var table = document.getElementById("t2");
+
+                var i = 1;
+                var sum = 0;
+                var qty = 0;
+                for(i =1; i< table.rows.length; i++) { //i=1 -> skip headers
+                    qty += parseFloat(table.rows[i].cells[1].innerHTML);
+                    sum += parseFloat(table.rows[i].cells[2].innerHTML);
+                }
+
+                var row = table.insertRow(i);
+                var cell1 = row.insertCell(0);
+                var cell2 = row.insertCell(1);
+                var cell3 = row.insertCell(2);
+
+                cell1.innerHTML = "Totals :";
+                cell2.innerHTML = qty;
+                cell3.innerHTML = sum;
+            </script>
+
+            <br>
+
+            <table id="t3" class="tbl">
+                <caption>Countries in Southern Africa</caption>
+                <tr>
+                    <th>Country</th><th>City</th><th>President</th>
+                </tr>
+                <tr>
+                    <td>Botswana</td><td>Gaborone</td><td>HE Masisi</td>
+                </tr>
+                <tr>
+                    <td>Namibia</td><td>Windhoek</td><td>HE Geingobe</td>
+                </tr>
+                <tr>
+                    <td>South Africa</td><td>Pretoria</td><td>HE Ramaphosa</td>
+                </tr>
+                <tr>
+                    <td>Zambia</td><td>Livingstone</td><td>HE Chiluba</td>
+                </tr>
+            </table>
+
+        </div>
+        
+    </body>
+</html>
+
+

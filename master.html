@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SpeedSterMotors Home</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/jpg" href="images/favicon.jpg"/>
+        <script>
+        </script>
+
+        <style>
+            /* embedded/internal css */
+            html{display:none;} /*heps to hide html until css is loaded : prevents=>flash of unstyled content (FOUC) on a web page*/
+            .today{
+                border:1px solid turquoise;
+                background-color: yellow;
+            }
+            #cal{
+                border: 1px solid turquoise;
+                border-radius:5px;
+                width:95%;
+                margin: auto;
+            }
+            #cal tr:first-child>th{
+                border-bottom: 1px solid #000;
+            }
+        </style>
+
+        <link rel="stylesheet" href="styles/mystyle.css">
+        <link rel="stylesheet" href="styles/mymenu.css">
+
+        <style>
+            html{display: block;} /*now enable html as external css is loaded in link tag above || no longer necessary coz of SetLoadingGIF() and ClearLoadingGIF() in LoadMasterPage()*/
+        </style>
+    </head>
+    <body>
+        <div id="divcontainer">
+            <header>
+                <div id="divbanner">
+                    <p id="sitetitle">SpeedSter Motors</p>
+                    <p id="sitemotto">The Home Of Quality Automobiles For Every Lifestyle</p>
+                </div>
+            </header>
+
+            <div id="divmenu">
+                
+                <!--create dropdown navigation menu-->
+                <nav id="navmenu">
+
+                    <!--ADD CHECKBOX TO CONTROL THE MENU TOGGLE EFFECT-->
+                    <input type="checkbox" id="menu_toggle">
+                    <label for="menu_toggle" id="lbl_toggle"></label>
+
+
+                    <ul id="mainmenu">
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="wmdteam.html">Our Team</a>
+                        </li>
+                        <li>
+                            <a href="#">About</a>
+                            <ul class="submenu">
+                                <li><a href="background.html">Background</a></li>
+                                <li><a href="contactus.html">Contact Us</a></li>
+                                <li><a href="loadfiledata.html">Load File Data</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Car Range</a>
+                            <ul class="submenu">
+                                <li><a href="multiplicationtable.html">Multiplication Table</a></li>
+                                <li><a href="slideshow.html">Gallery - SlideShow</a></li>
+                                <li><a href="animationlideshow.html">Gallery - Animations</a></li>
+                                <li><a href="multimedia.html">Multimedia - Testimonials</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Sales</a>
+                            <ul class="submenu">
+                                <li><a href="htmltables.html">View Prices</a></li>
+                                <li><a href="loadfiledata.html">View From File</a></li>
+                                <li><a href="services.html">Services</a></li>
+                                <li class="submain"><a href="#">Sales</a>
+                                    <ul class="subsubmenu">
+                                        <li><a href="sales.html">Cash Sales</a></li>
+                                        <li><a href="#" onclick="alert('\n\n💡 CREDIT SALES FEATURE COMING SOON: 🙏 \n⯐⯐⯐⯐⯐⯐⯐⯐⯐⯐⯐⯐⯐⯐⯐⯐⯐⯐⯐⯐⯐⯐⯐⯐⯐⯐⯐⯐⯐⯐⯐⯐⯐\n\n Kindly Visit any of our branches for sales. \n\n -------------------------THANK YOU-------------------------');">Credit Sales</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Account</a>
+                            <ul class="submenu">
+                                <li><a href="register.html">Register</a></li>
+                                <li><a href="#" onclick="alert('\n\n💡 THANK YOU FOR DOING BUSINESS WITH US: 🙏 \n⯐⯐⯐⯐⯐⯐⯐⯐⯐⯐⯐⯐⯐⯐⯐⯐⯐⯐⯐⯐⯐⯐⯐⯐⯐⯐⯐⯐⯐⯐⯐⯐⯐\n\n Kindly Visit Our Offices Nearest To You and update your KYC details. \n\n -----------------------THANK YOU-------------------------');">Update KYC</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="login.html">Login</a>
+                        </li>
+                    </ul>
+                </nav>
+            
+
+            </div>
+
+            <div id="divcol-container">
+                <div id="divsidebar"  class="col">
+                    <ul>
+
+                        <li><a href="latestmodels.html"><img src="images/latestmodels.jpg" alt="Latest Models" title="Latest Models 2021" width="100%"></a></li>
+
+                        <li><a href="blockflexbox.html">Block And FlexBox Layouts</a></li>
+
+                        <li><a href="combinators.html">Combinators</a></li>
+
+                        <li><a href="imagesandmaps.html">Images and Maps</a></li>
+
+                        <li><a href="multimedia.html">Multimedia - Videos & Audio</a></li>
+
+                        <li><a href="htmltables.html">HTML Tables</a></li>
+
+                        <li><a href="loadfiledata.html">Load File Data</a></li>
+
+                        <li><a href="dropdownmenu.html">Dropdown Menus</a></li>
+
+                        <li><a href="register.html">HTML Forms</a></li>
+
+                        <li><a href="jsintro.html">JavaScript</a></li>
+
+                        <li><a href="mediaqueries.html">Media Queries</a></li>
+
+                        <li><a href="animations.html">CSS Animations & Transitions</a></li>
+                    </ul>
+               
+
+                    <div id="calendar"></div>
+
+                </div>
+
+
+
+                <div id="divcontent" class="col">
+                    <!--content place holder for merging child page content-->
+                   
+
+                </div>
+
+            </div>
+
+            <div id="divfooter">
+                <p id="footer" >
+                    copyright@SpeedSterMotors.co.bw : 
+                </p>
+
+                <div id="divsocialmedia">
+                    <a href="https://www.facebook.com/speedstermotors/" target="_blank"><img src="images/fb.JPG" title="Like us on Facebook"></a> 
+                    <a href="https://web.whatsapp.com/" target="_blank"><img src="images/wa.JPG" title="Follow us on LinkedIn"></a> 
+                    <a href="https://www.youtube.com/user/speedstermotors" target="_blank"><img src="images/yt.JPG" title="Follow us on Youtube"></a> 
+                    <a href="https://twitter.com/speedstermotors" target="_blank"><img src="images/tt.JPG" title="Follow us on Twitter"></a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </body>
+</html>
+
+

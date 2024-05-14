@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SpeedSter Motors Home</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            #divteamcontainer{
+                border:1px solid navy;
+                border-radius:5px;
+                margin:auto;
+                padding:5px;
+                display:flex;
+                flex-wrap: wrap;
+            }
+            .card{
+                border:1px solid silver;
+                border-radius: 5px;
+                padding: 5px;
+                width:150px;
+                height:200px;
+                margin:5px;
+                text-align: center;
+            } 
+            .card>span{
+                display:block;
+            }             
+        </style>
+        <script src="scripts/team_data.js"></script>
+        <script src="scripts/LoadMasterPage.js"></script> <!--linking external javascript file-->
+    </head>
+    <body>
+
+        <h1 id="teamtitle" style="font-size: 30px;">THE 2021 WMD TEAM</h1>
+
+
+        <!--onchange set parameters: page_size=[selected] & page_start=[1] -->
+        <label for="filter_team">Filter Team :</label> 
+        <select id="filter_team" name="filter_team" onchange="(()=>{var params = new URLSearchParams(window.location.search); params.set('program', this.value); params.set('page', 1); window.location.search = params;})(); ">
+            <option value="1">ALL </option>
+            <option value="BIDA-2" >BIDA-2</option>
+            <option value="BIDA-4">BIDA-4</option>
+            <option value="CSE-1">CSE-1</option>
+        </select>
+
+        <script>
+            //set selected value
+            function SetSelectedValue(){
+                const urlParams = new URLSearchParams(window.location.search);
+                var selectedValue = urlParams.get('program');
+                document.querySelector("#filter_team").value= (selectedValue)? selectedValue : 1; //if null set 1
+            }
+            //helps to wait until dom is fully loaded
+            window.addEventListener("DOMContentLoaded", function(event) {
+                SetSelectedValue();
+                GetTextData('data/team_data.txt', LoadTeam);
+            });
+        </script>
+        <!-- ______ -->
+
+
+        <div id="divteamcontainer">
+
+            <div class="card">
+                <img  id="i0">
+                <span id="p0"></span>
+                <span id="p1"></span>
+                <span id="p2"></span>
+                <span id="p3"></span>
+            </div>
+        
+            <script>
+                /*
+                var data = bida4;
+                var copy;
+                var node=document.querySelector('.card');
+                for (var i = 0; i < data.length; i++) {
+                    copy = node.cloneNode(includeChildren=true);
+                    var avatar = `images/team/${data[i].cisno}.JPG`;
+                    var imgel  =  copy.querySelector('#i0');
+                    imgel.src=avatar;
+                    imgel.gender = data[i].gender.toLowerCase(); //capture for use in eventHandlerFunction
+
+                    // Determine whether the image size is greater than 0 or the image height and width are greater than 0
+                    if(!(imgel.filesize>0||(imgel.width>0 && imgel.height>0))){
+                        imgel.src = `images/team/${imgel.gender}_student.JPG`;
+                        imgel.alt = 'Default Image';
+                    }
+
+                    /*var imgel  =  copy.querySelector('#i0');
+                    imgel.gender = data[i].gender.toLowerCase(); //capture for use in eventHandlerFunction
+                    imgel.addEventListener('error', function (event) {
+                        if (event.target.tagName.toLowerCase() !== 'img') return; 
+                        event.target.src = `images/team/${imgel.gender}_student.JPG`;
+                        event.target.alt = 'Default Image';
+                    }, true);*/
+                    /*
+                    copy.querySelector('#p0').innerHTML=data[i].cisno;
+                    copy.querySelector('#p1').innerHTML=data[i].name;
+                    copy.querySelector('#p2').innerHTML=data[i].course;
+                    copy.querySelector('#p3').innerHTML=(data[i].gender.toLowerCase()=='f')? 'Female' : "Male";
+                    node.parentNode.insertBefore(copy, node);  //[insertBefore]
+                    //node.parentNode.insertBefore(copy, node.nextSibling); //[insertAfter]
+                }
+                node.parentNode.removeChild(node); //remove unused default
+                */
+
+                function LoadTeam(filedata){
+                    var program = document.querySelector("#filter_team").value;
+                    //alert(program);
+                    var copy;
+                    var node=document.querySelector('.card');
+                    filedata.split('\n').forEach(rowdata => {
+                        var linedata = rowdata.split('\t');
+                        var cisno  = linedata[0]; 
+                        var fname  = linedata[1];
+                        var sname  = linedata[2];
+                        var gender = linedata[3];
+                        var email  = linedata[4];
+                        var group  = linedata[5];
+                        var course = linedata[6];
+                        if(!cisno) { return; }  //if row is blank skip
+                        if( !((program==group) || (program == 1)) ){ return; } //filter selection
+
+                        copy = node.cloneNode(includeChildren=true);
+                        gender = gender.toLowerCase();
+                        var avatar = `images/team/${cisno}.JPG`;
+                        var imgel  =  copy.querySelector('#i0');
+                        imgel.src=avatar;
+                        imgel.gender = gender; //capture for use in eventHandlerFunction
+
+                        // Determine whether the image size is greater than 0 or the image height and width are greater than 0
+                        /*
+                        if(!(imgel.filesize>0||(imgel.width>0 && imgel.height>0))){
+                            imgel.src = `images/team/${gender.toLowerCase()}_student.JPG`;
+                            imgel.alt = 'Default Image';
+                        }
+                        */
+
+                        /*handle errorimage in javascript*/
+                        imgel.onerror = ((event)=>{
+                                            event.target.src = `images/team/${gender}_student.JPG`;
+                                            event.target.alt = 'Default Image';
+                                        });
+                        //---
+                        
+                        copy.querySelector('#p0').innerHTML=cisno;
+                        copy.querySelector('#p1').innerHTML=fname + ' '+ sname;
+                        copy.querySelector('#p2').innerHTML=group;
+                        copy.querySelector('#p3').innerHTML=(gender=='f')? 'Female' : "Male";
+                        node.parentNode.insertBefore(copy, node);  //[insertBefore]
+                        //node.parentNode.insertBefore(copy, node.nextSibling); //[insertAfter]
+                    });
+                    
+                    node.parentNode.removeChild(node); //remove unused default
+
+                }//end function
+
+                /*load data using callback*/
+                const fileUrl = 'data/team_data.txt' // provide file location
+                function GetTextData(fileUrl, callback){
+                    fetch(fileUrl)
+                        .then( r => r.text() )
+                        .then( t => callback(t) ); //console.log(t)
+                }
+                //GetTextData('data/team_data.txt', LoadTeam); //called ondomcontentloaded above
+                function display(r){
+                    r.split('\n').forEach(element => {
+                        document.write(element+'<br>');
+                    });
+                    
+                }
+                /*load data using callback*/
+
+
+                /*handle onerror in javascript*/
+                //---Using External JavaScript:
+                /*
+                var images = document.querySelectorAll('img');
+
+                for (var i = 0; i < images.length; i++) {
+                    images[i].onerror = function() {
+                        this.style.display='none';
+                    }
+                }
+
+                //---Using Modern External JavaScript:
+                document.querySelectorAll('img').forEach((img) => {
+                    img.onerror = function() {
+                        this.style.display = 'none';
+                    }
+                });
+
+                */
+
+            </script>
+
+        </div>
+        
+    </body>
+</html>
+

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SpeedSter Home</title>
+        <meta charset="utf-8">
+        <style></style>
+        <script src="scripts/LoadMasterPage.js"></script> <!--linking external javascript file-->
+    </head>
+    <body>
+
+        <div id="divcontainer" style="width:100%; height:100%; margin:auto; border:2px groove turquoise; border-radius:5px;padding:0px;">
+
+            <img id="slide" src="slideshow()" alt="Gallery Images" title="Car Image" onerror="errorHandler(this)" 
+                            style="height:100%; width:100%; border-radius:5px;"> <!--onerror="this.src='images/slide/default.jpg'" -->
+
+        </div>
+
+        <script>
+
+            //image array to store all images
+            /*
+            var arrgallery = new Array();
+
+            //add images to array
+            for(var k=0; k<=12; k++){  
+                arrgallery[k]="images/gallery/image_"+ k +".jpg"; 
+            }
+            */
+
+            //load array from folders using AJAX - Asynchrous JavaScript and XML
+            var arrgallery=new Array(); //image array
+            LoadImages(GetImagesCallback);
+            function GetImagesCallback(arrimgs){
+                arrgallery = arrimgs;
+            }
+
+            var imgIndex; //holds current index of loaded image
+
+            function slideshow(){
+                document.getElementById("slide").setAttribute("src", arrgallery[imgIndex]);
+                imgIndex = (imgIndex < arrgallery.length-1)? imgIndex + 1 : 0;
+            }
+
+            //set timer || use document instead of window which clashes with LoadMasterPage event
+            document.onload=function(){
+                setInterval("slideshow()", 5000); //setTimeout("slideshow()", 5000) 
+            } 
+
+            //errorHandler function
+            function errorHandler(img){
+                img.src=null; //clear error first
+                img.src="images/slide/default.jpg"; //load error image on error
+            }
+
+        </script>
+
+
+    </body>
+</html>

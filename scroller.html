@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Double Scroller</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="images/favicon.JPG">
+        <style>
+            #divmaincontent{
+                height: 100%;
+                width: 100%;
+                overflow: auto;
+            }
+            #divmain{
+                width: 2000px;
+            }
+
+          
+        </style>
+        <script src="scripts/LoadMasterPage.js"></script>
+    </head>
+    <body>
+
+        <div id="divmaincontent">
+
+           
+                <div id="divmain">
+                    aaaa bbbb cccc dddd aaaa bbbb cccc 
+                    dddd aaaa bbbb cccc dddd aaaa bbbb 
+                    cccc dddd aaaa bbbb cccc dddd aaaa 
+                    bbbb cccc dddd aaaa bbbb cccc dddd
+                </div>
+            </div>
+            
+
+        </div>
+            
+        <script>
+
+            /*window.onload=function(){
+                var btn = document.querySelector("#btn");
+                btn.onclick = function(){
+                    btn.style.backgroundColor=(btn.style.backgroundColor=='lime')?'yellow':'lime';
+                }
+            };*/
+
+            /*~~~~~~~~~~~~~~~~~~Show Top And Bottom ScrollBar~~~~~~~~~~~~~~~*/
+            function DoubleScroll(element) {
+                var elementid = element.id;
+                var scrollbar= document.createElement('div');
+                scrollbar.appendChild(document.createElement('div'));
+                scrollbar.setAttribute('id','sb');
+                scrollbar.style.overflow= 'auto';   
+                scrollbar.style.overflowY= 'hidden';
+                scrollbar.firstChild.style.width= element.scrollWidth+'px';
+                scrollbar.firstChild.style.paddingTop= '1px';
+                scrollbar.firstChild.appendChild(document.createTextNode('\xA0'));
+                element.parentNode.insertBefore(scrollbar, element);
+                //--
+                window.onload=function(){
+                    var running = false;
+                    //
+                    var sb = document.querySelector("#sb");
+                    var elem = document.querySelector(`#${elementid}`);
+                    sb.onscroll= function() {
+                        if(running) {
+                            running = false;
+                            return;
+                        }
+                        running = true;
+                        elem.scrollLeft= sb.scrollLeft;
+                    };
+
+                    //
+                    elem.onscroll= function() {
+                        if(running) {
+                            running = false;
+                            return;
+                        }
+                        running = true;
+                        sb.scrollLeft= elem.scrollLeft;
+                    };
+                    //
+                }
+                //--
+            }
+            DoubleScroll(document.querySelector('#divmaincontent')); 
+            //~~~~~~~~~~~~~~~Add Double Horizental Scrollbar | use id ~~~~~~~~~~~~~~~~~~~//
+        </script>
+
+    </body>
+
+</html>

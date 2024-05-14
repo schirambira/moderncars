@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Media Queries</title>
+        <meta charset="utf-8>">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="scripts/LoadMasterPage.js"></script>
+
+        <style>
+
+            /*media queries*/
+           
+            
+            /*
+            @media screen {
+                
+                h1{
+                    color: navy;
+                }
+
+            }
+            */
+            /*
+            @media screen and (orientation : landscape) {
+                
+                *{
+                    background-color: red;
+                }
+
+            }
+            */
+
+            /*
+            @media screen and (min-width : 0px) and (max-width :320px)  and (orientation : portrait) {
+                
+                *{
+                    background-color: red;
+                }
+
+            }
+            */
+            
+            /*
+            @media only screen and (min-width : 0px) and (max-width :320px) {
+            
+                label, input[type="text"], input[type="email"]{
+                    display:block;
+                }
+
+            }
+
+            @media only screen and (min-width : 321px) and (max-width :600px) {
+            
+                label, input[type="text"], input[type="email"]{
+                    display:block;
+                }
+                input[type="text"], input[type="email"]{
+                    display:block;
+                    background-image: linear-gradient(lightcyan, peachpuff);
+                }
+            }
+
+            @media only screen and (min-width : 601px) and (max-width :900px) {
+            
+                label{
+                    display:inline-block;
+                }
+                input[type="text"], input[type="email"]{
+                    display:block;
+                    background-image: linear-gradient(greenyellow, fuchsia);
+                }
+
+            }
+
+            @media only screen and (min-width : 901px) and (max-width :1020px) {
+            
+
+            }
+            @media only screen and (min-width : 1021px) {
+            
+                label, input[type="text"], input[type="email"]{
+                    display:block;
+                }
+
+            }
+            
+
+            */
+
+        /*media query simple example using background colors*/
+        @media only screen and (min-width : 0px) and (max-width :320px) {
+            div#col1{
+                background-image:radial-gradient(yellow, green);
+            }
+
+        }
+
+        @media only screen and (min-width : 321px) and (max-width :600px) {
+        
+            div#col1{
+                background-image:radial-gradient( green, red);
+            }
+        }
+
+        @media only screen and (min-width : 601px) and (max-width :900px) {
+            div#col1{
+                background-image:radial-gradient( red, black);
+            }
+
+        }
+
+        @media only screen and (min-width : 901px) and (max-width :1020px) {
+        
+            div#col1{
+                background-image:radial-gradient(black, blue);
+            }
+
+        }
+        @media only screen and (min-width : 1021px) {
+        
+            div#col1{
+                background-image:radial-gradient(blue, yellow);
+            }
+
+        }
+        
+            
+
+
+        </style>
+        
+    </head>
+
+    <body>
+
+        <div id="divcontainer">
+
+            <div id="col1">
+                <h1>Welcome to Media Queries</h1>
+
+                <label for="fname">Firstname</label>
+                <input type="text" id="fname" name="fname" placeholder="Firstname">
+                <label for="sname">Surname</label>
+                <input type="text" id="sname" name="sname" placeholder="Surname">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Email Address">
+
+            </div>
+
+        </div>
+
+    </body>
+</html>

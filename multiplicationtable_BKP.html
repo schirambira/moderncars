@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SpeedSter Home</title>
+        <meta charset="utf-8">
+        <style id="pepu">
+            .info{
+                background-color: greenyellow;
+            }
+            table,tr,td{
+                border:1px solid turquoise;
+                padding: 10px;
+            }
+            #tblcontainer{
+                border: 10px solid transparent;
+                padding: 5px;
+                border-image: url("images/border_image.JPG") 30% round;
+                overflow-x: scroll;
+            }
+            table{
+                border-collapse: collapse;
+            }
+
+            table>tbody>tr:first-child>td{
+                background-image: radial-gradient(yellow, cyan);
+                color: navy;
+                font-weight: bold;
+            }
+
+            table>tbody>tr>td:first-child{
+                background-image: radial-gradient(yellow, cyan);
+                color: navy;
+                font-weight: bold;
+            }
+
+            table>tbody>tr:hover:not(:first-child){
+                background-image: radial-gradient(yellow, lime);
+            }
+
+            #start, #end{
+                width:30%;
+            }
+        </style>
+        <script src="scripts/LoadMasterPage.js"></script> <!--linking external javascript file-->
+    </head>
+    <body>
+
+       
+        <h1>Multiplication Table</h1>
+
+        <label for="start" class="lbl">Start</label>
+        <input type="number" id="start" name="start" placeholder="Start" required  oninvalid="this.setCustomValidity('Please Enter Start Value Here')" oninput="this.setCustomValidity('')" value="0">
+
+        <label for="end" class="lbl">End</label>
+        <input type="number" id="end" name="end" class="txt" placeholder="End" required  oninvalid="this.setCustomValidity('Please Enter End Value Here')" oninput="this.setCustomValidity('')" value="30">
+        <input type="button" value="Re-Load" onclick="LoadTable()" >
+        <br>
+        <br>
+
+        <div id="tblcontainer">
+
+        </div>
+
+        <script>
+
+
+            document.onload = LoadTable();
+
+            function LoadTable(){
+
+                //get start and end values
+                var start = Number(document.getElementById("start").value);
+                var end = Number(document.querySelector("#end").value);
+                start = (start == 0)? start : start-1;
+
+                var tbl = "<table>";
+                    var k,i;
+                    for(k=start; k<=end; k++){
+                        tbl+="<tr>";
+                            for(i=start; i<=end; i++){
+                                tbl+="<td onmouseover='highlight(this,1)' onmouseout='highlight(this,0)' onclick='display(this,"+k+ ","+i+")'>"+( (k==start && i==start)? "X" : (k==start)?i : (i==start)? k: (k*i) ) +"</td>";
+                            }
+                            tbl+="</tr>";
+                    }
+                    tbl+="</table>";
+                    document.querySelector("#tblcontainer").innerHTML = tbl;
+            }
+
+            function highlight(cell,flag){
+                //alert(cell.cellIndex);
+                var style = document.createElement('style');
+                var bgcolor = (flag==1)?"yellow": "transparent";
+                style.innerText = " tbody>tr:nth-child(n+2)>td:nth-child("+ (cell.cellIndex+1) +"){background-color:"+ bgcolor +"; } ";
+                document.querySelector("style").appendChild(style);  //document.getElementsByTagName("style")[0].appendChild(style);   //document.head.appendChild(style); //returning null 
+            }
+
+            function display(cell, k, i){
+                //alert(cell.cellIndex);
+                if(k>0 && i>0){
+                    alert(k + " X " + i + " = " + cell.innerText);
+                }
+            }
+
+        </script>
+
+    </body>
+
+</html>
