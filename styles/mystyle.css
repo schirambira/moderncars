@@ -147,7 +147,7 @@ body {
     height: 200px;
     border: 1px solid Green;
     border-radius: 10px 10px 0 0;
-    background-image: url("../images/banner.jpg"); /*path has to be relative to css.. go out of css folder once, then find images*/
+    background-image: url('../images/banner.jpg'); /*path has to be relative to css.. go out of css folder once, then find images*/
     background-repeat:no-repeat;
     background-size: 100% 100%;
     color: royalblue;
