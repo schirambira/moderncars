@@ -206,7 +206,7 @@ function GetCurrentDateTime(){
 
     function slideshow(){
         var currentImage = (arrgallery[imgIndex])? arrgallery[imgIndex] : "images/slide/default.jpg";
-        //document.getElementById("divbanner").style.backgroundImage = "url("+currentImage+")";
+        document.getElementById("divbanner").style.backgroundImage = "url("+currentImage+")";
         imgIndex = (imgIndex < arrgallery.length-1)? imgIndex + 1 : 0;
     }
 
