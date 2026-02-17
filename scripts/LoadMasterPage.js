@@ -206,7 +206,7 @@ function GetCurrentDateTime(){
 
     function slideshow(){
         var currentImage = (arrgallery[imgIndex])? arrgallery[imgIndex] : "images/slide/default.jpg";
-        document.getElementById("divbanner").style.backgroundImage = "url("+currentImage+")";
+        document.getElementById("divbannerX").style.backgroundImage = "url("+currentImage+")";
         imgIndex = (imgIndex < arrgallery.length-1)? imgIndex + 1 : 0;
     }
 
@@ -356,3 +356,4 @@ I can tell you I am using just a single breakpoint at 768 - that is min-width: 7
 I haven't looked back since. It makes the responsive development easy and not a chore, and provides a reasonable experience on all devices at minimal cost to development time without the need to fear a new Android device with a new resolution you haven't factored in.
 
 */
+
