@@ -162,10 +162,10 @@
                         var current_timezone = new Date().getTimezoneOffset() / -60 * 3600; //console.log(offset); // if offset equals -60 then the time zone offset is UTC+01 
                         var locname = dataset.name; 
                         if(keys[i]==="icon"){ //weather
-                            kvp[keys[i].toUpperCase()]= (`<img id="icon" src='images/weather_icons/${Object.values(d)[i]}'.png>`);  
+                            kvp[keys[i].toUpperCase()]= (`<img id="icon" src='images/weather_icons/${Object.values(d)[i]}.png'>`);  
                         }else if(keys[i]==="all"){ //clouds
                             var cloud_unit = Math.round( Number(Object.values(d)[i]) / 10 , 0);
-                            kvp[keys[i].toUpperCase()]= (`${Object.values(d)[i]} <br><img id="all" src='images/weather_icons/c${cloud_unit}'.jpg>`);  
+                            kvp[keys[i].toUpperCase()]= (`${Object.values(d)[i]} <br><img id="all" src='images/weather_icons/c${cloud_unit}.jpg'>`);  
                         }else if(keys[i].includes("temp") || keys[i].includes("feels_like")){ //temperature add : <sup>°C</sup>
                             kvp[keys[i].toUpperCase()]= (`${Object.values(d)[i]} &#8451; `);  
                         }else if(keys[i].includes("sunrise")){ //sunrise : convert to time || unix tick units are actually seconds so we must multiply by 1000 to construct a correct javascript Date.
@@ -358,6 +358,7 @@
 
 
 </script>
+
 
 
 
