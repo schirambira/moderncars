@@ -148,6 +148,7 @@ body {
     border: 1px solid Green;
     border-radius: 10px 10px 0 0;
     background-image: url("../images/banner.jpg"); /*path has to be relative to css.. go out of css folder once, then find images*/
+    background-color: red;
     background-repeat:no-repeat;
     background-size: 100% 100%;
     color: royalblue;
@@ -486,6 +487,7 @@ input:not([type=checkbox]):not([type=radio]):not([type=reset]):not([type=submit]
 }
 
 /*~~~~~~~~~~~~~~`*/
+
 
 
 
