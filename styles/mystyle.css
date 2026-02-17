@@ -147,8 +147,7 @@ body {
     height: 200px;
     border: 1px solid Green;
     border-radius: 10px 10px 0 0;
-    /*background-image: url('../images/banner.jpg'); /*path has to be relative to css.. go out of css folder once, then find images*/
-    background-image: url('https://github.com/schirambira/moderncars/blob/7dff8863d169a270818a92bbba0d7b98e0a100de/images/banner.jpg');
+    background-image: url('../images/banner.jpg'); /*path has to be relative to css.. go out of css folder once, then find images*/
     background-repeat:no-repeat;
     background-size: 100% 100%;
     color: royalblue;
@@ -487,6 +486,7 @@ input:not([type=checkbox]):not([type=radio]):not([type=reset]):not([type=submit]
 }
 
 /*~~~~~~~~~~~~~~`*/
+
 
 
 
