@@ -188,7 +188,7 @@
                         var arrcountry = await GetCountryDetails(code);
                         console.log(arrcountry[0]["COUNTRY"]);
                         kvp["COUNTRY_NAME"] = arrcountry[0]["COUNTRY"];
-                        kvp["FLAG"] = `<img id="flag" src='images/flags/${code}.png'>`;  
+                        kvp["FLAG"] = `<img id="flag" src='/images/flags/${code}.png'>`;  
                     }
 
                     //add to array
@@ -357,5 +357,6 @@
 
 
 </script>
+
 
 
